@@ -11937,7 +11937,7 @@ Sorted
 <div caption="discogs blank" created="20200213021034600" modified="20200213024701133" tags="$:/tags/TextEditor/Snippet" title="New Tiddler" type="text/x-markdown">
 <pre>1. []()</pre>
 </div>
-<div created="20200213013949210" modified="20200213180551858" tags="[[red hat]] testing certification linux work" title="rhcsa" type="text/x-markdown">
+<div created="20200213013949210" modified="20200213182532540" tags="[[red hat]] testing certification linux work" title="rhcsa" type="text/x-markdown">
 <pre>Understand and use essential tools
 
 Access a shell prompt and issue commands with correct syntax
@@ -11962,7 +11962,7 @@ Access a shell prompt and issue commands with correct syntax
         Hard links files (no dirs) in volume only
     -7 List, set, and change standard ugo/rwx permissions
     -2 Locate, read, and use system documentation including man, info, and files in /usr/share/doc
-	  man -k to search for keyword in man pages
+        man -k to search for keyword in man pages
 
 Operate running systems
 
@@ -11978,93 +11978,93 @@ Operate running systems
 
 Manage tuning profiles
 
-`13 Locate and interpret system log files and journals
-	/var/log/messages (journalctl), /var/log/dmesg (kernel), /var/log/secure (auth)
-13 Preserve system journals
-	/etc/logrotate.conf for log rotation settings
-	/etc/rsyslog.conf to configure rsyslogd
-	/etc/sysconfig/rsyslog to specify ryslogd startup parameters
-	/etc/systemd/journal.conf for journald storage options`
+    -13 Locate and interpret system log files and journals
+        /var/log/messages (journalctl), /var/log/dmesg (kernel), /var/log/secure (auth)
+    -13 Preserve system journals
+        /etc/logrotate.conf for log rotation settings
+        /etc/rsyslog.conf to configure rsyslogd
+        /etc/sysconfig/rsyslog to specify ryslogd startup parameters
+        /etc/systemd/journal.conf for journald storage options
 
 Start, stop, and check the status of network services
 
-`5 Securely transfer files between systems
-Scp, sftp`
+    -5 Securely transfer files between systems
+        Scp, sftp
 
 
 Configure local storage
 
-`14 List, create, delete partitions on MBR and GPT disks
-15 Create and remove physical volumes
-15 Assign physical volumes to volume groups
-15 Create and delete logical volumes
-14 Configure systems to mount file systems at boot by universally unique ID (UUID) or label
-	Xfs_admin (xfs) or tune2fs (ext) or swaplabel (swap) to change
-14 Add new partitions and logical volumes, and swap to a system non-destructively`
+    -14 List, create, delete partitions on MBR and GPT disks
+    -15 Create and remove physical volumes
+    -15 Assign physical volumes to volume groups
+    -15 Create and delete logical volumes
+    -14 Configure systems to mount file systems at boot by universally unique ID (UUID) or label
+        Xfs_admin (xfs) or tune2fs (ext) or swaplabel (swap) to change
+    -14 Add new partitions and logical volumes, and swap to a system non-destructively
 
 Create and configure file systems
 
-`14 Create, mount, unmount, and use vfat, ext4, and xfs file systems
-	Findmnt
-24 Mount and unmount network file systems using NFS
-	showmount -e nfsserver available shares (uses portmapper)
-	Man nfs for fstab example
-15 Extend existing logical volumes
-	lvextend -r to increase LVM size and file system
-7 Create and configure set-GID directories for collaboration
-15 Configure disk compression (vdo and kmon-kvdo)
-	Sync mode to guarantee ACID
-15 Manage layered storage (Stratis)
-7 Diagnose and correct file permission problems`
+    -14 Create, mount, unmount, and use vfat, ext4, and xfs file systems
+        Findmnt
+    -24 Mount and unmount network file systems using NFS
+        showmount -e nfsserver available shares (uses portmapper)
+        Man nfs for fstab example
+    -15 Extend existing logical volumes
+        lvextend -r to increase LVM size and file system
+    -7 Create and configure set-GID directories for collaboration
+    -15 Configure disk compression (vdo and kmon-kvdo)
+        Sync mode to guarantee ACID
+    -15 Manage layered storage (Stratis)
+    -7 Diagnose and correct file permission problems
 
 Deploy, configure, and maintain systems
 
-`12 Schedule tasks using at and cron
-11 Start and stop services and configure services to start automatically at boot
-17 Configure systems to boot into a specific target automatically
-	Systemctl get-default, systemctl set-default ...
-25 Configure time service clients
-9 Install and update software packages from Red Hat Network, a remote repository, or from the local file system
-9 Work with package module streams
-17 Modify the system bootloader
-	Man grubby if you forget mkconfig target`
+    -12 Schedule tasks using at and cron
+    -11 Start and stop services and configure services to start automatically at boot
+    -17 Configure systems to boot into a specific target automatically
+        Systemctl get-default, systemctl set-default ...
+    -25 Configure time service clients
+    -9 Install and update software packages from Red Hat Network, a remote repository, or from the local file system
+    -9 Work with package module streams
+    -17 Modify the system bootloader
+        Man grubby if you forget mkconfig target
 
 Manage basic networking
 
-`8 Configure IPv4 and IPv6 addresses
-	Nmtui, nmcli, ip … all work
-8 Configure hostname resolution
-	/etc/hosts defines hostname resolution`
+    -8 Configure IPv4 and IPv6 addresses
+        Nmtui, nmcli, ip … all work
+    -8 Configure hostname resolution
+        /etc/hosts defines hostname resolution
 
 Configure network services to start automatically at boot
 
-`23 Restrict network access using firewall-cmd/firewall`
+    -23 Restrict network access using firewall-cmd/firewall`
 
 Manage users and groups
 
-`6 Create, delete, and modify local user accounts
-6 Change passwords and adjust password aging for local user accounts
-6 Create, delete, and modify local groups and group memberships
-6 Configure superuser access`
+    -6 Create, delete, and modify local user accounts
+    -6 Change passwords and adjust password aging for local user accounts
+    -6 Create, delete, and modify local groups and group memberships
+    -6 Configure superuser access
 
 Manage security
 
 Configure firewall settings using firewall-cmd/firewalld
 
-`	ss for ports and services
-7 Create and use file access control lists
-	ACLs require mount option in /etc/fstab
-5,20 Configure key-based authentication for SSH
-	ssh-agent /bin/bash then ssh-add caches password key for entire session
-22 Set enforcing and permissive modes for SELinux
-22 List and identify SELinux file and process context
-	Sestatus -v, -Z common parameter (ss or ls or ps)
-22 Restore default file contexts
-	restorecon
-22 Use boolean settings to modify system SELinux settings
-	getsebool -a list, setsebool (-P) … on/off (permanently)
-22 Diagnose and address routine SELinux policy violations
-	grep AVC /var/log/audit/audit.log SELinux messages`
+        ss for ports and services
+    -7 Create and use file access control lists
+        ACLs require mount option in /etc/fstab
+    -5,20 Configure key-based authentication for SSH
+        ssh-agent /bin/bash then ssh-add caches password key for entire session
+    -22 Set enforcing and permissive modes for SELinux
+    -22 List and identify SELinux file and process context
+        Sestatus -v, -Z common parameter (ss or ls or ps)
+    -22 Restore default file contexts
+        restorecon
+    -22 Use boolean settings to modify system SELinux settings
+        getsebool -a list, setsebool (-P) … on/off (permanently)
+    -22 Diagnose and address routine SELinux policy violations
+        grep AVC /var/log/audit/audit.log SELinux messages
 </pre>
 </div>
 <div created="20200213011054504" modified="20200213022714404" tags="work linux" title="rhel-eight" type="text/x-markdown">
