@@ -535,6 +535,8 @@ Error message and password prompt
 
 <li>cisco-ccna</li>
 
+<li>Draft of 'aws-sysops-assoc'</li>
+
 <li>general</li>
 
 <li>grab-bag</li>
@@ -10105,8 +10107,8 @@ Error message and password prompt
 <div created="20200213015628285" modified="20200213025936934" title="$:/state/folded/general">
 <pre>show</pre>
 </div>
-<div created="20200213015448205" modified="20200213025936934" title="$:/state/folded/index">
-<pre>show</pre>
+<div created="20200213015448205" modified="20200213175055598" title="$:/state/folded/index">
+<pre>hide</pre>
 </div>
 <div created="20200213025929672" modified="20200213025936934" title="$:/state/folded/jazzy">
 <pre>show</pre>
@@ -10114,11 +10116,11 @@ Error message and password prompt
 <div created="20200213025929672" modified="20200213025936934" title="$:/state/folded/New Tiddler">
 <pre>show</pre>
 </div>
-<div created="20200213015555766" modified="20200213015600770" title="$:/state/folded/rhcsa">
-<pre>hide</pre>
-</div>
-<div created="20200213025929672" modified="20200213025936934" title="$:/state/folded/rhel-eight">
+<div created="20200213015555766" modified="20200213175055598" title="$:/state/folded/rhcsa">
 <pre>show</pre>
+</div>
+<div created="20200213025929672" modified="20200213175055598" title="$:/state/folded/rhel-eight">
+<pre>hide</pre>
 </div>
 <div created="20200213025929672" modified="20200213025936934" title="$:/state/folded/rock-on">
 <pre>show</pre>
@@ -10162,7 +10164,7 @@ Error message and password prompt
 <div created="20200213014518251" modified="20200213014522021" title="$:/state/tag-manager/paintings">
 <pre>closed</pre>
 </div>
-<div created="20200213174926581" list="rhcsa rhel-eight index" modified="20200213174929629" title="$:/StoryList">
+<div created="20200213174926581" list="[[Draft of 'aws-sysops-assoc']] rhcsa rhel-eight index" modified="20200213175610709" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11656,6 +11658,117 @@ Sorted
 5.6 Troubleshoot basic Layer 3 end-to-end connectivity issues`
 </pre>
 </div>
+<div created="20200213011614930" draft.of="aws-sysops-assoc" draft.title="aws-sysops-assoc" modified="20200213175650298" tags="aws testing certification work" title="Draft of 'aws-sysops-assoc'" type="text/x-markdown">
+<pre>C.3 Security
+
+    -IAM supports Security Assertion Markup Langage 2.0
+    -IAM access keys
+    -Inspector - analyzes network reachability, CVEs, CIS benchmarks
+    -remember IAM role for logs:CreateLogStream and logs:PutLogEvents
+    -CW uses event version numbers for order and uniqueness
+    -Secrets Manager rotates credentials
+    -KMS is managed HSM
+    -WAF: web ACL on IP, country, regex/string, length, SQL, XSS
+
+C.4 Compute
+
+    -max 80,000 IOPS instance to all attached EBS
+    -max 1750 MiB/s to attached EBS
+    -migrate inst to other AZ - create AMI then launch new inst
+    -key pairs by region, 2048-bit SSH-2 RSA keys
+    -instance types (general, compute, memory, nitro)
+        -1 CPU credit = 1 vCPU at 100% for 1 minute
+    -stopping EBS-backed instance releases public IP
+    -user data (shell scripts and cloud-init directives-for SSH keys) not updated by modification while instance stopped
+    -http://169.254.169.254/latest/meta-data/ (throttled)
+    -http://169.254.169.254/latest/dynamic/instance-identity/ (JSON)
+    -CW alarm actions are recover, stop, terminate, reboot
+    -&quot;recover&quot; retains ID, metadata, private/elastic IP, EBS attach.
+    -dedicated instance: hardware for single customer
+    -dedicated host: use existing licenses, control &quot;placement&quot;
+    -CW metrics - CPU, DISK reads/writes, NETWORK in/out, instance status, system status, credit usage/balance
+    -on-demand, reserved (by region or AZ), spot (bid on &quot;market price&quot;)
+    -bundle: image manifest + files with template for root volume
+    -ECS &quot;awsvpc&quot; network mode exposes EC2 networking ENIs, etc.
+    -target tracking scaling policies auto create CW alarms
+    -auto scaling terminates inst. with failed health checks (ELB also)
+    -Lambda
+        -push: ALB target, API gateway, CT by log into S3, CW Events (passed to), CW logs, evalute Config, S3 object event, SNS target
+        -pull: Kinesis, DynamoDB, SQS
+        -up to 15 minute timeout
+        -Lambda max 1,000 concurrent executions
+        -Lambda@Edge: node.js or python (respond to CloudFront events)
+
+C.5 Networking
+
+    -flow log for VPC, subnet, or ENI; requires ARN of IAM role to CW
+    -every silly detail of direct connect process (90 day expiration)
+        -request in console - 1, 10 Gbps and location (hosted connect in console)
+        -download loa-cfa (required by colocation or network provider)
+    -ALB (HTTP, HTTPS)
+        -host-based routing - by host header in http (think DNS domains)
+        -path-based routing - by URL path
+        -http header value routing (any)
+        -http method value routing (get, post, etc.)
+        -x-forwarded-for header (preserves source ip)
+    -NLB (TCP, UDP, TLS)
+    -Route 53
+        -resource record sets define routing policies for hosted zone
+        -health checks on resources, CW alarms, other health checks
+        -Cross-Origin Resource Sharing from other domains
+        -max, min, default TTL at same value overrides cache-cont. head.
+
+C.6 Storage
+
+    -logical io up to 256KB, 1MB
+    -EBS 1GB/4GB/500GB/500GB up to 16TB
+    -EBS 16000/64000(16-64KB/io) and 500/250(1MB/io) max iops
+    -EBS 250MB/s, 1000MB/s, 500 MB/s, 250 MB/s max throughput
+    -EBS burst credits accum. 3iops/GB, 40MB/s per TB, 12MB/s per TB
+    -no snapshots on instance storage
+    -instance storage best for &lt; 1 ms latency
+    -EBS snapshot 5 cents/GiB/month
+    -EBS parameters - type, size, AZ, IOPS (io1), snapshot ID, encryption
+    -must snapshot encrypted volume to share (by region)
+    -snapshot &gt; 10Gb is whole volume
+    -cannot share encrypted volume if CMK (customer master key) is default
+    -EBS-backed boots faster than instance-backed
+    -EBS volumes per AZ, snapshots per region
+    -EBS types (General Purpose SSD (gp2), Provisioned IOPS SSD (io1), Throughput Optimized HDD (st1), Cold HDD (sc1), magnetic (old))
+    -must own encrypted snapshot to restore it
+    -EBS (non-elastic) volume can get stuck &quot;busy&quot; state if detached while mounted
+    -EFS uses mount point in VPC (ip), linux only
+    -S3 data backup durability only in bucket REGION
+    -S3 virtual hosted URL resolves bucket in domain (DNS works)
+    -S3 path-style must use region in domain (no DNS, specific to region)
+    -404 returned to get request on delete marker as current version
+    -lifecycle management: transition to storage class, expiration (del)
+    S3 policies ***not available on MFA-enabled buckets
+    -pricing for objects pro-rated to 30-day minimum, 90 for glacier
+    -cross-origin resource sharing (by other origins, methods, headers)
+    S3 server access logging
+    -Glacier: vaults, vault lock, query in uncompressed CSV
+    -Storage Gateway: File, Volume, Tape hardware appliances (NFS, SMB)
+
+C.7 Databases
+
+    -standbys auto to other AZ, no reads allowed
+    -RDS: SQL, ACID, table joins, M(multi-pur), R(RAM), T(Tiny/burst)
+    -MySQL, MariaDB, PostgreSQL, Oracle, Microsoft SQL Server
+    -snapshots temp. slow I/O unless multi-AZ
+    -can promote read replica to standalone DB (after reboot)
+    -enhanced monitoring for real-time, performance insights (DB query)
+    -parameter groups, options groups
+    -Redshift: enhanced VPC routing for private routing / slow resize
+    -Aurora (MySQL, PostgreSQL)
+        -r/w endpoint, &quot;ro&quot; read replica endpoint, custom, instance
+        -10GB - 64TB storage
+        -2 copies of your data in 3 AZ
+        -15 read replicas max, async replication
+        -use serverless to eliminate scaling &quot;delay&quot; with low usage
+    -ElastiCache: Redis or Memcached, regional
+    -Database Migration - requires replication instance + endpoints</pre>
+</div>
 <div created="20200213010945998" modified="20200213022704223" tags="work linux" title="general" type="text/x-markdown">
 <pre>Edit implies create if file does not exist
 
@@ -11824,44 +11937,44 @@ Sorted
 <div caption="discogs blank" created="20200213021034600" modified="20200213024701133" tags="$:/tags/TextEditor/Snippet" title="New Tiddler" type="text/x-markdown">
 <pre>1. []()</pre>
 </div>
-<div created="20200213013949210" modified="20200213175052336" tags="[[red hat]] testing certification linux work" title="rhcsa" type="text/x-markdown">
+<div created="20200213013949210" modified="20200213180551858" tags="[[red hat]] testing certification linux work" title="rhcsa" type="text/x-markdown">
 <pre>Understand and use essential tools
 
 Access a shell prompt and issue commands with correct syntax
 
-`2 Use input-output redirection (&gt;, &gt;&gt;, |, 2&gt;, etc.)
-	Man bash (redirection)
-4 Use grep and regular expressions to analyze text
-	grep ^... for lines that start with … grep …$ for lines that end with …
-	Man grep or info grep for regex
-	Use quotes to escape chars
-5 Access remote systems using SSH
-	All ssh based commands
-5 Log in and switch users in multiuser targets
-3 Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2
-	tar -z option (un)compresses with gzip during archive operation
-	Tar allows GNU usage, tab complete with -- for all options
-2, 4 Create and edit text files
-	:%s/old/new/g replace all “old” with “new”
-3 Create, delete, copy, and move files and directories
-	cp -a /dir1/. /dir2/ to copy all files including hidden (notice .)
-3 Create hard and soft links
-	Hard links files (no dirs) in volume only
-7 List, set, and change standard ugo/rwx permissions
-2 Locate, read, and use system documentation including man, info, and files in /usr/share/doc
-	man -k to search for keyword in man pages`
+    -2 Use input-output redirection (&gt;, &gt;&gt;, |, 2&gt;, etc.)
+        Man bash (redirection)
+    -4 Use grep and regular expressions to analyze text
+        grep ^... for lines that start with … grep …$ for lines that end with …
+        Man grep or info grep for regex
+        Use quotes to escape chars
+    -5 Access remote systems using SSH
+        All ssh based commands
+    -5 Log in and switch users in multiuser targets
+    -3 Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2
+        tar -z option (un)compresses with gzip during archive operation
+        Tar allows GNU usage, tab complete with -- for all options
+    -2, 4 Create and edit text files
+        :%s/old/new/g replace all “old” with “new”
+    -3 Create, delete, copy, and move files and directories
+        cp -a /dir1/. /dir2/ to copy all files including hidden (notice .)
+    -3 Create hard and soft links
+        Hard links files (no dirs) in volume only
+    -7 List, set, and change standard ugo/rwx permissions
+    -2 Locate, read, and use system documentation including man, info, and files in /usr/share/doc
+	  man -k to search for keyword in man pages
 
 Operate running systems
 
-`5 Boot, reboot, and shut down a system normally
-18 Boot systems into different targets manually
-	Systemctl isolate targetname.target
-18 Interrupt the boot process in order to gain access to a system
-	systemd.unit=targetname.target on kernel line
-10 Identify CPU/memory intensive processes and kill processes
-top for process overview and state
-10 Adjust process scheduling
-	&amp; at end of command to start process in background`
+    -5 Boot, reboot, and shut down a system normally
+    -18 Boot systems into different targets manually
+        Systemctl isolate targetname.target
+    -18 Interrupt the boot process in order to gain access to a system
+        systemd.unit=targetname.target on kernel line
+    -10 Identify CPU/memory intensive processes and kill processes
+        top for process overview and state
+    -10 Adjust process scheduling
+        &amp; at end of command to start process in background
 
 Manage tuning profiles
 
