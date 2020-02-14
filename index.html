@@ -219,6 +219,8 @@ Error message and password prompt
 
 <li>$:/isEncrypted</li>
 
+<li>$:/link-color</li>
+
 <li>$:/palette</li>
 
 <li>$:/palettes/Twilight1</li>
@@ -9918,10 +9920,18 @@ Error message and password prompt
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20200212223944282" modified="20200213214124836" title="$:/palette">
+<div created="20200214025340654" modified="20200214030157077" tags="$:/tags/Stylesheet" title="$:/link-color">
+<pre>a:link {
+  color: rgb(255, 192, 76);
+}
+a:visited {
+  color: rgb(153, 255, 102);
+}</pre>
+</div>
+<div created="20200212223944282" modified="20200214021032578" title="$:/palette">
 <pre>$:/palettes/Twilight1</pre>
 </div>
-<div author="Thomas Elmiger" created="20200213214110318" description="Delightful, soft darkness." modified="20200214015828014" name="Twilight" tags="$:/tags/Palette" title="$:/palettes/Twilight1" type="application/x-tiddler-dictionary">
+<div author="Thomas Elmiger" created="20200213214110318" description="Delightful, soft darkness." modified="20200214030107772" name="Twilight" tags="$:/tags/Palette" title="$:/palettes/Twilight1" type="application/x-tiddler-dictionary">
 <pre>alert-background: rgb(255, 255, 102)
 alert-border: rgb(232, 232, 125)
 alert-highlight: rgb(255, 51, 51)
@@ -9947,17 +9957,17 @@ download-background: #19a974
 download-foreground: rgb(38, 38, 38)
 dragger-background: rgb(179, 179, 179)
 dragger-foreground: rgb(38, 38, 38)
-dropdown-background: rgb(38, 38, 38)
+dropdown-background: #404040
 dropdown-border: rgb(255, 255, 255)
-dropdown-tab-background: rgba(0,0,0,.1)
-dropdown-tab-background-selected: rgba(255,255,255,1)
+dropdown-tab-background: #3e3e3e
+dropdown-tab-background-selected: rgba(255,255,255)
 dropzone-background: #9eebcf
-external-link-background: transparent
-external-link-background-hover: transparent
-external-link-background-visited: transparent
+external-link-background: #4e4e4e
+external-link-background-hover: #454545
+external-link-background-visited: #3f3f3f
 external-link-foreground: #80ff80
-external-link-foreground-hover: transparent
-external-link-foreground-visited: #ff8080
+external-link-foreground-hover: #80ff80
+external-link-foreground-visited: rgb(108, 229, 242)
 foreground: rgb(230, 230, 230)
 message-background: &lt;&lt;colour tag-foreground&gt;&gt;
 message-border: #96ccff
@@ -10337,8 +10347,8 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213021003196" modified="20200213201814478" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div created="20200213160827892" modified="20200214015702602" title="$:/state/ShowPaletteEditor">
-<pre>yes</pre>
+<div created="20200213160827892" modified="20200214030118888" title="$:/state/ShowPaletteEditor">
+<pre>no</pre>
 </div>
 <div created="20200212231233308" modified="20200212231234447" title="$:/state/sidebar">
 <pre>yes</pre>
@@ -10358,8 +10368,8 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213171552619" modified="20200213202328593" title="$:/state/tab-1342078386">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Plugins</pre>
 </div>
-<div created="20200212224313825" modified="20200214015659414" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20200212224313825" modified="20200214030130895" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20200212224509100" modified="20200213220701932" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/General</pre>
@@ -10367,8 +10377,8 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213192203102" modified="20200213214848769" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20200212223929553" modified="20200213220524899" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20200212223929553" modified="20200214025946172" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20200213160930997" modified="20200213202246371" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -10376,7 +10386,7 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213014518251" modified="20200213014522021" title="$:/state/tag-manager/paintings">
 <pre>closed</pre>
 </div>
-<div created="20200214015653303" list="$:/ControlPanel jazzy" modified="20200214015653303" title="$:/StoryList">
+<div list="index" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11196,7 +11206,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20200213171707179" modified="20200213171710409" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre></pre>
 </div>
-<div created="20200213005026667" modified="20200213205712053" title="$:/temp/search">
+<div created="20200213005026667" modified="20200214025955233" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20200213194759976" modified="20200213194759976" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
