@@ -603,7 +603,7 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20200213203714583" modified="20200213215032170" tags="$:/tags/Stylesheet" title="$:/color-link-to-tiddler">
+<div created="20200213203714583" modified="20200214035353895" tags="$:/tags/Stylesheet" title="$:/color-link-to-tiddler" type="text/css">
 <pre>a.tc-tiddlylink {
     color:rgb(255, 192, 76);
 }</pre>
@@ -9920,12 +9920,26 @@ Error message and password prompt
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20200214025340654" modified="20200214030157077" tags="$:/tags/Stylesheet" title="$:/link-color">
-<pre>a:link {
-  color: rgb(255, 192, 76);
+<div created="20200214025340654" modified="20200214035640416" tags="$:/tags/Stylesheet" title="$:/link-color" type="text/css">
+<pre>[href^=&quot;https://&quot;]:not([href*=&quot;github.io&quot;]) {
+  color: rgb(55, 192, 76);
 }
-a:visited {
+[href^=&quot;https://&quot;]:not([href*=&quot;github.io&quot;])::visited {
   color: rgb(153, 255, 102);
+}
+[href^=&quot;https://&quot;]:not([href*=&quot;github.io&quot;])::after {
+  content: '(external link)';
+  display: inline-block;
+  width: .5em;
+  height: .5em;
+  text-indent: .5em;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/44/Icon_External_Link.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-left: .1em;
 }</pre>
 </div>
 <div created="20200212223944282" modified="20200214021032578" title="$:/palette">
@@ -10344,7 +10358,7 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213200214062" modified="20200213202551655" title="$:/state/plugin-info--270617185-$:/themes/tiddlywiki/tight">
 <pre>no</pre>
 </div>
-<div created="20200213021003196" modified="20200213201814478" title="$:/state/showeditpreview">
+<div created="20200213021003196" modified="20200214035425316" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
 <div created="20200213160827892" modified="20200214030118888" title="$:/state/ShowPaletteEditor">
@@ -10377,8 +10391,8 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213192203102" modified="20200213214848769" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20200212223929553" modified="20200214025946172" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20200212223929553" modified="20200214035828062" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200213160930997" modified="20200213202246371" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -10386,7 +10400,7 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213014518251" modified="20200213014522021" title="$:/state/tag-manager/paintings">
 <pre>closed</pre>
 </div>
-<div list="index" title="$:/StoryList">
+<div created="20200214035727396" list="aws-sysops-assoc grab-bag index jazzy chill-bruh" modified="20200214035845732" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11486,10 +11500,10 @@ C.7 Databases
     -ElastiCache: Redis or Memcached, regional
     -Database Migration - requires replication instance + endpoints</pre>
 </div>
-<div created="20200213010206820" modified="20200213200738996" tags="music play" title="beep-boop" type="text/x-markdown">
+<div created="20200213010206820" modified="20200214030648698" tags="music play" title="beep-boop" type="text/x-markdown">
 <pre>Recent Additions
 
-1. [john hopkins - immunity](https://www.discogs.com/Jon-Hopkins-Immunity/master/562454)
+1. [jon hopkins - immunity](https://www.discogs.com/Jon-Hopkins-Immunity/master/562454)
 
 ---
 Sorted
@@ -11532,7 +11546,7 @@ Sorted
 1. [fourcolor - as pleat](https://www.discogs.com/Fourcolor-As-Pleat/master/1227042)
 1. [fourcolor - letter of sounds](https://www.discogs.com/Fourcolor-Letter-Of-Sounds/release/780468)
 1. [global goon - afterlife](https://www.discogs.com/Global-Goon-Afterlife/master/12180)
-1. [john hopkins - singularity](https://www.discogs.com/Jon-Hopkins-Singularity/master/1357752)
+1. [jon hopkins - singularity](https://www.discogs.com/Jon-Hopkins-Singularity/master/1357752)
 1. [jp buckle - flyin lo-fi](https://www.discogs.com/JP-Buckle-Flyin-Lo-Fi/master/112649)
 1. [junior boys - big black coat](https://www.discogs.com/Junior-Boys-Big-Black-Coat/master/952914)
 1. [leo anibaldi - void](https://www.discogs.com/Leo-Anibaldi-Void/master/86390)
