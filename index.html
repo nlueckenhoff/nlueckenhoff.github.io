@@ -577,6 +577,8 @@ Error message and password prompt
 
 <li>cisco-ccna</li>
 
+<li>courses</li>
+
 <li>general</li>
 
 <li>grab-bag</li>
@@ -10334,8 +10336,8 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213015555766" modified="20200213175055598" title="$:/state/folded/rhcsa">
 <pre>show</pre>
 </div>
-<div created="20200213025929672" modified="20200213175055598" title="$:/state/folded/rhel-eight">
-<pre>hide</pre>
+<div created="20200213025929672" modified="20200215181427394" title="$:/state/folded/rhel-eight">
+<pre>show</pre>
 </div>
 <div created="20200213025929672" modified="20200213025936934" title="$:/state/folded/rock-on">
 <pre>show</pre>
@@ -10385,13 +10387,13 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200212224313825" modified="20200214160152983" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20200212224509100" modified="20200214160154265" title="$:/state/tab-2065006209">
+<div created="20200212224509100" modified="20200215173730067" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200213192203102" modified="20200213214848769" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/All</pre>
+<div created="20200213192203102" modified="20200215165923063" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200212223929553" modified="20200214035828062" title="$:/state/tab/sidebar--595412856">
+<div created="20200212223929553" modified="20200215172722396" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200213160930997" modified="20200213202246371" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -10400,7 +10402,7 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213014518251" modified="20200213014522021" title="$:/state/tag-manager/paintings">
 <pre>closed</pre>
 </div>
-<div list="index" title="$:/StoryList">
+<div created="20200215183015479" list="$:/ControlPanel index" modified="20200215183015479" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11744,164 +11746,174 @@ Sorted
 1. [william basinski - cascade](https://www.discogs.com/William-Basinski-Cascade/master/885746)
 1. [yann novak ‎– surroundings](https://www.discogs.com/Yann-Novak-Surroundings/release/10187049)</pre>
 </div>
-<div created="20200213012751762" modified="20200213183659919" tags="cisco work testing certification" title="cisco-ccna" type="text/x-markdown">
+<div created="20200213012751762" modified="20200215163842009" tags="cisco work testing certification" title="cisco-ccna" type="text/x-markdown">
 <pre>26% 1.0 LAN Switching Technologies
 
-    -1.1 Configure, verify, and troubleshoot VLANs (normal/extended range) spanning multiple switches (1-1005-4096)
-    -1.1.a Access ports (data and voice)
-    -1.1.b Default VLAN
-    -1.2 Configure, verify, and troubleshoot interswitch connectivity
-    -1.2.a Add and remove VLANs on a trunk
-    -1.2.b DTP and VTP (v1&amp;v2)
-        VTP (v1/v2 must match for transparent to forward vlan info)
-        vtp mode * (server/client/transparent) (server is default)
-        vtp domain * (must match)
-        vtp password *
-        vtp pruning
-    -1.3 Configure, verify, and troubleshoot STP protocols
-    -1.3.a STP mode (PVST+ and RPVST+) (hello timer based on root, rapid alternate/root and backup/designated ports)
-    -1.3.b STP root bridge selection (lowest priority first then id if tie | hello/maxage/delay timers)
-        STP
-        spanning-tree mode * (pvst/rapid/mst)
-    -1.4 Configure, verify, and troubleshoot STP-related optional features
-    -1.4.a PortFast
-    -1.4.b BPDU guard
-    -1.5 Configure, verify, and troubleshoot (Layer 2/Layer 3) EtherChannel (layer 3 no ip add on phys int and no switchport)
-    -1.5.a Static
-    -1.5.b PAGP
-    -1.5.c LACP
-        Ether-Channel
-        channel-group * mode * (number | active/passive/auto/desirable/on)
-        int port-channel * (#)
-        sw trunk encap dot1q
-        sw mode trunk
-        sw trunk allow vlan *,*,*... (#,#,#...)
-    -1.6 Describe the benefits of switch stacking and chassis aggregation
-    -1.7 Describe common access layer threat mitigation techniques
-    -1.7.a 802.1x (EAP Extensiable Authentication Protocol suplicant/authenticator/authentication server)
-    -1.7.b DHCP snooping
-    -1.7.c Nondefault native VLAN
+    1.1 Configure, verify, and troubleshoot VLANs (normal/extended range) spanning multiple switches (1-1005-4096)
+    1.1.a Access ports (data and voice)
+    1.1.b Default VLAN
+    1.2 Configure, verify, and troubleshoot interswitch connectivity
+    1.2.a Add and remove VLANs on a trunk
+    1.2.b DTP and VTP (v1&amp;v2)
+      -VTP (v1/v2 must match for transparent to forward vlan info)
+      -vtp mode * (server/client/transparent) (server is default)
+      -vtp domain * (must match)
+      -vtp password *
+      -vtp pruning
+    1.3 Configure, verify, and troubleshoot STP protocols
+    1.3.a STP mode (PVST+ and RPVST+) (hello timer based on root, rapid alternate/root and backup/designated ports)
+    1.3.b STP root bridge selection (lowest priority first then id if tie | hello/maxage/delay timers)
+      -STP
+      -spanning-tree mode * (pvst/rapid/mst)
+    1.4 Configure, verify, and troubleshoot STP-related optional features
+    1.4.a PortFast
+    1.4.b BPDU guard
+    1.5 Configure, verify, and troubleshoot (Layer 2/Layer 3) EtherChannel (layer 3 no ip add on phys int and no switchport)
+    1.5.a Static
+    1.5.b PAGP
+    1.5.c LACP
+      -Ether-Channel
+      -channel-group * mode * (number | active/passive/auto/desirable/on)
+      -int port-channel * (#)
+      -sw trunk encap dot1q
+      -sw mode trunk
+      -sw trunk allow vlan *,*,*... (#,#,#...)
+    1.6 Describe the benefits of switch stacking and chassis aggregation
+    1.7 Describe common access layer threat mitigation techniques
+    1.7.a 802.1x (EAP Extensiable Authentication Protocol suplicant/authenticator/authentication server)
+    1.7.b DHCP snooping
+    1.7.c Nondefault native VLAN
 
 29% 2.0 Routing Technologies
 
-    -2.1 Configure, verify, and troubleshoot Inter-VLAN routing
-    -2.1.a Router on a stick
-    -2.1.b SVI (layer 3 switch routing interface)
-        interface vlan *
-        ip address * *
-    -2.2 Compare and contrast distance vector and link-state routing protocols
-    -2.3 Compare and contrast interior and exterior routing protocols
-    -2.4 Configure, verify, and troubleshoot single area and multiarea OSPFv2 for IPv4 (excluding authentication, filtering, manual summarization, redistribution, stub, virtual-link, and LSAs) (5,6, unique IDs, DR/BDR by highest ID, can set cost/bandwidth/ref bw, default route info optional)
-        OSPFv2 (ipv4)
-        router ospf * (process id)
-        router-id * (x.x.x.x) / interface loopback * (#) | ip address * *
-        network * * area * (add | wildcard | #) | ip ospf * area * (use from interface config)
-        passive-interface * (int id)
-    -2.5 Configure, verify, and troubleshoot single area and multiarea OSPFv3 for IPv6 (excluding authentication, filtering, manual summarization, redistribution, stub, virtual-link, and LSAs) (neighbors diff subnets ok)
-        OSPFv3 (ipv6)
-        ipv6 router ospf *
-        same as v2
-        ipv6 ospf * area * (interface config)
-        passiveinterface * (int id)
-    -2.6 Configure, verify, and troubleshoot EIGRP for IPv4 (excluding authentication, filtering, manual summarization, redistribution, stub) (10, DUAL, BDLR for metric, FD/RD, successor route/FS, variance mult, neighbors K-value/ASN)
-        EIGRP (ipv6 enable on interface also)
-        router eigrp * (ASN#)
-        network * * (connected network | wildcard mask)
-        eigrp router-id * (#)
-        ip hello-interval/hold-time eigrp *(#)
-        bandwidth/delay * (#)
-        maximum-paths *(#) | variance * (multiplier)
-        auto-summary (probably bad idea)
-    -2.7 Configure, verify, and troubleshoot EIGRP for IPv6 (excluding authentication, filtering, manual summarization, redistribution, stub) (same but no network use interface)
+    2.1 Configure, verify, and troubleshoot Inter-VLAN routing
+    2.1.a Router on a stick
+    2.1.b SVI (layer 3 switch routing interface)
+      -interface vlan *
+      -ip address * *
+    2.2 Compare and contrast distance vector and link-state routing protocols
+    2.3 Compare and contrast interior and exterior routing protocols
+    2.4 Configure, verify, and troubleshoot single area and multiarea OSPFv2 for IPv4 (excluding authentication, filtering, manual summarization, redistribution, stub, virtual-link, and LSAs) (5,6, unique IDs, DR/BDR by highest ID, can set cost/bandwidth/ref bw, default route info optional)
+      -OSPFv2 (ipv4)
+      -router ospf * (process id)
+      -router-id * (x.x.x.x) / interface loopback * (#) | ip address * *
+      -network * * area * (add | wildcard | #) | ip ospf * area * (use from interface config)
+      -passive-interface * (int id)
+    2.5 Configure, verify, and troubleshoot single area and multiarea OSPFv3 for IPv6 (excluding authentication, filtering, manual summarization, redistribution, stub, virtual-link, and LSAs) (neighbors diff subnets ok)
+      -OSPFv3 (ipv6)
+      -ipv6 router ospf *
+      -same as v2
+      -ipv6 ospf * area * (interface config)
+      -passiveinterface * (int id)
+    2.6 Configure, verify, and troubleshoot EIGRP for IPv4 (excluding authentication, filtering, manual summarization, redistribution, stub) (10, DUAL, BDLR for metric, FD/RD, successor route/FS, variance mult, neighbors K-value/ASN)
+      -EIGRP (ipv6 enable on interface also)
+      -router eigrp * (ASN#)
+      -network * * (connected network | wildcard mask)
+      -eigrp router-id * (#)
+      -ip hello-interval/hold-time eigrp *(#)
+      -bandwidth/delay * (#)
+      -maximum-paths *(#) | variance * (multiplier)
+      -auto-summary (probably bad idea)
+    2.7 Configure, verify, and troubleshoot EIGRP for IPv6 (excluding authentication, filtering, manual summarization, redistribution, stub) (same but no network use interface)
 
 16% 3.0 WAN Technologies
 
-    -3.1 Configure and verify PPP and MLPPP on WAN interfaces using local authentication (LCP 2 / NCP 3, PAP/CHAP, parallel layer 3 [serial] int as virtual int, ping works with subnet mismatch [still fails connect])
-        PPP CHAP
-        hostname *
-        username * password * (username of connected router)
-        encapsulation ppp (int config)
-        ppp authentication chap (int config)
-        MLPPP (Multilink) (remove ip from interface, group possibly necessary under int config also)
-        interface multilink * (#)
-        encapsulation ppp
-        ppp multilink
-        ip address * *
-        ppp multilink group * (#)
-    -3.2 Configure, verify, and troubleshoot PPPoE client-side interfaces using local authentication (dialpool, dialerpool)
-    -3.3 Configure, verify, and troubleshoot GRE tunnel connectivity (generic routing encapsulation)
-        GRE Tunnel
-        interface tunnel * (# local)
-        tunnel mode gre ip (default)
-        ip address * * (int conf, private address)
-        tunnel source * (ip address) | tunnel source * (interface id)
-        tunnel destination * (ip-address/hostname) (must match other tunnel source)
-    -3.4 Describe WAN topology options
-    -3.4.a Point-to-point
-    -3.4.b Hub and spoke
-    -3.4.c Full mesh
-    -3.4.d Single vs dual-homed (1-2 link to same router)
-    -3.5 Describe WAN access connectivity options
-    -3.5.a MPLS
-    -3.5.b MetroEthernet
-    -3.5.c Broadband PPPoE
-    -3.5.d Internet VPN (DMVPN, site-to-site VPN, client VPN) (dynamic multipoint vpn, tree to NHRP server)
-    -3.6 Configure and verify single-homed branch connectivity using eBGP IPv4 (limited to peering and route advertisement using Network command only)
-        eBGP
-        router bgp * (asn)
-        neighbor * remote-as * (ip add | asn)
-        network * * (ip add / subnet mask)
+    3.1 Configure and verify PPP and MLPPP on WAN interfaces using local authentication (LCP 2 / NCP 3, PAP/CHAP, parallel layer 3 [serial] int as virtual int, ping works with subnet mismatch [still fails connect])
+      -PPP CHAP
+      -hostname *
+      -username * password * (username of connected router)
+      -encapsulation ppp (int config)
+      -ppp authentication chap (int config)
+      -MLPPP (Multilink) (remove ip from interface, group possibly necessary under int config also)
+      -interface multilink * (#)
+      -encapsulation ppp
+      -ppp multilink
+      -ip address * *
+      -ppp multilink group * (#)
+    3.2 Configure, verify, and troubleshoot PPPoE client-side interfaces using local authentication (dialpool, dialerpool)
+    3.3 Configure, verify, and troubleshoot GRE tunnel connectivity (generic routing encapsulation)
+      -GRE Tunnel
+      -interface tunnel * (# local)
+      -tunnel mode gre ip (default)
+      -ip address * * (int conf, private address)
+      -tunnel source * (ip address) | tunnel source * (interface id)
+      -tunnel destination * (ip-address/hostname) (must match other tunnel source)
+    3.4 Describe WAN topology options
+    3.4.a Point-to-point
+    3.4.b Hub and spoke
+    3.4.c Full mesh
+    3.4.d Single vs dual-homed (1-2 link to same router)
+    3.5 Describe WAN access connectivity options
+    3.5.a MPLS
+    3.5.b MetroEthernet
+    3.5.c Broadband PPPoE
+    3.5.d Internet VPN (DMVPN, site-to-site VPN, client VPN) (dynamic multipoint vpn, tree to NHRP server)
+    3.6 Configure and verify single-homed branch connectivity using eBGP IPv4 (limited to peering and route advertisement using Network command only)
+      -eBGP
+      -router bgp * (asn)
+      -neighbor * remote-as * (ip add | asn)
+      -network * * (ip add / subnet mask)
 
 14% 4.0 Infrastructure Services
 
-    -4.1 Configure, verify, and troubleshoot basic HSRP (vmac/vip, need same group #)
-    -4.1.a Priority (highest wins)
-    -4.1.b Preemption (defaults to no)
-    -4.1.c Version (v2 for ipv6, faster hello, unique router id | v1 .2 v2 .102)
-        HSRP (preempt for newly enabled int)
-        standby version * (1/2)
-        standby * ip * (group# | virtual ip)
-        standby * priority * (# | election #)
-    -4.2 Describe the effects of cloud resources on enterprise network architecture
-    -4.2.a Traffic path to internal and external cloud services
-    -4.2.b Virtual services
-    -4.2.c Basic virtual network infrastructure
-    -4.3 Describe basic QoS concepts
-    -4.3.a Marking (IP header DSCP in ToS byte, dot1q header PCP or CoS field, dot11 TID)
-    -4.3.b Device trust
-    -4.3.c Prioritization (low latency queues, round robin, class weighted)
-    -4.3.c. (i) Voice
-    -4.3.c. (ii) Video
-    -4.3.c. (iii) Data
-    -4.3.d Shaping (time intervals)
-    -4.3.e Policing
-    -4.3.f Congestion management
-    -4.4 Configure, verify, and troubleshoot IPv4 and IPv6 access list for traffic filtering (ipv6 extra permits for NS/NA)
-    -4.4.a Standard (1-99, 1300-1999)
-    -4.4.b Extended (100-199, 2000-2699)
-    -4.4.c Named
-    -4.5 Verify ACLs using the APIC-EM Path Trace ACL analysis tool (APIC-EM is a controller)
+    4.1 Configure, verify, and troubleshoot basic HSRP (vmac/vip, need same group #)
+    4.1.a Priority (highest wins)
+    4.1.b Preemption (defaults to no)
+    4.1.c Version (v2 for ipv6, faster hello, unique router id | v1 .2 v2 .102)
+      -HSRP (preempt for newly enabled int)
+      -standby version * (1/2)
+      -standby * ip * (group# | virtual ip)
+      -standby * priority * (# | election #)
+    4.2 Describe the effects of cloud resources on enterprise network architecture
+    4.2.a Traffic path to internal and external cloud services
+    4.2.b Virtual services
+    4.2.c Basic virtual network infrastructure
+    4.3 Describe basic QoS concepts
+    4.3.a Marking (IP header DSCP in ToS byte, dot1q header PCP or CoS field, dot11 TID)
+    4.3.b Device trust
+    4.3.c Prioritization (low latency queues, round robin, class weighted)
+    4.3.c. (i) Voice
+    4.3.c. (ii) Video
+    4.3.c. (iii) Data
+    4.3.d Shaping (time intervals)
+    4.3.e Policing
+    4.3.f Congestion management
+    4.4 Configure, verify, and troubleshoot IPv4 and IPv6 access list for traffic filtering (ipv6 extra permits for NS/NA)
+    4.4.a Standard (1-99, 1300-1999)
+    4.4.b Extended (100-199, 2000-2699)
+    4.4.c Named
+    4.5 Verify ACLs using the APIC-EM Path Trace ACL analysis tool (APIC-EM is a controller)
 
 15% 5.0 Infrastructure Maintenance
 
-    -5.1 Configure and verify device-monitoring protocols
-    -5.1.a SNMPv2 (NMS, MIB database, udp 161, RO RW different communities)
-    -5.1.b SNMPv3 (authentication, encryption, message integrity, auth for hash, priv for key)
-        SNMP v2
-        snmp-server host * (address)
-        snmp-server community * * (comm string | ro,rw,acl name#)
-        snmp-server location/contact
-        SNMP v3
-        snmp-server group * v3 *
-    -5.2 Troubleshoot network connectivity issues using ICMP echo-based IP SLA (history buckets)
-    -5.3 Use local SPAN to troubleshoot and resolve problems (switched port analyzer, source monitored sent to dest)
-    -5.4 Describe device management using AAA with TACACS+ and RADIUS (tcp49 and udp1645/1812, tac cli supp)
-    -5.5 Describe network programmability in enterprise network architecture (openflow/ODL, cisco/OSC)
-    -5.5.a Function of a controller
-    -5.5.b Separation of control plane and data plane
-    -5.5.c Northbound and southbound APIs
-    -5.6 Troubleshoot basic Layer 3 end-to-end connectivity issues`
+    5.1 Configure and verify device-monitoring protocols
+    5.1.a SNMPv2 (NMS, MIB database, udp 161, RO RW different communities)
+    5.1.b SNMPv3 (authentication, encryption, message integrity, auth for hash, priv for key)
+      -SNMP v2
+      -snmp-server host * (address)
+      -snmp-server community * * (comm string | ro,rw,acl name#)
+      -snmp-server location/contact
+      -SNMP v3
+      -snmp-server group * v3 *
+    5.2 Troubleshoot network connectivity issues using ICMP echo-based IP SLA (history buckets)
+    5.3 Use local SPAN to troubleshoot and resolve problems (switched port analyzer, source monitored sent to dest)
+    5.4 Describe device management using AAA with TACACS+ and RADIUS (tcp49 and udp1645/1812, tac cli supp)
+    5.5 Describe network programmability in enterprise network architecture (openflow/ODL, cisco/OSC)
+    5.5.a Function of a controller
+    5.5.b Separation of control plane and data plane
+    5.5.c Northbound and southbound APIs
+    5.6 Troubleshoot basic Layer 3 end-to-end connectivity issues`
 </pre>
+</div>
+<div created="20200215170033162" modified="20200215175218517" tags="education courses play" title="courses" type="text/x-markdown">
+<pre>Nearly all current university courses have publicly available syllabi, readings, textbooks, problem sets and course notes.  Stanford and Carnegie Mellon are fruitful for computer science.
+
+1. [Japanese I - MIT OCW](https://ocw.mit.edu/courses/global-studies-and-languages/21g-501-japanese-i-fall-2012/)
+1. [Early Middle Ages, 284-1000 - OYC](https://oyc.yale.edu/history/hist-210)
+1. [Moral Foundations of Politics - Yale on Coursera](https://www.coursera.org/learn/moral-politics)
+1. [Power and Politics in Today's World - Yale DeVane Lectures](https://communications.yale.edu/2019-devane-lectures-power-and-politics-todays-world)
+1. [Introduction to Computer Science and Programming in Python - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm)
+1. [Introduction to Algorithms - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)</pre>
 </div>
 <div created="20200213010945998" modified="20200213022704223" tags="work linux" title="general" type="text/x-markdown">
 <pre>Edit implies create if file does not exist
@@ -11917,7 +11929,7 @@ Sorted
 	- `:reg d` to view contents of register `d`
 	- `Ctrl-r d`  in insert/command mode to access register `d`</pre>
 </div>
-<div created="20200212225220902" modified="20200214160907263" tags="paintings play" title="grab-bag" type="text/x-markdown">
+<div created="20200212225220902" modified="20200215162310146" tags="paintings play" title="grab-bag" type="text/x-markdown">
 <pre>1. Bellini, Gentile
   - 1496 Processione in piazza San Marco
 1. Bellini, Gentile and Giovanni
@@ -11925,6 +11937,7 @@ Sorted
 1. Bellini, Giovanni
   - 1501 Ritratto del doge Leonardo Loredan
 1. Bosch, Jheronimus
+  - 1495 Driekoningen-drieluik
   - 1495 Het narrenschip
   - 1495 Tuin der lusten
   - 1495 Driekoningen-drieluik
@@ -11984,7 +11997,7 @@ Sorted
   - 1573 Convito in casa di Levi
   - 1576 Perseo liberando Andromeda</pre>
 </div>
-<div created="20200212231530968" modified="20200213202750943" tags="" title="index" type="text/x-markdown">
+<div created="20200212231530968" modified="20200215175816167" tags="" title="index" type="text/x-markdown">
 <pre>**Linux**
 
 - [General](#general) - *Probably generally applicable but who knows*
@@ -12010,7 +12023,7 @@ Sorted
 
 ---
 
-**Paintings** - *Subjective aesthetic judgements and exceptions for historical events*
+**Paintings** - *Subjective aesthetic judgements or for historical context*
 
 - [Grab Bag](#grab-bag)
 
@@ -12030,11 +12043,9 @@ Sorted
 
 ---
 
-**University Courses/Lectures** - *Free and publically available*
+**Education** - *Free and publicly available*
 
----
-
-**Links**</pre>
+- [University Courses](#courses)</pre>
 </div>
 <div created="20200213010835169" modified="20200213200723308" tags="play music" title="jazzy" type="text/x-markdown">
 <pre>Recent Additions
@@ -12066,134 +12077,134 @@ Sorted
 <div caption="discogs blank" created="20200213021034600" modified="20200213024701133" tags="$:/tags/TextEditor/Snippet" title="New Tiddler" type="text/x-markdown">
 <pre>1. []()</pre>
 </div>
-<div created="20200213013949210" modified="20200213182532540" tags="[[red hat]] testing certification linux work" title="rhcsa" type="text/x-markdown">
+<div created="20200213013949210" modified="20200215163429086" tags="[[red hat]] testing certification linux work" title="rhcsa" type="text/x-markdown">
 <pre>Understand and use essential tools
 
 Access a shell prompt and issue commands with correct syntax
 
-    -2 Use input-output redirection (&gt;, &gt;&gt;, |, 2&gt;, etc.)
-        Man bash (redirection)
-    -4 Use grep and regular expressions to analyze text
-        grep ^... for lines that start with … grep …$ for lines that end with …
-        Man grep or info grep for regex
-        Use quotes to escape chars
-    -5 Access remote systems using SSH
-        All ssh based commands
-    -5 Log in and switch users in multiuser targets
-    -3 Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2
-        tar -z option (un)compresses with gzip during archive operation
-        Tar allows GNU usage, tab complete with -- for all options
-    -2, 4 Create and edit text files
-        :%s/old/new/g replace all “old” with “new”
-    -3 Create, delete, copy, and move files and directories
-        cp -a /dir1/. /dir2/ to copy all files including hidden (notice .)
-    -3 Create hard and soft links
-        Hard links files (no dirs) in volume only
-    -7 List, set, and change standard ugo/rwx permissions
-    -2 Locate, read, and use system documentation including man, info, and files in /usr/share/doc
-        man -k to search for keyword in man pages
+    2 Use input-output redirection (&gt;, &gt;&gt;, |, 2&gt;, etc.)
+      -Man bash (redirection)
+    4 Use grep and regular expressions to analyze text
+      -grep ^x for lines start with x; x$ for lines end with x
+      -Man grep or info grep for regex
+      -Use quotes to escape chars
+    5 Access remote systems using SSH
+      -All ssh based commands
+    5 Log in and switch users in multiuser targets
+    3 Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2
+      -tar -z option (un)compresses with gzip during archive operation
+      -Tar allows GNU usage, tab complete with -- for all options
+    2, 4 Create and edit text files
+      -:%s/old/new/g replace all “old” with “new”
+    3 Create, delete, copy, and move files and directories
+      -cp -a /dir1/. /dir2/ to copy all files including hidden (notice .)
+    3 Create hard and soft links
+      -Hard links files (no dirs) in volume only
+    7 List, set, and change standard ugo/rwx permissions
+    2 Locate, read, and use system documentation including man, info, and files in /usr/share/doc
+      -man -k to search for keyword in man pages
 
 Operate running systems
 
-    -5 Boot, reboot, and shut down a system normally
-    -18 Boot systems into different targets manually
-        Systemctl isolate targetname.target
-    -18 Interrupt the boot process in order to gain access to a system
-        systemd.unit=targetname.target on kernel line
-    -10 Identify CPU/memory intensive processes and kill processes
-        top for process overview and state
-    -10 Adjust process scheduling
-        &amp; at end of command to start process in background
+    5 Boot, reboot, and shut down a system normally
+    18 Boot systems into different targets manually
+      -Systemctl isolate targetname.target
+    18 Interrupt the boot process in order to gain access to a system
+      -systemd.unit=targetname.target on kernel line
+    10 Identify CPU/memory intensive processes and kill processes
+      -top for process overview and state
+    10 Adjust process scheduling
+      -&amp; at end of command to start process in background
 
 Manage tuning profiles
 
-    -13 Locate and interpret system log files and journals
-        /var/log/messages (journalctl), /var/log/dmesg (kernel), /var/log/secure (auth)
-    -13 Preserve system journals
-        /etc/logrotate.conf for log rotation settings
-        /etc/rsyslog.conf to configure rsyslogd
-        /etc/sysconfig/rsyslog to specify ryslogd startup parameters
-        /etc/systemd/journal.conf for journald storage options
+    13 Locate and interpret system log files and journals
+      -/var/log/messages (journalctl), /var/log/dmesg (kernel), /var/log/secure (auth)
+    13 Preserve system journals
+      -/etc/logrotate.conf for log rotation settings
+      -/etc/rsyslog.conf to configure rsyslogd
+      -/etc/sysconfig/rsyslog to specify ryslogd startup parameters
+      -/etc/systemd/journal.conf for journald storage options
 
 Start, stop, and check the status of network services
 
-    -5 Securely transfer files between systems
-        Scp, sftp
+    5 Securely transfer files between systems
+      -Scp, sftp
 
 
 Configure local storage
 
-    -14 List, create, delete partitions on MBR and GPT disks
-    -15 Create and remove physical volumes
-    -15 Assign physical volumes to volume groups
-    -15 Create and delete logical volumes
-    -14 Configure systems to mount file systems at boot by universally unique ID (UUID) or label
-        Xfs_admin (xfs) or tune2fs (ext) or swaplabel (swap) to change
-    -14 Add new partitions and logical volumes, and swap to a system non-destructively
+    14 List, create, delete partitions on MBR and GPT disks
+    15 Create and remove physical volumes
+    15 Assign physical volumes to volume groups
+    15 Create and delete logical volumes
+    14 Configure systems to mount file systems at boot by universally unique ID (UUID) or label
+      -Xfs_admin (xfs) or tune2fs (ext) or swaplabel (swap) to change
+    14 Add new partitions and logical volumes, and swap to a system non-destructively
 
 Create and configure file systems
 
-    -14 Create, mount, unmount, and use vfat, ext4, and xfs file systems
-        Findmnt
-    -24 Mount and unmount network file systems using NFS
-        showmount -e nfsserver available shares (uses portmapper)
-        Man nfs for fstab example
-    -15 Extend existing logical volumes
-        lvextend -r to increase LVM size and file system
-    -7 Create and configure set-GID directories for collaboration
-    -15 Configure disk compression (vdo and kmon-kvdo)
-        Sync mode to guarantee ACID
-    -15 Manage layered storage (Stratis)
-    -7 Diagnose and correct file permission problems
+    14 Create, mount, unmount, and use vfat, ext4, and xfs file systems
+      -Findmnt
+    24 Mount and unmount network file systems using NFS
+      -showmount -e nfsserver available shares (uses portmapper)
+      -Man nfs for fstab example
+    15 Extend existing logical volumes
+      -lvextend -r to increase LVM size and file system
+    7 Create and configure set-GID directories for collaboration
+    15 Configure disk compression (vdo and kmon-kvdo)
+      -Sync mode to guarantee ACID
+    15 Manage layered storage (Stratis)
+    7 Diagnose and correct file permission problems
 
 Deploy, configure, and maintain systems
 
-    -12 Schedule tasks using at and cron
-    -11 Start and stop services and configure services to start automatically at boot
-    -17 Configure systems to boot into a specific target automatically
-        Systemctl get-default, systemctl set-default ...
-    -25 Configure time service clients
-    -9 Install and update software packages from Red Hat Network, a remote repository, or from the local file system
-    -9 Work with package module streams
-    -17 Modify the system bootloader
-        Man grubby if you forget mkconfig target
+    12 Schedule tasks using at and cron
+    11 Start and stop services and configure services to start automatically at boot
+    17 Configure systems to boot into a specific target automatically
+      -Systemctl get-default, systemctl set-default ...
+    25 Configure time service clients
+    9 Install and update software packages from Red Hat Network, a remote repository, or from the local file system
+    9 Work with package module streams
+    17 Modify the system bootloader
+      -Man grubby if you forget mkconfig target
 
 Manage basic networking
 
-    -8 Configure IPv4 and IPv6 addresses
-        Nmtui, nmcli, ip … all work
-    -8 Configure hostname resolution
-        /etc/hosts defines hostname resolution
+    8 Configure IPv4 and IPv6 addresses
+      -Nmtui, nmcli, ip … all work
+    8 Configure hostname resolution
+      -/etc/hosts defines hostname resolution
 
 Configure network services to start automatically at boot
 
-    -23 Restrict network access using firewall-cmd/firewall`
+    23 Restrict network access using firewall-cmd/firewall`
 
 Manage users and groups
 
-    -6 Create, delete, and modify local user accounts
-    -6 Change passwords and adjust password aging for local user accounts
-    -6 Create, delete, and modify local groups and group memberships
-    -6 Configure superuser access
+    6 Create, delete, and modify local user accounts
+    6 Change passwords and adjust password aging for local user accounts
+    6 Create, delete, and modify local groups and group memberships
+    6 Configure superuser access
 
 Manage security
 
 Configure firewall settings using firewall-cmd/firewalld
 
-        ss for ports and services
-    -7 Create and use file access control lists
-        ACLs require mount option in /etc/fstab
-    -5,20 Configure key-based authentication for SSH
-        ssh-agent /bin/bash then ssh-add caches password key for entire session
-    -22 Set enforcing and permissive modes for SELinux
-    -22 List and identify SELinux file and process context
-        Sestatus -v, -Z common parameter (ss or ls or ps)
-    -22 Restore default file contexts
-        restorecon
-    -22 Use boolean settings to modify system SELinux settings
-        getsebool -a list, setsebool (-P) … on/off (permanently)
-    -22 Diagnose and address routine SELinux policy violations
-        grep AVC /var/log/audit/audit.log SELinux messages
+      -ss for ports and services
+    7 Create and use file access control lists
+      -ACLs require mount option in /etc/fstab
+    5,20 Configure key-based authentication for SSH
+      -ssh-agent /bin/bash then ssh-add caches password key for entire session
+    22 Set enforcing and permissive modes for SELinux
+    22 List and identify SELinux file and process context
+      -Sestatus -v, -Z common parameter (ss or ls or ps)
+    22 Restore default file contexts
+      -restorecon
+    22 Use boolean settings to modify system SELinux settings
+      -getsebool -a list, setsebool (-P) … on/off (permanently)
+    22 Diagnose and address routine SELinux policy violations
+      -grep AVC /var/log/audit/audit.log SELinux messages
 </pre>
 </div>
 <div created="20200213011054504" modified="20200213022714404" tags="work linux" title="rhel-eight" type="text/x-markdown">
