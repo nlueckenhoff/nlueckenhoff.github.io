@@ -23,4 +23,4 @@ jobs:
         aws-s3-tag: ${{ secrets.AWS_S3_TAG }}
         aws-s3-bucket: ${{ secrets.AWS_S3_BUCKET }}
       run: |
-        aws s3api put-object --bucket ${{ secrets.AWS_S3_BUCKET }} --key index.html --body ./index.html --tagging "${{ secrets.AWS_S3_TAG }}"
+        aws s3api put-object --bucket ${{ secrets.AWS_S3_BUCKET }} --key index.html --body ./index.html --metadata text=html --tagging "${{ secrets.AWS_S3_TAG }}"
