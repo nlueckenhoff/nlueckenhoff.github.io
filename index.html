@@ -10408,7 +10408,7 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213014518251" modified="20200213014522021" title="$:/state/tag-manager/paintings">
 <pre>closed</pre>
 </div>
-<div created="20200217030451667" list="index" modified="20200217030451667" title="$:/StoryList">
+<div list="index" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11228,7 +11228,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20200213171707179" modified="20200213171710409" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre></pre>
 </div>
-<div created="20200213005026667" modified="20200216204310409" title="$:/temp/search">
+<div created="20200213005026667" modified="20200217170959955" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20200213194759976" modified="20200213194759976" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
@@ -11508,8 +11508,11 @@ C.7 Databases
     -ElastiCache: Redis or Memcached, regional
     -Database Migration - requires replication instance + endpoints</pre>
 </div>
-<div created="20200213010206820" modified="20200216182908520" tags="music play" title="beep-boop" type="text/x-markdown">
+<div created="20200213010206820" modified="20200217190849986" tags="music play" title="beep-boop" type="text/x-markdown">
 <pre>Recent Additions
+
+1. [**atom™** - dropshadow disease](https://www.discogs.com/Atom-Dropshadow-Disease/release/7759585)
+1. [**atom™ &amp; masaki sakamoto** - alien symphony](https://www.discogs.com/Atom-Masaki-Sakamoto-Alien-Symphony/release/2418302)
 
 ---
 Sorted
@@ -11938,7 +11941,7 @@ Sorted
   - `:reg d` to view contents of register `d`
   - `Ctrl-r d`  in insert/command mode to access register `d`</pre>
 </div>
-<div created="20200212225220902" modified="20200216180524027" tags="paintings play" title="grab-bag" type="text/x-markdown">
+<div created="20200212225220902" modified="20200217155414193" tags="paintings play" title="grab-bag" type="text/x-markdown">
 <pre>1. Bellini, Gentile
   - 1496 *Processione in piazza San Marco*
 1. Bellini, Gentile and Giovanni
@@ -11977,6 +11980,8 @@ Antonius* (Museo del Prado)
 1. Parmigianino
   - 1535 *Antea*
   - 1535 *Ritratto di Pier Maria Rossi di San Secondo*
+1. Patinir, Joachim
+  - 1520 *De oversteek naar de onderwereld*
 1. Perugino, Pietro
   - 1501 *Sposalizio della Vergine*
   - 1503 *Lotta tra Amore e Castità*
@@ -12016,7 +12021,7 @@ Antonius* (Museo del Prado)
   - S3 API reference for PutObjectTagging currently unclear stating, &quot;Sets the supplied tag-set to an object that already exists in a bucket&quot;
   - CLI Command Reference for `aws s3api put-object` includes `--tagging` option and mentions WRITE access requirement but not TAGGING access requirement</pre>
 </div>
-<div created="20200212231530968" modified="20200217030005898" tags="" title="index" type="text/x-markdown">
+<div created="20200212231530968" modified="20200217201212656" tags="" title="index" type="text/x-markdown">
 <pre>**Amazon Web Services**
 
 - [Identity and Access Management](#iam)
@@ -12026,8 +12031,6 @@ Antonius* (Museo del Prado)
 
 - [General](#general)
 - [Red Hat Enterprise Linux 8](#rhel-eight) - *May apply to other versions*
-
----
 
 **Certification** - *Unedited after passing*
 
@@ -12044,25 +12047,18 @@ Antonius* (Museo del Prado)
 - [Jazzy](#jazzy)
 - [Rock On](#rock-on)
 - [Blue Earth](#blue-earth)
----
 
 **Paintings** - *Subjective aesthetic judgements or for historical context*
 
 - [Grab Bag](#grab-bag)
 
----
-
 **Films**
-
----
 
 **Books**
 
 - [Educational/Technical](#textbooks)
 - Non-fiction
 - Fiction
-
----
 
 **Education** - *Free and publicly available*
 
@@ -12248,11 +12244,10 @@ Sorted
 1. [**gorky's zygotic mynci** - how i long to feel that summer in my heart](https://www.discogs.com/Gorkys-Zygotic-Mynci-How-I-Long-To-Feel-That-Summer-In-My-Heart/master/32859)
 1. [**gorky's zygotic mynci** - sleep/holiday](https://www.discogs.com/Gorkys-Zygotic-Mynci-SleepHoliday/master/288233)</pre>
 </div>
-<div created="20200215210323289" modified="20200217030243905" tags="work s3 aws" title="s3" type="text/x-markdown">
-<pre>
-1. **Requirement for bucket replication by tag**
+<div created="20200215210323289" modified="20200217155528328" tags="work s3 aws" title="s3" type="text/x-markdown">
+<pre>1. **Requirement for bucket replication by tag**
   - Object tag must be set on initial upload
-  - New/edited object tags set on object already in bucket won't be replicated
+  - Object won't be replicated if already in bucket when new tag is set/edited
 1. **S3 defaults to MIME type application/octet-stream**
   - May lead to incorrect MIME type (confirmed for certain html files)
   - Consult CLI command reference (e.g. `put-object`) or appropriate SDK reference to set on upload</pre>
