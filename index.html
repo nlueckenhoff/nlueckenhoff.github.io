@@ -269,6 +269,8 @@ Error message and password prompt
 
 <li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/starlight</li>
 
+<li>$:/state/edit/references-684880001</li>
+
 <li>$:/state/folded/$:/ControlPanel</li>
 
 <li>$:/state/folded/aws-sysops-assoc</li>
@@ -567,37 +569,39 @@ Error message and password prompt
 
 <li>$:/view</li>
 
-<li>aws-sysops-assoc</li>
+<li>aws-es</li>
+
+<li>aws-iam</li>
+
+<li>aws-s3</li>
 
 <li>beep-boop</li>
 
 <li>blue-earth</li>
 
-<li>chill-bruh</li>
+<li>cert-ccna</li>
 
-<li>cisco-ccna</li>
+<li>cert-rhcsa</li>
+
+<li>cert-sysops-a</li>
+
+<li>chill-bruh</li>
 
 <li>courses</li>
 
-<li>general</li>
-
 <li>grab-bag</li>
-
-<li>iam</li>
 
 <li>index</li>
 
 <li>jazzy</li>
 
+<li>linux-general</li>
+
+<li>linux-rhel8</li>
+
 <li>New Tiddler</li>
 
-<li>rhcsa</li>
-
-<li>rhel-eight</li>
-
 <li>rock-on</li>
-
-<li>s3</li>
 
 <li>textbooks</li>
 
@@ -664,8 +668,8 @@ Error message and password prompt
 <div created="20200213193344329" modified="20200213201023978" title="$:/config/Plugins/Disabled/$:/themes/tiddlywiki/centralised">
 <pre>no</pre>
 </div>
-<div created="20200212232227161" modified="20200212232227161" title="$:/config/RelinkOnRename">
-<pre>yes</pre>
+<div created="20200212232227161" modified="20200305165418764" title="$:/config/RelinkOnRename">
+<pre>no</pre>
 </div>
 <div created="20200213005305014" modified="20200213005307782" title="$:/config/TextEditor/EnableToolbar">
 <pre>yes</pre>
@@ -10313,6 +10317,9 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213202323191" modified="20200213202324107" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/starlight">
 <pre>no</pre>
 </div>
+<div created="20200305165546767" modified="20200305165547766" title="$:/state/edit/references-684880001">
+<pre>hide</pre>
+</div>
 <div created="20200213025929672" modified="20200213215804535" title="$:/state/folded/$:/ControlPanel">
 <pre>show</pre>
 </div>
@@ -10397,11 +10404,11 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200212224509100" modified="20200305035517673" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200213192203102" modified="20200215165923063" title="$:/state/tab/moresidebar-1850697562">
+<div created="20200213192203102" modified="20200305165128408" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200212223929553" modified="20200216204313994" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20200212223929553" modified="20200305165125976" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20200213160930997" modified="20200213202246371" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -11397,117 +11404,22 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20200212230305895" modified="20200213191026117" title="$:/view">
 <pre>pop</pre>
 </div>
-<div created="20200213011614930" modified="20200213201833978" tags="aws testing certification work" title="aws-sysops-assoc" type="text/x-markdown">
-<pre>C.3 Security
-
-    -IAM supports Security Assertion Markup Langage 2.0
-    -IAM access keys
-    -Inspector - analyzes network reachability, CVEs, CIS benchmarks
-    -remember IAM role for logs:CreateLogStream and logs:PutLogEvents
-    -CW uses event version numbers for order and uniqueness
-    -Secrets Manager rotates credentials
-    -KMS is managed HSM
-    -WAF: web ACL on IP, country, regex/string, length, SQL, XSS
-
-C.4 Compute
-
-    -max 80,000 IOPS instance to all attached EBS
-    -max 1750 MiB/s to attached EBS
-    -migrate inst to other AZ - create AMI then launch new inst
-    -key pairs by region, 2048-bit SSH-2 RSA keys
-    -instance types (general, compute, memory, nitro)
-        1 CPU credit = 1 vCPU at 100% for 1 minute
-    -stopping EBS-backed instance releases public IP
-    -user data (shell scripts and cloud-init directives-for SSH keys) not updated by modification while instance stopped
-    -http://169.254.169.254/latest/meta-data/ (throttled)
-    -http://169.254.169.254/latest/dynamic/instance-identity/ (JSON)
-    -CW alarm actions are recover, stop, terminate, reboot
-    -&quot;recover&quot; retains ID, metadata, private/elastic IP, EBS attach.
-    -dedicated instance: hardware for single customer
-    -dedicated host: use existing licenses, control &quot;placement&quot;
-    -CW metrics - CPU, DISK reads/writes, NETWORK in/out, instance status, system status, credit usage/balance
-    -on-demand, reserved (by region or AZ), spot (bid on &quot;market price&quot;)
-    -bundle: image manifest + files with template for root volume
-    -ECS &quot;awsvpc&quot; network mode exposes EC2 networking ENIs, etc.
-    -target tracking scaling policies auto create CW alarms
-    -auto scaling terminates inst. with failed health checks (ELB also)
-    -Lambda
-        push: ALB target, API gateway, CT by log into S3, CW Events (passed to), CW logs, evalute 
-        Config, S3 object event, SNS target
-        pull: Kinesis, DynamoDB, SQS
-        up to 15 minute timeout
-        Lambda max 1,000 concurrent executions
-        Lambda@Edge: node.js or python (respond to CloudFront events)
-
-C.5 Networking
-
-    -flow log for VPC, subnet, or ENI; requires ARN of IAM role to CW
-    -every silly detail of direct connect process (90 day expiration)
-        request in console - 1, 10 Gbps and location (hosted connect in console)
-        download loa-cfa (required by colocation or network provider)
-    -ALB (HTTP, HTTPS)
-        host-based routing - by host header in http (think DNS domains)
-        path-based routing - by URL path
-        http header value routing (any)
-        http method value routing (get, post, etc.)
-        x-forwarded-for header (preserves source ip)
-    -NLB (TCP, UDP, TLS)
-    -Route 53
-        resource record sets define routing policies for hosted zone
-        health checks on resources, CW alarms, other health checks
-        Cross-Origin Resource Sharing from other domains
-        max, min, default TTL at same value overrides cache-cont. head.
-
-C.6 Storage
-
-    -logical io up to 256KB, 1MB
-    -EBS 1GB/4GB/500GB/500GB up to 16TB
-    -EBS 16000/64000(16-64KB/io) and 500/250(1MB/io) max iops
-    -EBS 250MB/s, 1000MB/s, 500 MB/s, 250 MB/s max throughput
-    -EBS burst credits accum. 3iops/GB, 40MB/s per TB, 12MB/s per TB
-    -no snapshots on instance storage
-    -instance storage best for &lt; 1 ms latency
-    -EBS snapshot 5 cents/GiB/month
-    -EBS parameters - type, size, AZ, IOPS (io1), snapshot ID, encryption
-    -must snapshot encrypted volume to share (by region)
-    -snapshot &gt; 10Gb is whole volume
-    -cannot share encrypted volume if CMK (customer master key) is default
-    -EBS-backed boots faster than instance-backed
-    -EBS volumes per AZ, snapshots per region
-    -EBS types (General Purpose SSD (gp2), Provisioned IOPS SSD (io1), Throughput Optimized HDD (st1), Cold HDD (sc1), magnetic (old))
-    -must own encrypted snapshot to restore it
-    -EBS (non-elastic) volume can get stuck &quot;busy&quot; state if detached while mounted
-    -EFS uses mount point in VPC (ip), linux only
-    -S3 data backup durability only in bucket REGION
-    -S3 virtual hosted URL resolves bucket in domain (DNS works)
-    -S3 path-style must use region in domain (no DNS, specific to region)
-    -404 returned to get request on delete marker as current version
-    -lifecycle management: transition to storage class, expiration (del)
-    -S3 policies ***not available on MFA-enabled buckets
-    -pricing for objects pro-rated to 30-day minimum, 90 for glacier
-    -cross-origin resource sharing (by other origins, methods, headers)
-    -S3 server access logging
-    -Glacier: vaults, vault lock, query in uncompressed CSV
-    -Storage Gateway: File, Volume, Tape hardware appliances (NFS, SMB)
-
-C.7 Databases
-
-    -standbys auto to other AZ, no reads allowed
-    -RDS: SQL, ACID, table joins, M(multi-pur), R(RAM), T(Tiny/burst)
-    -MySQL, MariaDB, PostgreSQL, Oracle, Microsoft SQL Server
-    -snapshots temp. slow I/O unless multi-AZ
-    -can promote read replica to standalone DB (after reboot)
-    -enhanced monitoring for real-time, performance insights (DB query)
-    -parameter groups, options groups
-    -Redshift: enhanced VPC routing for private routing / slow resize
-    -Aurora (MySQL, PostgreSQL)
-        r/w endpoint, &quot;ro&quot; read replica endpoint, custom, instance
-        10GB - 64TB storage
-        2 copies of your data in 3 AZ
-        15 read replicas max, async replication
-        use serverless to eliminate scaling &quot;delay&quot; with low usage
-    -ElastiCache: Redis or Memcached, regional
-    -Database Migration - requires replication instance + endpoints</pre>
+<div created="20200305164706217" modified="20200305165023334" tags="work es aws" title="aws-es" type="text/x-markdown">
+<pre>1. Data encryption must be enabled during domain creation</pre>
+</div>
+<div created="20200215205123244" modified="20200305165047232" tags="iam work aws" title="aws-iam" type="text/x-markdown">
+<pre>1. **Permissions necessary for object tagging on upload to S3**
+  - `s3:PutObject` and `s3:PutObjectTagging`
+  - S3 API reference for PutObjectTagging currently unclear stating, &quot;Sets the supplied tag-set to an object that already exists in a bucket&quot;
+  - CLI Command Reference for `aws s3api put-object` includes `--tagging` option and mentions WRITE access requirement but not TAGGING access requirement</pre>
+</div>
+<div created="20200215210323289" modified="20200305165109850" tags="s3 work aws" title="aws-s3" type="text/x-markdown">
+<pre>1. **Requirement for bucket replication by tag**
+  - Object tag must be set on initial upload
+  - Object won't be replicated if already in bucket when new tag is set/edited
+1. **S3 defaults to MIME type application/octet-stream**
+  - May lead to incorrect MIME type (confirmed for certain html files)
+  - Consult CLI command reference (e.g. `put-object`) or appropriate SDK reference to set on upload</pre>
 </div>
 <div created="20200213010206820" modified="20200304231657260" tags="music play" title="beep-boop" type="text/x-markdown">
 <pre>Recent Additions
@@ -11636,149 +11548,7 @@ Sorted
 1. [**山崎ハコ** ‎- 飛・び・ま・す](https://www.discogs.com/%E5%B1%B1%E5%B4%8E%E3%83%8F%E3%82%B3-%E9%A3%9B%E3%81%B3%E3%81%BE%E3%81%99/master/20610)
 1. [**梶芽衣子** ‎- きょうの我が身は・・・・・・](https://www.discogs.com/%E6%A2%B6%E8%8A%BD%E8%A1%A3%E5%AD%90-%E3%81%8D%E3%82%87%E3%81%86%E3%81%AE%E6%88%91%E3%81%8C%E8%BA%AB%E3%81%AF-/master/831154)</pre>
 </div>
-<div created="20200213010602435" modified="20200228220134451" tags="play music" title="chill-bruh" type="text/x-markdown">
-<pre>Recent Additions
-
-1. [**atom™ - texturen I**](https://www.discogs.com/Atom-Texturen-I/master/914282)
-1. [**claire m singer** - fairge](https://www.discogs.com/Claire-M-Singer-Fairge/release/10988038)
-1. [**jochem paap** - vrs-mbnt-pcs 9598 i](https://www.discogs.com/Jochem-Paap-Vrs-Mbnt-Pcs-9598-I/master/305595)
-1. [**jochem paap** - vrs-mbnt-pcs 9598 ii](https://www.discogs.com/Jochem-Paap-Vrs-Mbnt-Pcs-9598-II/master/313776)
-1. [**dots** - dots](https://www.discogs.com/Dots-Dots/master/183508)
-1. [**2350 broadway** - 2350 broadway 4](https://www.discogs.com/2350-Broadway-2350-Broadway-4/release/882897)
-1. [**solitaire** - solitaire](https://www.discogs.com/Solitaire-Solitaire/release/59)
-1. [**mark van hoen** - invisible threads](https://www.discogs.com/Mark-Van-Hoen-Invisible-Threads/release/11742915)
-1. [**ozmotic** - elusive balance](https://www.discogs.com/Ozmotic-Elusive-Balance/release/12048774)
-1. [**rafael toral** - violence of discovery and calm of acceptance](https://www.discogs.com/Rafael-Toral-Violence-Of-Discovery-And-Calm-Of-Acceptance/master/185551)
-
----
-Sorted
-
-1. [**2350 broadway** - 2350 broadway](https://www.discogs.com/2350-Broadway-2350-Broadway/master/146282)
-1. [**62 eulengasse** - 62 eulengasse](https://www.discogs.com/62-Eulengasse-62-Eulengasse/master/245865)
-1. [**aerial service area** - aerial service area 2 - 150 g space weight](https://www.discogs.com/Aerial-Service-Area-Aerial-Service-Area-2-150-G-Space-Weight/master/1095067)
-1. [**aidan baker** - aneira](https://www.discogs.com/Aidan-Baker-Aneira/release/4405623)
-1. [**air** - air ii](https://www.discogs.com/Air-Air-II/release/12299)
-1. [**air** - air](https://www.discogs.com/Air-You/master/183501)
-1. [**alien community** - alien community](https://www.discogs.com/Alien-Community-Alien-Community/release/99432)
-1. [**alva noto &amp; ryuichi sakamoto** - vrioon](https://www.discogs.com/Alva-Noto-Ryuichi-Sakamoto-Vrioon/master/9557)
-1. [**ambiant otaku** - ambiant otaku](https://www.discogs.com/Ambiant-Otaku-Ambiant-Otaku/master/45022)
-1. [**atom heart** - live at sel i/s/c](https://www.discogs.com/Atom-Heart-Live-At-Sel-isc/master/1160774)
-1. [**atom heart** - orange](https://www.discogs.com/Atom-Heart-Orange-Monochrome-Stills/master/328068)
-1. [**atom™** - texturen II**](https://www.discogs.com/Atom-Texturen-II/master/995744)
-1. [**atom™** ‎- texturen III](https://www.discogs.com/Atom-Texturen-III/master/1412193)
-1. [**biosphere** - departed glories](https://www.discogs.com/Biosphere-Departed-Glories/master/1062867)
-1. [**biosphere** - dropsonde](https://www.discogs.com/Biosphere-Dropsonde/master/23419)
-1. [**biosphere** - n-plants](https://www.discogs.com/Biosphere-N-Plants/master/368739)
-1. [**brian eno** - compact forest proposal](https://www.discogs.com/Brian-Eno-Compact-Forest-Proposal/master/1236040)
-1. [**brian eno** - lux](https://www.discogs.com/Brian-Eno-Lux/master/491259)
-1. [**brian eno** - music for films volume 2](https://www.discogs.com/Brian-Eno-Music-For-Films-Volume-2/master/32611)
-1. [**brian eno** - music for installations](https://www.discogs.com/Brian-Eno-Music-For-Installations/master/1358475)
-1. [**brian eno** - neroli](https://www.discogs.com/Brian-Eno-Neroli-Thinking-Music-Part-IV/master/32663)
-1. [**brian eno** - textures](https://www.discogs.com/Brian-Eno-Textures/master/232986)
-1. [**brian eno** - the shutov assembly](https://www.discogs.com/Brian-Eno-The-Shutov-Assembly/master/32538)
-1. [**brian eno** - thursday afternoon](https://www.discogs.com/Brian-Eno-Thursday-Afternoon/master/32621)
-1. [**brian eno, peter chilvers** - reflection](https://www.discogs.com/Brian-Eno-Reflection/master/1110975)
-1. [**chihei hatakeyama + federico durand** ‎- sora](https://www.discogs.com/Chihei-Hatakeyama-Federico-Durand-Sora/master/1156870)
-1. [**chihei hatakeyama + hakobune** ‎- the fall rises](https://www.discogs.com/Chihei-Hatakeyama-Hakobune-The-Fall-Rises/release/9384559)
-1. [**chihei hatakeyama / dirk serries** ‎- the storm of silence](https://www.discogs.com/Chihei-Hatakeyama-Dirk-Serries-The-Storm-Of-Silence/master/1315272)
-1. [**chihei hatakeyama** ‎- ghost woods](https://www.discogs.com/Chihei-Hatakeyama-Ghost-Woods/release/14109528)
-1. [**chihei hatakeyama** ‎- grace](https://www.discogs.com/Chihei-Hatakeyama-Grace/release/8811572)
-1. [**chihei hatakeyama** ‎- heavy snow](https://www.discogs.com/Chihei-Hatakeyama-Heavy-Snow/master/1332789)
-1. [**chihei hatakeyama** ‎- maybe](https://www.discogs.com/Chihei-Hatakeyama-Maybe/release/11030407)
-1. [**chihei hatakeyama** ‎- void ix](https://www.discogs.com/Chihei-Hatakeyama-Void-IX/release/8769710)
-1. [**chihei hatakeyama** ‎- void vii](https://www.discogs.com/Chihei-Hatakeyama-Void-VII/release/7214866)
-1. [**chihei hatakeyama** ‎- void x](https://www.discogs.com/Chihei-Hatakeyama-Void-X/release/12083792)
-1. [**chihei hatakeyama** ‎- void xiv](https://www.discogs.com/Chihei-Hatakeyama-Void-XIV/release/10863231)
-1. [**chihei hatakeyama** ‎- void xv](https://www.discogs.com/Chihei-Hatakeyama-Void-XV/release/11581703)
-1. [**chihei hatakeyama** ‎- void xvi](https://www.discogs.com/Chihei-Hatakeyama-Void-XVI/release/13747523)
-1. [**chihei hatakeyama** ‎- void xvii](https://www.discogs.com/Chihei-Hatakeyama-Void-XVII/release/13048033)
-1. [**chihei hatakeyama** ‎- void xviii](https://www.discogs.com/Chihei-Hatakeyama-Void-XVIII/release/13647728)
-1. [**chihei hatakeyama** ‎- you're still in it](https://www.discogs.com/Chihei-Hatakeyama-Youre-Still-In-It/release/8210517)
-1. [**cymatic scan** - cymatic scan](https://www.discogs.com/Cymatic-Scan-Cymatic-Scan/master/146313)
-1. [**dj olive** - sleep](https://www.discogs.com/DJ-Olive-Sleep/master/296169)
-1. [**dj olive** ‎- triage](https://www.discogs.com/DJ-Olive-Triage/release/1555130)
-1. [**dreamfish** - dreamfish](https://www.discogs.com/Dreamfish-Dreamfish/master/32126)
-1. [**duenn &amp; brian grainger** - presence (version iib)](https://www.discogs.com/Duenn-Brian-Grainger-Presence-Version-IIB-/release/13717905)
-1. [**duenn** ‎- bgm](https://www.discogs.com/Duenn-Bgm/release/13156883)
-1. [**eliane radigue** ‎- adnos i-iii](https://www.discogs.com/Eliane-Radigue-Adnos-I-III/master/615491)
-1. [**eliane radigue** ‎- trilogie de la mort](https://www.discogs.com/Eliane-Radigue-Trilogie-De-La-Mort/master/1175700)
-1. [**fennesz** - agora](https://www.discogs.com/Fennesz-Agora/master/1525679)
-1. [**fires of ork** - the fires of ork 1](https://www.discogs.com/The-Fires-Of-Ork-The-Fires-Of-Ork/master/21694)
-1. [**fires of ork** - the fires of ork 2](https://www.discogs.com/The-Fires-Of-Ork-The-Fires-Of-Ork-2/master/21697)
-1. [**frame** - the journey](https://www.discogs.com/Frame-The-Journey/master/1590622)
-1. [**france jobin** ‎- scènes](https://www.discogs.com/France-Jobin-Sc%C3%A8nes/release/11139169)
-1. [**france jobin** ‎- singulum](https://www.discogs.com/France-Jobin-Singulum/master/958698)
-1. [**france jobin** ‎- valence](https://www.discogs.com/France-Jobin-Valence/master/1224831)
-1. [**from within** - from within 2](https://www.discogs.com/From-Within-From-Within-2/release/150554)
-1. [**from within** - from within 3](https://www.discogs.com/From-Within-From-Within-3/master/21922)
-1. [**from within** - from within](https://www.discogs.com/From-Within-From-Within/release/107087)
-1. [**gas** - narkopop](https://www.discogs.com/Gas-Narkopop/master/1168165)
-1. [**hakobune** - betelgeuse](https://www.discogs.com/Hakobune-Betelgeuse/master/1304605)
-1. [**hakobune** - parhelion](https://www.discogs.com/Hakobune-Parhelion/master/1309968)
-1. [**hakobune** - rain studies](https://www.discogs.com/Hakobune-Rain-Studies/release/14439550)
-1. [**hakobune** - the last of our time together](https://www.discogs.com/Hakobune-The-Last-Of-Our-Time-Together/master/1582463)
-1. [**hakobune** - torch](https://www.discogs.com/Hakobune-Torch/release/11199922)
-1. [**human mesh dance** ‎- thesecretnumbertwelve](https://www.discogs.com/Human-Mesh-Dance-Thesecretnumbertwelve/master/799513)
-1. [**jet chamber** - jet chamber](https://www.discogs.com/Jet-Chamber-Jet-Chamber/release/16617)
-1. [**johannes malfatti** - surge](https://www.discogs.com/Johannes-Malfatti-Surge/release/9765484)
-1. [**jonas reinhardt /  jürgen müller** - the encyclopedia of civilizations vol. 1: egypt](https://www.discogs.com/Jonas-Reinhardt-J%C3%BCrgen-M%C3%BCller-The-Encyclopedia-Of-Civilizations-Vol-1-Egypt/release/10186227)
-1. [**jonas reinhardt** - conclave surge](https://www.discogs.com/Jonas-Reinhardt-Conclave-Surge/release/11378173)
-1. [**jonas reinhardt** - ganymede](https://www.discogs.com/Jonas-Reinhardt-Ganymede/release/8402428)
-1. [**jonas reinhardt** - palace savant](https://www.discogs.com/Jonas-Reinhardt-Palace-Savant/master/889121)
-1. [**kenneth james gibson** - in the fields of nothing](https://www.discogs.com/Kenneth-James-Gibson-In-The-Fields-Of-Nothing/master/1336951)
-1. [**leandro fresco** ‎- el reino invisible](https://www.discogs.com/Leandro-Fresco-El-Reino-Invisible/master/804237)
-1. [**line spectrum** - bruma](https://www.discogs.com/Line-Spectrum-Bruma/master/1585691)
-1. [**markus guentner** - shadows of the city](https://www.discogs.com/Markus-Guentner-Shadows-Of-The-City/master/664977)
-1. [**markus guentner** ‎- theia](https://www.discogs.com/Markus-Guentner-Theia/master/911402)
-1. [**mirror** - islands](https://www.discogs.com/Mirror-Islands/master/42167)
-1. [**mirror** - still valley](https://www.discogs.com/Mirror-Still-Valley/master/42174)
-1. [**mirror** ‎- die spiegelmanufaktur](https://www.discogs.com/Mirror-Die-Spiegelmanufaktur/master/42170)
-1. [**mirror** ‎- front row centre](https://www.discogs.com/Mirror-Front-Row-Centre/release/423217)
-1. [**mirror** ‎- visiting star](https://www.discogs.com/Mirror-Visiting-Star/release/582173)
-1. [**monos** ‎- generators](https://www.discogs.com/Monos-Generators/master/68352)
-1. [**myosotis** - intersection](https://www.discogs.com/Myosotis-Intersection/master/1394533)
-1. [**namlook** - namlook xxii • music for urban meditation iii](https://www.discogs.com/Namlook-Namlook-XXII-Music-For-Urban-Meditation-III/release/1731669)
-1. [**namlook** - namlook xxxiii • pearl](https://www.discogs.com/Namlook-Namlook-XXIII-Pearl/release/2001700)
-1. [**namlook** - seasons greetings =winter=](https://www.discogs.com/Namlook-Seasons-Greetings-Winter/release/107219)
-1. [**netherworld** ‎- mørketid](https://www.discogs.com/Netherworld-M%C3%B8rketid/master/1589723)
-1. [**new rome** ‎- nowhere](https://www.discogs.com/New-Rome-Nowhere/release/8383043)
-1. [**orb** ‎- cow / chill out, world!](https://www.discogs.com/Orb-COW-Chill-Out-World/master/1074312)
-1. [**oren ambarchi** - grapes from the estate](https://www.discogs.com/Oren-Ambarchi-Grapes-From-The-Estate/master/10077)
-1. [**organic cloud** - organic cloud](https://www.discogs.com/Organic-Cloud-Organic-Cloud/master/45057)
-1. [**organum** ‎- omega](https://www.discogs.com/Organum-Omega/release/1232047)
-1. [**otras** - otras 2](https://www.discogs.com/Otras-Otras-2/release/52643)
-1. [**outland** - outland](https://www.discogs.com/Outland-Outland/master/16653)
-1. [**oöphoi &amp; tau ceti** ‎- celestial geometries](https://www.discogs.com/O%C3%B6phoi-Tau-Ceti-Celestial-Geometries/master/104536)
-1. [**oöphoi** - an aerial view](https://www.discogs.com/Oophoi-An-Aerial-View/release/1289284)
-1. [**pinkcourtesyphone** ‎- elegant &amp; detached](https://www.discogs.com/Pinkcourtesyphone-Elegant-Detached/master/1154757)
-1. [**porya hatami &amp; arovane** ‎- kaziwa](https://www.discogs.com/Porya-Hatami-Arovane-Kaziwa/master/1039013)
-1. [**porya hatami** ‎- monads](https://www.discogs.com/Porya-Hatami-Monads/release/10101501)
-1. [**rafael anton irisarri** ‎- the unintentional sea](https://www.discogs.com/Rafael-Anton-Irisarri-The-Unintentional-Sea/master/627367)
-1. [**recurring dreams of the urban myth** - recurring dreams of the urban myth](https://www.discogs.com/Recurring-Dreams-Of-The-Urban-Myth-Recurring-Dreams-Of-The-Urban-Myth/release/52489)
-1. [**richard chartier + taylor deupree** ‎- specification.fifteen](https://www.discogs.com/Richard-Chartier-Taylor-Deupree-SpecificationFifteen/master/1224956)
-1. [**robert curgenven** - climata](https://www.discogs.com/Robert-Curgenven-Climata/master/993997)
-1. [**shades of orion** - shades of orion 2](https://www.discogs.com/Shades-Of-Orion-Shades-Of-Orion-2/master/90705)
-1. [**shuttle\_three five eight** - understanding wildlife](https://www.discogs.com/Shuttle_Three-Five-Eight-Understanding-Wildlife/master/1264375)
-1. [**silence** - silence v](https://www.discogs.com/Silence-Silence-V/master/141905)
-1. [**stephan mathieu** ‎- remain](https://www.discogs.com/Stephan-Mathieu-Remain/master/1224979)
-1. [**tamaru &amp; chihei hatakeyama** - lunar eclipse](https://www.discogs.com/Tamaru-Chihei-Hatakeyama-Lunar-Eclipse/release/10690158)
-1. [**taylor deupree + marcus fischer** - in a place of such graceful shapes](https://www.discogs.com/Taylor-Deupree-Marcus-Fischer-In-A-Place-Of-Such-Graceful-Shapes/master/606585)
-1. [**taylor deupree** - fallen](https://www.discogs.com/Taylor-Deupree-Fallen/master/1320388)
-1. [**tetsu inoue** - inland](https://www.discogs.com/Tetsu-Inoue-Inland/master/476962)
-1. [**tetsu inoue** - world receiver](https://www.discogs.com/Tetsu-Inoue-World-Receiver/master/45050)
-1. [**thomas köner** ‎- daikan](https://www.discogs.com/Thomas-K%C3%B6ner-Daikan/release/73875)
-1. [**thomas köner** ‎- la barca](https://www.discogs.com/Thomas-K%C3%B6ner-La-Barca/master/237737)
-1. [**thomas köner** ‎- tiento de las nieves](https://www.discogs.com/Thomas-K%C3%B6ner-Tiento-De-Las-Nieves/master/768173)
-1. [**thomas p. heckmann** - raum](https://www.discogs.com/Thomas-P-Heckmann-Raum/master/92258)
-1. [**uusitalo** ‎- vapaa muurari live](https://www.discogs.com/Uusitalo-Vapaa-Muurari-Live/master/826586)
-1. [**vladislav delay** - ele](https://www.discogs.com/Vladislav-Delay-Ele/master/557716)
-1. [**vladislav delay** - entain](https://www.discogs.com/Vladislav-Delay-Entain/master/6240)
-1. [**vladislav delay** - multila](https://www.discogs.com/Vladislav-Delay-Multila/master/6219)
-1. [**william basinski + richard chartier** ‎- aurora liminalis](https://www.discogs.com/William-Basinski-Richard-Chartier-Aurora-Liminalis/master/1224919)
-1. [**william basinski** - cascade](https://www.discogs.com/William-Basinski-Cascade/master/885746)
-1. [**yann novak** ‎– surroundings](https://www.discogs.com/Yann-Novak-Surroundings/release/10187049)</pre>
-</div>
-<div created="20200213012751762" modified="20200215163842009" tags="cisco work testing certification" title="cisco-ccna" type="text/x-markdown">
+<div created="20200213012751762" modified="20200305165606549" tags="cisco work testing certification" title="cert-ccna" type="text/x-markdown">
 <pre>26% 1.0 LAN Switching Technologies
 
     1.1 Configure, verify, and troubleshoot VLANs (normal/extended range) spanning multiple switches (1-1005-4096)
@@ -11937,234 +11707,7 @@ Sorted
     5.6 Troubleshoot basic Layer 3 end-to-end connectivity issues`
 </pre>
 </div>
-<div created="20200215170033162" modified="20200216194141748" tags="work education courses play" title="courses" type="text/x-markdown">
-<pre>Nearly all current university courses have publicly available syllabi, readings, textbooks, problem sets and course notes.  Stanford and Carnegie Mellon are fruitful for computer science.
-
-1. [**Japanese I** - MIT OCW](https://ocw.mit.edu/courses/global-studies-and-languages/21g-501-japanese-i-fall-2012/)
-1. [**Early Middle Ages, 284-1000** - OYC](https://oyc.yale.edu/history/hist-210)
-1. [**Moral Foundations of Politics** - Yale on Coursera](https://www.coursera.org/learn/moral-politics)
-1. [**Power and Politics in Today's World** - Yale DeVane Lectures](https://communications.yale.edu/2019-devane-lectures-power-and-politics-todays-world)
-1. [**Introduction to Computer Science and Programming in Python** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm)
-1. [**Introduction to Algorithms** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)</pre>
-</div>
-<div created="20200213010945998" modified="20200305035350800" tags="work linux" title="general" type="text/x-markdown">
-<pre>Edit implies create if file does not exist
-
-1. **Disable terminal bell/beep**
-  - Edit `/etc/inputrc` with `set bell-style none`
-  - Vim sound unaffected
-1. **Disable Vim bell/beep**
-  - Edit `~/.vimrc` with `set visualbell`
-  - `:set visualbell` in Vim for temporary disable
-1. **Yank to specific register in Vim**
-  - `&quot;dy` in visual mode to yank to register `d`, `&quot;&quot;` for default register
-  - `:reg d` to view contents of register `d`
-  - `Ctrl-r d`  in insert/command mode to access register `d`
-1. **Enable Kernel Page-Table Isolation**
-  - Edit `/etc/default/grub` and locate `GRUB_CMDLINE_LINUX`
-  - Add `&quot;pti=on&quot;` option and rebuild
-  - KPTI to address Meltdown; may result in significant performance penalties
-1. **Enable SLUB/SLAB allocator poisoning**
-  - Edit `/etc/default/grub` and locate `GRUB_CMDLINE_LINUX`
-  - Add `&quot;slub_debug=P&quot;` and rebuild
-  - Writes arbitrary value to freed objects
-1. **Enable page allocator poisoning**
-  - Edit `/etc/default/grub` and locate `GRUB_CMDLINE_LINUX`
-  - Add `&quot;page_poison=1&quot;` and rebuild
-  - For freed pages
-1. **Prepend ISO8601 UTC timestamp to command output**
-  - `foo | TZ=UTC gawk '{ print strftime(&quot;%FT%TZ&quot;), $0 }'`
-  - May be vulnerable to buffering</pre>
-</div>
-<div created="20200212225220902" modified="20200304232139226" tags="paintings play" title="grab-bag" type="text/x-markdown">
-<pre>1. Baldung, Hans
-  - 1530 *Bildnis einer vornehmen Frau*
-1. Bellini, Gentile
-  - 1496 *Processione in piazza San Marco*
-1. Bellini, Gentile and Giovanni
-  - 1504 *Predica di san Marco ad Alessandria d'Egitto*
-1. Bellini, Giovanni
-  - 1501 *Ritratto del doge Leonardo Loredan*
-1. Bruegel de Oude, Pieter
-  - 1559 *De strijd tussen Vasten en Vastenavond*
-  - 1563 *De Toren van Babel*
-1. Bosch, Jheronimus
-  - 1495 *Driekoningen-drieluik*
-  - 1495 *Het narrenschip*
-  - 1495 *Tuin der lusten*
-  - 1495 *Driekoningen-drieluik*
-  - 1500 *De verzoeking van de heilige 
-Antonius* (Museo del Prado)
-  - 1500 *De verzoeking van de heilige Antonius* (Nelson-Atkins Museum of Art)
-1. Botticelli, Sandro
-  - 1470 *Fortezza*
-  - 1482 *Pallade e il centauro*
-  - 1482 *Primavera*
-  - 1483 *La nascita di Venere*
-1. Clouet, François
-  - 1571 *Élisabeth d'Autriche*
-1. da Messina, Antonello
-  - 1478 *San Sebastiano*
-1. di Cosimo, Piero
-  - 1510 *Liberazione di Andromeda*
-1. di ser Piero da Vinci, Leonardo
-  - 1472 *Annunciazione*
-1. Eworth, Hans
-  - 1550 *Allegorical portrait of Sir John Lutrell*
-1. Fouquet, Jean
-  - 1452 Diptyque de Melun
-1. Giorgione
-  - 1504 *Giuditta con la testa di Oloferne*
-  - 1507 *Venere dormiente*
-1. Gossaert, Jan
-  - 1515 *&quot;Vermoedelijk&quot; zelfportret van Jan Gossaert*
-1. Mantegna, Andrea
-  - 1459 *Ritratto del cardinale Ludovico Trevisan*
-1. Massijs I, Quinten
-  - 1513 *Portret van een groteske oude vrouw*
-  - 1514 *De goudweger en zijn vrouw*
-1. Memling, Hans
-  - 1475 *Portret van Maria Portinari*
-1. Mostaert, Jan Jansz.
-  - 1525 *Portret van een Afrikaanse man*
-1. Parmigianino
-  - 1535 *Antea*
-  - 1535 *Ritratto di Pier Maria Rossi di San Secondo*
-1. Patinir, Joachim
-  - 1520 *De oversteek naar de onderwereld*
-1. Perugino, Pietro
-  - 1501 *Sposalizio della Vergine*
-  - 1503 *Lotta tra Amore e Castità*
-1. Pontormo
-  - 1529 *Alabardiere*
-1. Pourbus de Oudere, Frans
-  - 1564 *Portret van een man*
-  - 1581 *Portret van een jonge vrouw*
-1. Pourbus le Jeune, Frans
-  - 1610 *Marie de Médicis*  
-  - 1615 *Portrait de Louis XIII*
-  - 1617 *Portrait d'homme*
-  - 1619 *Portrait de Giovanni Battista Marino*
-  1. Sanzio, Raffaello
-  - 1503 *Tre Grazie*
-  - 1504 *Sposalizio della Vergine*
-  - 1505 *San Giorgio e il drago*
-  - 1505 *San Giorgio e il drago (di Parigi)*
-  - 1505 *San Michele e il drago*
-  - 1506 *Autoritratto*
-  - 1509 *Scuola di Atene*
-  - 1514 *Ritratto di Baldassarre Castiglione*
-  - 1518 *San Michele sconfigge Satana*
-  - 1518 *Santa Margherita e il drago*
-1. Tiziano
-  - 1515 *Ritratto di giovane in pelliccia*
-  - 1538 *Venere di Urbino*
-1. Uccello, Paolo
-  - 1470 *Caccia notturna*
-1. van Dashorst, Anthonis Mor
-  - 1554 *Portret van Maria I van Engeland*
-  - 1560 *Portret van Sir Thomas Gresham*
-1. van der Weyden, Rogier
-  - 1432 *Portret van een vrouw*
-  - 1434 *Portret van Giovanni Arnolfini en zijn vrouw*
-1. van Eyck, Jan
-  - 1433 *Portret van een man met rode tulband*
-  - 1434 *Annunciatie*
-1. Veronese, Paolo
-  - 1563 *Nozze di Cana*
-  - 1565 *La famiglia di Dario ai piedi di Alessandro*
-  - 1573 *Convito in casa di Levi*
-  - 1576 *Perseo liberando Andromeda*</pre>
-</div>
-<div created="20200215205123244" modified="20200216204756373" tags="work iam aws" title="iam" type="text/x-markdown">
-<pre>1. **Permissions necessary for object tagging on upload to S3**
-  - `s3:PutObject` and `s3:PutObjectTagging`
-  - S3 API reference for PutObjectTagging currently unclear stating, &quot;Sets the supplied tag-set to an object that already exists in a bucket&quot;
-  - CLI Command Reference for `aws s3api put-object` includes `--tagging` option and mentions WRITE access requirement but not TAGGING access requirement</pre>
-</div>
-<div created="20200212231530968" modified="20200228024605397" tags="" title="index" type="text/x-markdown">
-<pre>**Amazon Web Services**
-
-- [Identity and Access Management](#iam)
-- [Simple Storage Service](#s3)
-
-**GNU/Linux**
-
-- [General](#general) - *May apply to Unix*
-- [Red Hat Enterprise Linux 8](#rhel-eight) - *May apply to other versions*
-
-**Certification** - *Unedited after passing*
-
-- [RHCSA for RHEL8](#rhcsa)
-- [AWS SysOps Admin - Assoc](#aws-sysops-assoc)
-- [CCNA ICND2 2019](#cisco-ccna)
-
----
-
-**Music** - *Includes external links to discogs.com &quot;master&quot; entry when possible*
-
-- [Beep Boop](#beep-boop) - *Includes electronic/hip-hop/rap/etc.*
-- [Chill Bruh](#chill-bruh) - *Relaxing, droning and minimal*
-- [Jazzy](#jazzy)
-- [Rock On](#rock-on) - *Includes country/folk/soul/funk/etc.*
-- [Blue Earth](#blue-earth)
-
-**Paintings** - *Subjective aesthetic judgements or for historical context*
-
-- [Grab Bag](#grab-bag)
-
-**Films**
-
-**Books**
-
-- [Educational/Technical](#textbooks)
-- Non-fiction
-- Fiction
-
-**Education** - *Free and publicly available*
-
-- [University Courses](#courses)</pre>
-</div>
-<div created="20200213010835169" modified="20200228024830011" tags="play music" title="jazzy" type="text/x-markdown">
-<pre>Recent Additions
-
-1. [**john coltrane quartet** - crescent](https://www.discogs.com/John-Coltrane-Quartet-Crescent/master/37368)
-1. [**john coltrane** - meditations](https://www.discogs.com/John-Coltrane-Meditations/master/75680)
-1. [**john coltrane** - my favorite things](https://www.discogs.com/John-Coltrane-My-Favorite-Things/master/32265)
-1. [**john coltrane with red garland** - soultrane](https://www.discogs.com/John-Coltrane-With-Red-Garland-Soultrane/master/37307)
-1. [**john coltrane &amp; don cherry** - the avant-garde](https://www.discogs.com/John-Coltrane-Don-Cherry-The-Avant-Garde/master/39901)
-1. [**ornette coleman** - something else!!!](https://www.discogs.com/Ornette-Coleman-Something-Else/master/61707)
-1. [**ornette coleman** - the shape of jazz to come](https://www.discogs.com/Ornette-Coleman-The-Shape-Of-Jazz-To-Come/master/47813)
-1. [**ornette coleman** - tomorrow is the question!](https://www.discogs.com/Ornette-Coleman-Tomorrow-Is-The-Question/master/61722)
-
----
-Sorted
-
-1. [**charles mingus** - blues &amp; roots](https://www.discogs.com/Charlie-Mingus-Blues-Roots/master/176882)
-1. [**charles mingus** - mingus plays piano](https://www.discogs.com/Mingus-Mingus-Plays-Piano-Spontaneous-Compositions-And-Improvisations/master/176924)
-1. [**charlie parker** - swedish schnapps](https://www.discogs.com/Charlie-Parker-And-His-Orchestra-Swedish-Schnapps/master/357047)
-1. [**dizzy gillespie/sonny stitt/sonny rollins** - sonny side up](https://www.discogs.com/Dizzy-Gillespie-Sonny-Stitt-Sonny-Rollins-Sonny-Side-Up/master/259350)
-1. [**herbie hancock** - head hunters](https://www.discogs.com/Herbie-Hancock-Head-Hunters/master/19493)
-1. [**herbie hancock** - man-child](https://www.discogs.com/Herbie-Hancock-Man-Child/master/47832)
-1. [**john coltrane** - a love supreme](https://www.discogs.com/John-Coltrane-A-Love-Supreme/master/32287)
-1. [**john coltrane** - blue train](https://www.discogs.com/John-Coltrane-Blue-Train/master/32208)
-1. [**john coltrane** - coltrane plays the blues](https://www.discogs.com/John-Coltrane-Coltrane-Plays-The-Blues/master/75660)
-1. [**john coltrane** - giant steps](https://www.discogs.com/John-Coltrane-Giant-Steps/master/32236)
-1. [**john coltrane** - live in japan](https://www.discogs.com/John-Coltrane-Live-In-Japan/master/75956)
-1. [**john zorn - robert rodriguez** - aguares: book of angels volume 23](https://www.discogs.com/John-Zorn-Roberto-Rodriguez-Aguares-Book-Of-Angels-Volume-23/release/6161308)
-1. [**masada** - live in sevilla 2000](https://www.discogs.com/Masada-Live-In-Sevilla-2000/release/781093)
-1. [**max roach** - drums unlimited](https://www.discogs.com/Max-Roach-Drums-Unlimited/master/259324)
-1. [**mccoy tyner** - inception](https://www.discogs.com/McCoy-Tyner-Trio-Inception/master/177612)
-1. [**mccoy tyner** - passion dance](https://www.discogs.com/McCoy-Tyner-Passion-Dance/master/216461)
-1. [**miles davis** - 'round about midnight](https://www.discogs.com/Miles-Davis-Round-About-Midnight/master/9130)
-1. [**ornette coleman quartet** - ornette!](https://www.discogs.com/The-Ornette-Coleman-Quartet-Ornette/master/183269)
-1. [**pharoah sanders** - pharoah](https://www.discogs.com/Pharoah-Sanders-Pharoah/master/455161)
-1. [**sun ra** - the futuristic sounds of sun ra](https://www.discogs.com/Sun-Ra-The-Futuristic-Sounds-Of-Sun-Ra/master/84411)</pre>
-</div>
-<div caption="discogs blank" created="20200213021034600" modified="20200216190725475" tags="$:/tags/TextEditor/Snippet" title="New Tiddler" type="text/x-markdown">
-<pre>1. [****]()</pre>
-</div>
-<div created="20200213013949210" modified="20200215163429086" tags="[[red hat]] testing certification linux work" title="rhcsa" type="text/x-markdown">
+<div created="20200213013949210" modified="20200305165436747" tags="[[red hat]] testing certification linux work" title="cert-rhcsa" type="text/x-markdown">
 <pre>Understand and use essential tools
 
 Access a shell prompt and issue commands with correct syntax
@@ -12294,7 +11837,480 @@ Configure firewall settings using firewall-cmd/firewalld
       -grep AVC /var/log/audit/audit.log SELinux messages
 </pre>
 </div>
-<div created="20200213011054504" modified="20200216194240384" tags="[[red hat]] work linux" title="rhel-eight" type="text/x-markdown">
+<div created="20200213011614930" modified="20200305165552079" tags="aws testing certification work" title="cert-sysops-a" type="text/x-markdown">
+<pre>C.3 Security
+
+    -IAM supports Security Assertion Markup Langage 2.0
+    -IAM access keys
+    -Inspector - analyzes network reachability, CVEs, CIS benchmarks
+    -remember IAM role for logs:CreateLogStream and logs:PutLogEvents
+    -CW uses event version numbers for order and uniqueness
+    -Secrets Manager rotates credentials
+    -KMS is managed HSM
+    -WAF: web ACL on IP, country, regex/string, length, SQL, XSS
+
+C.4 Compute
+
+    -max 80,000 IOPS instance to all attached EBS
+    -max 1750 MiB/s to attached EBS
+    -migrate inst to other AZ - create AMI then launch new inst
+    -key pairs by region, 2048-bit SSH-2 RSA keys
+    -instance types (general, compute, memory, nitro)
+        1 CPU credit = 1 vCPU at 100% for 1 minute
+    -stopping EBS-backed instance releases public IP
+    -user data (shell scripts and cloud-init directives-for SSH keys) not updated by modification while instance stopped
+    -http://169.254.169.254/latest/meta-data/ (throttled)
+    -http://169.254.169.254/latest/dynamic/instance-identity/ (JSON)
+    -CW alarm actions are recover, stop, terminate, reboot
+    -&quot;recover&quot; retains ID, metadata, private/elastic IP, EBS attach.
+    -dedicated instance: hardware for single customer
+    -dedicated host: use existing licenses, control &quot;placement&quot;
+    -CW metrics - CPU, DISK reads/writes, NETWORK in/out, instance status, system status, credit usage/balance
+    -on-demand, reserved (by region or AZ), spot (bid on &quot;market price&quot;)
+    -bundle: image manifest + files with template for root volume
+    -ECS &quot;awsvpc&quot; network mode exposes EC2 networking ENIs, etc.
+    -target tracking scaling policies auto create CW alarms
+    -auto scaling terminates inst. with failed health checks (ELB also)
+    -Lambda
+        push: ALB target, API gateway, CT by log into S3, CW Events (passed to), CW logs, evalute 
+        Config, S3 object event, SNS target
+        pull: Kinesis, DynamoDB, SQS
+        up to 15 minute timeout
+        Lambda max 1,000 concurrent executions
+        Lambda@Edge: node.js or python (respond to CloudFront events)
+
+C.5 Networking
+
+    -flow log for VPC, subnet, or ENI; requires ARN of IAM role to CW
+    -every silly detail of direct connect process (90 day expiration)
+        request in console - 1, 10 Gbps and location (hosted connect in console)
+        download loa-cfa (required by colocation or network provider)
+    -ALB (HTTP, HTTPS)
+        host-based routing - by host header in http (think DNS domains)
+        path-based routing - by URL path
+        http header value routing (any)
+        http method value routing (get, post, etc.)
+        x-forwarded-for header (preserves source ip)
+    -NLB (TCP, UDP, TLS)
+    -Route 53
+        resource record sets define routing policies for hosted zone
+        health checks on resources, CW alarms, other health checks
+        Cross-Origin Resource Sharing from other domains
+        max, min, default TTL at same value overrides cache-cont. head.
+
+C.6 Storage
+
+    -logical io up to 256KB, 1MB
+    -EBS 1GB/4GB/500GB/500GB up to 16TB
+    -EBS 16000/64000(16-64KB/io) and 500/250(1MB/io) max iops
+    -EBS 250MB/s, 1000MB/s, 500 MB/s, 250 MB/s max throughput
+    -EBS burst credits accum. 3iops/GB, 40MB/s per TB, 12MB/s per TB
+    -no snapshots on instance storage
+    -instance storage best for &lt; 1 ms latency
+    -EBS snapshot 5 cents/GiB/month
+    -EBS parameters - type, size, AZ, IOPS (io1), snapshot ID, encryption
+    -must snapshot encrypted volume to share (by region)
+    -snapshot &gt; 10Gb is whole volume
+    -cannot share encrypted volume if CMK (customer master key) is default
+    -EBS-backed boots faster than instance-backed
+    -EBS volumes per AZ, snapshots per region
+    -EBS types (General Purpose SSD (gp2), Provisioned IOPS SSD (io1), Throughput Optimized HDD (st1), Cold HDD (sc1), magnetic (old))
+    -must own encrypted snapshot to restore it
+    -EBS (non-elastic) volume can get stuck &quot;busy&quot; state if detached while mounted
+    -EFS uses mount point in VPC (ip), linux only
+    -S3 data backup durability only in bucket REGION
+    -S3 virtual hosted URL resolves bucket in domain (DNS works)
+    -S3 path-style must use region in domain (no DNS, specific to region)
+    -404 returned to get request on delete marker as current version
+    -lifecycle management: transition to storage class, expiration (del)
+    -S3 policies ***not available on MFA-enabled buckets
+    -pricing for objects pro-rated to 30-day minimum, 90 for glacier
+    -cross-origin resource sharing (by other origins, methods, headers)
+    -S3 server access logging
+    -Glacier: vaults, vault lock, query in uncompressed CSV
+    -Storage Gateway: File, Volume, Tape hardware appliances (NFS, SMB)
+
+C.7 Databases
+
+    -standbys auto to other AZ, no reads allowed
+    -RDS: SQL, ACID, table joins, M(multi-pur), R(RAM), T(Tiny/burst)
+    -MySQL, MariaDB, PostgreSQL, Oracle, Microsoft SQL Server
+    -snapshots temp. slow I/O unless multi-AZ
+    -can promote read replica to standalone DB (after reboot)
+    -enhanced monitoring for real-time, performance insights (DB query)
+    -parameter groups, options groups
+    -Redshift: enhanced VPC routing for private routing / slow resize
+    -Aurora (MySQL, PostgreSQL)
+        r/w endpoint, &quot;ro&quot; read replica endpoint, custom, instance
+        10GB - 64TB storage
+        2 copies of your data in 3 AZ
+        15 read replicas max, async replication
+        use serverless to eliminate scaling &quot;delay&quot; with low usage
+    -ElastiCache: Redis or Memcached, regional
+    -Database Migration - requires replication instance + endpoints</pre>
+</div>
+<div created="20200213010602435" modified="20200228220134451" tags="play music" title="chill-bruh" type="text/x-markdown">
+<pre>Recent Additions
+
+1. [**atom™ - texturen I**](https://www.discogs.com/Atom-Texturen-I/master/914282)
+1. [**claire m singer** - fairge](https://www.discogs.com/Claire-M-Singer-Fairge/release/10988038)
+1. [**jochem paap** - vrs-mbnt-pcs 9598 i](https://www.discogs.com/Jochem-Paap-Vrs-Mbnt-Pcs-9598-I/master/305595)
+1. [**jochem paap** - vrs-mbnt-pcs 9598 ii](https://www.discogs.com/Jochem-Paap-Vrs-Mbnt-Pcs-9598-II/master/313776)
+1. [**dots** - dots](https://www.discogs.com/Dots-Dots/master/183508)
+1. [**2350 broadway** - 2350 broadway 4](https://www.discogs.com/2350-Broadway-2350-Broadway-4/release/882897)
+1. [**solitaire** - solitaire](https://www.discogs.com/Solitaire-Solitaire/release/59)
+1. [**mark van hoen** - invisible threads](https://www.discogs.com/Mark-Van-Hoen-Invisible-Threads/release/11742915)
+1. [**ozmotic** - elusive balance](https://www.discogs.com/Ozmotic-Elusive-Balance/release/12048774)
+1. [**rafael toral** - violence of discovery and calm of acceptance](https://www.discogs.com/Rafael-Toral-Violence-Of-Discovery-And-Calm-Of-Acceptance/master/185551)
+
+---
+Sorted
+
+1. [**2350 broadway** - 2350 broadway](https://www.discogs.com/2350-Broadway-2350-Broadway/master/146282)
+1. [**62 eulengasse** - 62 eulengasse](https://www.discogs.com/62-Eulengasse-62-Eulengasse/master/245865)
+1. [**aerial service area** - aerial service area 2 - 150 g space weight](https://www.discogs.com/Aerial-Service-Area-Aerial-Service-Area-2-150-G-Space-Weight/master/1095067)
+1. [**aidan baker** - aneira](https://www.discogs.com/Aidan-Baker-Aneira/release/4405623)
+1. [**air** - air ii](https://www.discogs.com/Air-Air-II/release/12299)
+1. [**air** - air](https://www.discogs.com/Air-You/master/183501)
+1. [**alien community** - alien community](https://www.discogs.com/Alien-Community-Alien-Community/release/99432)
+1. [**alva noto &amp; ryuichi sakamoto** - vrioon](https://www.discogs.com/Alva-Noto-Ryuichi-Sakamoto-Vrioon/master/9557)
+1. [**ambiant otaku** - ambiant otaku](https://www.discogs.com/Ambiant-Otaku-Ambiant-Otaku/master/45022)
+1. [**atom heart** - live at sel i/s/c](https://www.discogs.com/Atom-Heart-Live-At-Sel-isc/master/1160774)
+1. [**atom heart** - orange](https://www.discogs.com/Atom-Heart-Orange-Monochrome-Stills/master/328068)
+1. [**atom™** - texturen II**](https://www.discogs.com/Atom-Texturen-II/master/995744)
+1. [**atom™** ‎- texturen III](https://www.discogs.com/Atom-Texturen-III/master/1412193)
+1. [**biosphere** - departed glories](https://www.discogs.com/Biosphere-Departed-Glories/master/1062867)
+1. [**biosphere** - dropsonde](https://www.discogs.com/Biosphere-Dropsonde/master/23419)
+1. [**biosphere** - n-plants](https://www.discogs.com/Biosphere-N-Plants/master/368739)
+1. [**brian eno** - compact forest proposal](https://www.discogs.com/Brian-Eno-Compact-Forest-Proposal/master/1236040)
+1. [**brian eno** - lux](https://www.discogs.com/Brian-Eno-Lux/master/491259)
+1. [**brian eno** - music for films volume 2](https://www.discogs.com/Brian-Eno-Music-For-Films-Volume-2/master/32611)
+1. [**brian eno** - music for installations](https://www.discogs.com/Brian-Eno-Music-For-Installations/master/1358475)
+1. [**brian eno** - neroli](https://www.discogs.com/Brian-Eno-Neroli-Thinking-Music-Part-IV/master/32663)
+1. [**brian eno** - textures](https://www.discogs.com/Brian-Eno-Textures/master/232986)
+1. [**brian eno** - the shutov assembly](https://www.discogs.com/Brian-Eno-The-Shutov-Assembly/master/32538)
+1. [**brian eno** - thursday afternoon](https://www.discogs.com/Brian-Eno-Thursday-Afternoon/master/32621)
+1. [**brian eno, peter chilvers** - reflection](https://www.discogs.com/Brian-Eno-Reflection/master/1110975)
+1. [**chihei hatakeyama + federico durand** ‎- sora](https://www.discogs.com/Chihei-Hatakeyama-Federico-Durand-Sora/master/1156870)
+1. [**chihei hatakeyama + hakobune** ‎- the fall rises](https://www.discogs.com/Chihei-Hatakeyama-Hakobune-The-Fall-Rises/release/9384559)
+1. [**chihei hatakeyama / dirk serries** ‎- the storm of silence](https://www.discogs.com/Chihei-Hatakeyama-Dirk-Serries-The-Storm-Of-Silence/master/1315272)
+1. [**chihei hatakeyama** ‎- ghost woods](https://www.discogs.com/Chihei-Hatakeyama-Ghost-Woods/release/14109528)
+1. [**chihei hatakeyama** ‎- grace](https://www.discogs.com/Chihei-Hatakeyama-Grace/release/8811572)
+1. [**chihei hatakeyama** ‎- heavy snow](https://www.discogs.com/Chihei-Hatakeyama-Heavy-Snow/master/1332789)
+1. [**chihei hatakeyama** ‎- maybe](https://www.discogs.com/Chihei-Hatakeyama-Maybe/release/11030407)
+1. [**chihei hatakeyama** ‎- void ix](https://www.discogs.com/Chihei-Hatakeyama-Void-IX/release/8769710)
+1. [**chihei hatakeyama** ‎- void vii](https://www.discogs.com/Chihei-Hatakeyama-Void-VII/release/7214866)
+1. [**chihei hatakeyama** ‎- void x](https://www.discogs.com/Chihei-Hatakeyama-Void-X/release/12083792)
+1. [**chihei hatakeyama** ‎- void xiv](https://www.discogs.com/Chihei-Hatakeyama-Void-XIV/release/10863231)
+1. [**chihei hatakeyama** ‎- void xv](https://www.discogs.com/Chihei-Hatakeyama-Void-XV/release/11581703)
+1. [**chihei hatakeyama** ‎- void xvi](https://www.discogs.com/Chihei-Hatakeyama-Void-XVI/release/13747523)
+1. [**chihei hatakeyama** ‎- void xvii](https://www.discogs.com/Chihei-Hatakeyama-Void-XVII/release/13048033)
+1. [**chihei hatakeyama** ‎- void xviii](https://www.discogs.com/Chihei-Hatakeyama-Void-XVIII/release/13647728)
+1. [**chihei hatakeyama** ‎- you're still in it](https://www.discogs.com/Chihei-Hatakeyama-Youre-Still-In-It/release/8210517)
+1. [**cymatic scan** - cymatic scan](https://www.discogs.com/Cymatic-Scan-Cymatic-Scan/master/146313)
+1. [**dj olive** - sleep](https://www.discogs.com/DJ-Olive-Sleep/master/296169)
+1. [**dj olive** ‎- triage](https://www.discogs.com/DJ-Olive-Triage/release/1555130)
+1. [**dreamfish** - dreamfish](https://www.discogs.com/Dreamfish-Dreamfish/master/32126)
+1. [**duenn &amp; brian grainger** - presence (version iib)](https://www.discogs.com/Duenn-Brian-Grainger-Presence-Version-IIB-/release/13717905)
+1. [**duenn** ‎- bgm](https://www.discogs.com/Duenn-Bgm/release/13156883)
+1. [**eliane radigue** ‎- adnos i-iii](https://www.discogs.com/Eliane-Radigue-Adnos-I-III/master/615491)
+1. [**eliane radigue** ‎- trilogie de la mort](https://www.discogs.com/Eliane-Radigue-Trilogie-De-La-Mort/master/1175700)
+1. [**fennesz** - agora](https://www.discogs.com/Fennesz-Agora/master/1525679)
+1. [**fires of ork** - the fires of ork 1](https://www.discogs.com/The-Fires-Of-Ork-The-Fires-Of-Ork/master/21694)
+1. [**fires of ork** - the fires of ork 2](https://www.discogs.com/The-Fires-Of-Ork-The-Fires-Of-Ork-2/master/21697)
+1. [**frame** - the journey](https://www.discogs.com/Frame-The-Journey/master/1590622)
+1. [**france jobin** ‎- scènes](https://www.discogs.com/France-Jobin-Sc%C3%A8nes/release/11139169)
+1. [**france jobin** ‎- singulum](https://www.discogs.com/France-Jobin-Singulum/master/958698)
+1. [**france jobin** ‎- valence](https://www.discogs.com/France-Jobin-Valence/master/1224831)
+1. [**from within** - from within 2](https://www.discogs.com/From-Within-From-Within-2/release/150554)
+1. [**from within** - from within 3](https://www.discogs.com/From-Within-From-Within-3/master/21922)
+1. [**from within** - from within](https://www.discogs.com/From-Within-From-Within/release/107087)
+1. [**gas** - narkopop](https://www.discogs.com/Gas-Narkopop/master/1168165)
+1. [**hakobune** - betelgeuse](https://www.discogs.com/Hakobune-Betelgeuse/master/1304605)
+1. [**hakobune** - parhelion](https://www.discogs.com/Hakobune-Parhelion/master/1309968)
+1. [**hakobune** - rain studies](https://www.discogs.com/Hakobune-Rain-Studies/release/14439550)
+1. [**hakobune** - the last of our time together](https://www.discogs.com/Hakobune-The-Last-Of-Our-Time-Together/master/1582463)
+1. [**hakobune** - torch](https://www.discogs.com/Hakobune-Torch/release/11199922)
+1. [**human mesh dance** ‎- thesecretnumbertwelve](https://www.discogs.com/Human-Mesh-Dance-Thesecretnumbertwelve/master/799513)
+1. [**jet chamber** - jet chamber](https://www.discogs.com/Jet-Chamber-Jet-Chamber/release/16617)
+1. [**johannes malfatti** - surge](https://www.discogs.com/Johannes-Malfatti-Surge/release/9765484)
+1. [**jonas reinhardt /  jürgen müller** - the encyclopedia of civilizations vol. 1: egypt](https://www.discogs.com/Jonas-Reinhardt-J%C3%BCrgen-M%C3%BCller-The-Encyclopedia-Of-Civilizations-Vol-1-Egypt/release/10186227)
+1. [**jonas reinhardt** - conclave surge](https://www.discogs.com/Jonas-Reinhardt-Conclave-Surge/release/11378173)
+1. [**jonas reinhardt** - ganymede](https://www.discogs.com/Jonas-Reinhardt-Ganymede/release/8402428)
+1. [**jonas reinhardt** - palace savant](https://www.discogs.com/Jonas-Reinhardt-Palace-Savant/master/889121)
+1. [**kenneth james gibson** - in the fields of nothing](https://www.discogs.com/Kenneth-James-Gibson-In-The-Fields-Of-Nothing/master/1336951)
+1. [**leandro fresco** ‎- el reino invisible](https://www.discogs.com/Leandro-Fresco-El-Reino-Invisible/master/804237)
+1. [**line spectrum** - bruma](https://www.discogs.com/Line-Spectrum-Bruma/master/1585691)
+1. [**markus guentner** - shadows of the city](https://www.discogs.com/Markus-Guentner-Shadows-Of-The-City/master/664977)
+1. [**markus guentner** ‎- theia](https://www.discogs.com/Markus-Guentner-Theia/master/911402)
+1. [**mirror** - islands](https://www.discogs.com/Mirror-Islands/master/42167)
+1. [**mirror** - still valley](https://www.discogs.com/Mirror-Still-Valley/master/42174)
+1. [**mirror** ‎- die spiegelmanufaktur](https://www.discogs.com/Mirror-Die-Spiegelmanufaktur/master/42170)
+1. [**mirror** ‎- front row centre](https://www.discogs.com/Mirror-Front-Row-Centre/release/423217)
+1. [**mirror** ‎- visiting star](https://www.discogs.com/Mirror-Visiting-Star/release/582173)
+1. [**monos** ‎- generators](https://www.discogs.com/Monos-Generators/master/68352)
+1. [**myosotis** - intersection](https://www.discogs.com/Myosotis-Intersection/master/1394533)
+1. [**namlook** - namlook xxii • music for urban meditation iii](https://www.discogs.com/Namlook-Namlook-XXII-Music-For-Urban-Meditation-III/release/1731669)
+1. [**namlook** - namlook xxxiii • pearl](https://www.discogs.com/Namlook-Namlook-XXIII-Pearl/release/2001700)
+1. [**namlook** - seasons greetings =winter=](https://www.discogs.com/Namlook-Seasons-Greetings-Winter/release/107219)
+1. [**netherworld** ‎- mørketid](https://www.discogs.com/Netherworld-M%C3%B8rketid/master/1589723)
+1. [**new rome** ‎- nowhere](https://www.discogs.com/New-Rome-Nowhere/release/8383043)
+1. [**orb** ‎- cow / chill out, world!](https://www.discogs.com/Orb-COW-Chill-Out-World/master/1074312)
+1. [**oren ambarchi** - grapes from the estate](https://www.discogs.com/Oren-Ambarchi-Grapes-From-The-Estate/master/10077)
+1. [**organic cloud** - organic cloud](https://www.discogs.com/Organic-Cloud-Organic-Cloud/master/45057)
+1. [**organum** ‎- omega](https://www.discogs.com/Organum-Omega/release/1232047)
+1. [**otras** - otras 2](https://www.discogs.com/Otras-Otras-2/release/52643)
+1. [**outland** - outland](https://www.discogs.com/Outland-Outland/master/16653)
+1. [**oöphoi &amp; tau ceti** ‎- celestial geometries](https://www.discogs.com/O%C3%B6phoi-Tau-Ceti-Celestial-Geometries/master/104536)
+1. [**oöphoi** - an aerial view](https://www.discogs.com/Oophoi-An-Aerial-View/release/1289284)
+1. [**pinkcourtesyphone** ‎- elegant &amp; detached](https://www.discogs.com/Pinkcourtesyphone-Elegant-Detached/master/1154757)
+1. [**porya hatami &amp; arovane** ‎- kaziwa](https://www.discogs.com/Porya-Hatami-Arovane-Kaziwa/master/1039013)
+1. [**porya hatami** ‎- monads](https://www.discogs.com/Porya-Hatami-Monads/release/10101501)
+1. [**rafael anton irisarri** ‎- the unintentional sea](https://www.discogs.com/Rafael-Anton-Irisarri-The-Unintentional-Sea/master/627367)
+1. [**recurring dreams of the urban myth** - recurring dreams of the urban myth](https://www.discogs.com/Recurring-Dreams-Of-The-Urban-Myth-Recurring-Dreams-Of-The-Urban-Myth/release/52489)
+1. [**richard chartier + taylor deupree** ‎- specification.fifteen](https://www.discogs.com/Richard-Chartier-Taylor-Deupree-SpecificationFifteen/master/1224956)
+1. [**robert curgenven** - climata](https://www.discogs.com/Robert-Curgenven-Climata/master/993997)
+1. [**shades of orion** - shades of orion 2](https://www.discogs.com/Shades-Of-Orion-Shades-Of-Orion-2/master/90705)
+1. [**shuttle\_three five eight** - understanding wildlife](https://www.discogs.com/Shuttle_Three-Five-Eight-Understanding-Wildlife/master/1264375)
+1. [**silence** - silence v](https://www.discogs.com/Silence-Silence-V/master/141905)
+1. [**stephan mathieu** ‎- remain](https://www.discogs.com/Stephan-Mathieu-Remain/master/1224979)
+1. [**tamaru &amp; chihei hatakeyama** - lunar eclipse](https://www.discogs.com/Tamaru-Chihei-Hatakeyama-Lunar-Eclipse/release/10690158)
+1. [**taylor deupree + marcus fischer** - in a place of such graceful shapes](https://www.discogs.com/Taylor-Deupree-Marcus-Fischer-In-A-Place-Of-Such-Graceful-Shapes/master/606585)
+1. [**taylor deupree** - fallen](https://www.discogs.com/Taylor-Deupree-Fallen/master/1320388)
+1. [**tetsu inoue** - inland](https://www.discogs.com/Tetsu-Inoue-Inland/master/476962)
+1. [**tetsu inoue** - world receiver](https://www.discogs.com/Tetsu-Inoue-World-Receiver/master/45050)
+1. [**thomas köner** ‎- daikan](https://www.discogs.com/Thomas-K%C3%B6ner-Daikan/release/73875)
+1. [**thomas köner** ‎- la barca](https://www.discogs.com/Thomas-K%C3%B6ner-La-Barca/master/237737)
+1. [**thomas köner** ‎- tiento de las nieves](https://www.discogs.com/Thomas-K%C3%B6ner-Tiento-De-Las-Nieves/master/768173)
+1. [**thomas p. heckmann** - raum](https://www.discogs.com/Thomas-P-Heckmann-Raum/master/92258)
+1. [**uusitalo** ‎- vapaa muurari live](https://www.discogs.com/Uusitalo-Vapaa-Muurari-Live/master/826586)
+1. [**vladislav delay** - ele](https://www.discogs.com/Vladislav-Delay-Ele/master/557716)
+1. [**vladislav delay** - entain](https://www.discogs.com/Vladislav-Delay-Entain/master/6240)
+1. [**vladislav delay** - multila](https://www.discogs.com/Vladislav-Delay-Multila/master/6219)
+1. [**william basinski + richard chartier** ‎- aurora liminalis](https://www.discogs.com/William-Basinski-Richard-Chartier-Aurora-Liminalis/master/1224919)
+1. [**william basinski** - cascade](https://www.discogs.com/William-Basinski-Cascade/master/885746)
+1. [**yann novak** ‎– surroundings](https://www.discogs.com/Yann-Novak-Surroundings/release/10187049)</pre>
+</div>
+<div created="20200215170033162" modified="20200216194141748" tags="work education courses play" title="courses" type="text/x-markdown">
+<pre>Nearly all current university courses have publicly available syllabi, readings, textbooks, problem sets and course notes.  Stanford and Carnegie Mellon are fruitful for computer science.
+
+1. [**Japanese I** - MIT OCW](https://ocw.mit.edu/courses/global-studies-and-languages/21g-501-japanese-i-fall-2012/)
+1. [**Early Middle Ages, 284-1000** - OYC](https://oyc.yale.edu/history/hist-210)
+1. [**Moral Foundations of Politics** - Yale on Coursera](https://www.coursera.org/learn/moral-politics)
+1. [**Power and Politics in Today's World** - Yale DeVane Lectures](https://communications.yale.edu/2019-devane-lectures-power-and-politics-todays-world)
+1. [**Introduction to Computer Science and Programming in Python** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm)
+1. [**Introduction to Algorithms** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)</pre>
+</div>
+<div created="20200212225220902" modified="20200304232139226" tags="paintings play" title="grab-bag" type="text/x-markdown">
+<pre>1. Baldung, Hans
+  - 1530 *Bildnis einer vornehmen Frau*
+1. Bellini, Gentile
+  - 1496 *Processione in piazza San Marco*
+1. Bellini, Gentile and Giovanni
+  - 1504 *Predica di san Marco ad Alessandria d'Egitto*
+1. Bellini, Giovanni
+  - 1501 *Ritratto del doge Leonardo Loredan*
+1. Bruegel de Oude, Pieter
+  - 1559 *De strijd tussen Vasten en Vastenavond*
+  - 1563 *De Toren van Babel*
+1. Bosch, Jheronimus
+  - 1495 *Driekoningen-drieluik*
+  - 1495 *Het narrenschip*
+  - 1495 *Tuin der lusten*
+  - 1495 *Driekoningen-drieluik*
+  - 1500 *De verzoeking van de heilige 
+Antonius* (Museo del Prado)
+  - 1500 *De verzoeking van de heilige Antonius* (Nelson-Atkins Museum of Art)
+1. Botticelli, Sandro
+  - 1470 *Fortezza*
+  - 1482 *Pallade e il centauro*
+  - 1482 *Primavera*
+  - 1483 *La nascita di Venere*
+1. Clouet, François
+  - 1571 *Élisabeth d'Autriche*
+1. da Messina, Antonello
+  - 1478 *San Sebastiano*
+1. di Cosimo, Piero
+  - 1510 *Liberazione di Andromeda*
+1. di ser Piero da Vinci, Leonardo
+  - 1472 *Annunciazione*
+1. Eworth, Hans
+  - 1550 *Allegorical portrait of Sir John Lutrell*
+1. Fouquet, Jean
+  - 1452 Diptyque de Melun
+1. Giorgione
+  - 1504 *Giuditta con la testa di Oloferne*
+  - 1507 *Venere dormiente*
+1. Gossaert, Jan
+  - 1515 *&quot;Vermoedelijk&quot; zelfportret van Jan Gossaert*
+1. Mantegna, Andrea
+  - 1459 *Ritratto del cardinale Ludovico Trevisan*
+1. Massijs I, Quinten
+  - 1513 *Portret van een groteske oude vrouw*
+  - 1514 *De goudweger en zijn vrouw*
+1. Memling, Hans
+  - 1475 *Portret van Maria Portinari*
+1. Mostaert, Jan Jansz.
+  - 1525 *Portret van een Afrikaanse man*
+1. Parmigianino
+  - 1535 *Antea*
+  - 1535 *Ritratto di Pier Maria Rossi di San Secondo*
+1. Patinir, Joachim
+  - 1520 *De oversteek naar de onderwereld*
+1. Perugino, Pietro
+  - 1501 *Sposalizio della Vergine*
+  - 1503 *Lotta tra Amore e Castità*
+1. Pontormo
+  - 1529 *Alabardiere*
+1. Pourbus de Oudere, Frans
+  - 1564 *Portret van een man*
+  - 1581 *Portret van een jonge vrouw*
+1. Pourbus le Jeune, Frans
+  - 1610 *Marie de Médicis*  
+  - 1615 *Portrait de Louis XIII*
+  - 1617 *Portrait d'homme*
+  - 1619 *Portrait de Giovanni Battista Marino*
+  1. Sanzio, Raffaello
+  - 1503 *Tre Grazie*
+  - 1504 *Sposalizio della Vergine*
+  - 1505 *San Giorgio e il drago*
+  - 1505 *San Giorgio e il drago (di Parigi)*
+  - 1505 *San Michele e il drago*
+  - 1506 *Autoritratto*
+  - 1509 *Scuola di Atene*
+  - 1514 *Ritratto di Baldassarre Castiglione*
+  - 1518 *San Michele sconfigge Satana*
+  - 1518 *Santa Margherita e il drago*
+1. Tiziano
+  - 1515 *Ritratto di giovane in pelliccia*
+  - 1538 *Venere di Urbino*
+1. Uccello, Paolo
+  - 1470 *Caccia notturna*
+1. van Dashorst, Anthonis Mor
+  - 1554 *Portret van Maria I van Engeland*
+  - 1560 *Portret van Sir Thomas Gresham*
+1. van der Weyden, Rogier
+  - 1432 *Portret van een vrouw*
+  - 1434 *Portret van Giovanni Arnolfini en zijn vrouw*
+1. van Eyck, Jan
+  - 1433 *Portret van een man met rode tulband*
+  - 1434 *Annunciatie*
+1. Veronese, Paolo
+  - 1563 *Nozze di Cana*
+  - 1565 *La famiglia di Dario ai piedi di Alessandro*
+  - 1573 *Convito in casa di Levi*
+  - 1576 *Perseo liberando Andromeda*</pre>
+</div>
+<div created="20200212231530968" modified="20200305165646761" tags="" title="index" type="text/x-markdown">
+<pre>**Amazon Web Services**
+
+- [Identity and Access Management](#aws-iam)
+- [Simple Storage Service](#aws-s3)
+- [Elasticsearch Service](#aws-es)
+
+**GNU/Linux**
+
+- [General](#linux-general) - *May apply to Unix*
+- [Red Hat Enterprise Linux 8](#linux-rhel8) - *May apply to other versions*
+
+**Certification** - *Unedited after passing*
+
+- [RHCSA for RHEL8](#cert-rhcsa)
+- [AWS SysOps Admin - Assoc](#cert-sysops-a)
+- [CCNA ICND2 2019](#cert-ccna)
+
+---
+
+**Music** - *Includes external links to discogs.com &quot;master&quot; entry when possible*
+
+- [Beep Boop](#beep-boop) - *Includes electronic/hip-hop/rap/etc.*
+- [Chill Bruh](#chill-bruh) - *Relaxing, droning and minimal*
+- [Jazzy](#jazzy)
+- [Rock On](#rock-on) - *Includes country/folk/soul/funk/etc.*
+- [Blue Earth](#blue-earth)
+
+**Paintings** - *Subjective aesthetic judgements or for historical context*
+
+- [Grab Bag](#grab-bag)
+
+**Films**
+
+**Books**
+
+- [Educational/Technical](#textbooks)
+- Non-fiction
+- Fiction
+
+**Education** - *Free and publicly available*
+
+- [University Courses](#courses)</pre>
+</div>
+<div created="20200213010835169" modified="20200228024830011" tags="play music" title="jazzy" type="text/x-markdown">
+<pre>Recent Additions
+
+1. [**john coltrane quartet** - crescent](https://www.discogs.com/John-Coltrane-Quartet-Crescent/master/37368)
+1. [**john coltrane** - meditations](https://www.discogs.com/John-Coltrane-Meditations/master/75680)
+1. [**john coltrane** - my favorite things](https://www.discogs.com/John-Coltrane-My-Favorite-Things/master/32265)
+1. [**john coltrane with red garland** - soultrane](https://www.discogs.com/John-Coltrane-With-Red-Garland-Soultrane/master/37307)
+1. [**john coltrane &amp; don cherry** - the avant-garde](https://www.discogs.com/John-Coltrane-Don-Cherry-The-Avant-Garde/master/39901)
+1. [**ornette coleman** - something else!!!](https://www.discogs.com/Ornette-Coleman-Something-Else/master/61707)
+1. [**ornette coleman** - the shape of jazz to come](https://www.discogs.com/Ornette-Coleman-The-Shape-Of-Jazz-To-Come/master/47813)
+1. [**ornette coleman** - tomorrow is the question!](https://www.discogs.com/Ornette-Coleman-Tomorrow-Is-The-Question/master/61722)
+
+---
+Sorted
+
+1. [**charles mingus** - blues &amp; roots](https://www.discogs.com/Charlie-Mingus-Blues-Roots/master/176882)
+1. [**charles mingus** - mingus plays piano](https://www.discogs.com/Mingus-Mingus-Plays-Piano-Spontaneous-Compositions-And-Improvisations/master/176924)
+1. [**charlie parker** - swedish schnapps](https://www.discogs.com/Charlie-Parker-And-His-Orchestra-Swedish-Schnapps/master/357047)
+1. [**dizzy gillespie/sonny stitt/sonny rollins** - sonny side up](https://www.discogs.com/Dizzy-Gillespie-Sonny-Stitt-Sonny-Rollins-Sonny-Side-Up/master/259350)
+1. [**herbie hancock** - head hunters](https://www.discogs.com/Herbie-Hancock-Head-Hunters/master/19493)
+1. [**herbie hancock** - man-child](https://www.discogs.com/Herbie-Hancock-Man-Child/master/47832)
+1. [**john coltrane** - a love supreme](https://www.discogs.com/John-Coltrane-A-Love-Supreme/master/32287)
+1. [**john coltrane** - blue train](https://www.discogs.com/John-Coltrane-Blue-Train/master/32208)
+1. [**john coltrane** - coltrane plays the blues](https://www.discogs.com/John-Coltrane-Coltrane-Plays-The-Blues/master/75660)
+1. [**john coltrane** - giant steps](https://www.discogs.com/John-Coltrane-Giant-Steps/master/32236)
+1. [**john coltrane** - live in japan](https://www.discogs.com/John-Coltrane-Live-In-Japan/master/75956)
+1. [**john zorn - robert rodriguez** - aguares: book of angels volume 23](https://www.discogs.com/John-Zorn-Roberto-Rodriguez-Aguares-Book-Of-Angels-Volume-23/release/6161308)
+1. [**masada** - live in sevilla 2000](https://www.discogs.com/Masada-Live-In-Sevilla-2000/release/781093)
+1. [**max roach** - drums unlimited](https://www.discogs.com/Max-Roach-Drums-Unlimited/master/259324)
+1. [**mccoy tyner** - inception](https://www.discogs.com/McCoy-Tyner-Trio-Inception/master/177612)
+1. [**mccoy tyner** - passion dance](https://www.discogs.com/McCoy-Tyner-Passion-Dance/master/216461)
+1. [**miles davis** - 'round about midnight](https://www.discogs.com/Miles-Davis-Round-About-Midnight/master/9130)
+1. [**ornette coleman quartet** - ornette!](https://www.discogs.com/The-Ornette-Coleman-Quartet-Ornette/master/183269)
+1. [**pharoah sanders** - pharoah](https://www.discogs.com/Pharoah-Sanders-Pharoah/master/455161)
+1. [**sun ra** - the futuristic sounds of sun ra](https://www.discogs.com/Sun-Ra-The-Futuristic-Sounds-Of-Sun-Ra/master/84411)</pre>
+</div>
+<div created="20200213010945998" modified="20200305165227153" tags="work linux" title="linux-general" type="text/x-markdown">
+<pre>Edit implies create if file does not exist
+
+1. **Disable terminal bell/beep**
+  - Edit `/etc/inputrc` with `set bell-style none`
+  - Vim sound unaffected
+1. **Disable Vim bell/beep**
+  - Edit `~/.vimrc` with `set visualbell`
+  - `:set visualbell` in Vim for temporary disable
+1. **Yank to specific register in Vim**
+  - `&quot;dy` in visual mode to yank to register `d`, `&quot;&quot;` for default register
+  - `:reg d` to view contents of register `d`
+  - `Ctrl-r d`  in insert/command mode to access register `d`
+1. **Enable Kernel Page-Table Isolation**
+  - Edit `/etc/default/grub` and locate `GRUB_CMDLINE_LINUX`
+  - Add `&quot;pti=on&quot;` option and rebuild
+  - KPTI to address Meltdown; may result in significant performance penalties
+1. **Enable SLUB/SLAB allocator poisoning**
+  - Edit `/etc/default/grub` and locate `GRUB_CMDLINE_LINUX`
+  - Add `&quot;slub_debug=P&quot;` and rebuild
+  - Writes arbitrary value to freed objects
+1. **Enable page allocator poisoning**
+  - Edit `/etc/default/grub` and locate `GRUB_CMDLINE_LINUX`
+  - Add `&quot;page_poison=1&quot;` and rebuild
+  - For freed pages
+1. **Prepend ISO8601 UTC timestamp to command output**
+  - `foo | TZ=UTC gawk '{ print strftime(&quot;%FT%TZ&quot;), $0 }'`
+  - May be vulnerable to buffering</pre>
+</div>
+<div created="20200213011054504" modified="20200305165244759" tags="[[red hat]] work linux" title="linux-rhel8" type="text/x-markdown">
 <pre>Edit implies create if file does not exist
 
 1. **Switch to cgroups v2 from v1**
@@ -12302,6 +12318,9 @@ Configure firewall settings using firewall-cmd/firewalld
   - Rebuild `grub.conf` with `grub2-mkconfig` and reboot
 1. **Mount filesystem without default emergency mode after timeout on boot**
   - Set `x-systemd.device-timeout=0` as option in `/etc/fstab`</pre>
+</div>
+<div caption="discogs blank" created="20200213021034600" modified="20200216190725475" tags="$:/tags/TextEditor/Snippet" title="New Tiddler" type="text/x-markdown">
+<pre>1. [****]()</pre>
 </div>
 <div created="20200213010853669" modified="20200304193925838" tags="play music" title="rock-on" type="text/x-markdown">
 <pre>Recent Additions
@@ -12349,14 +12368,6 @@ Sorted
 1. [**white magic** - dat rosa mel apibus](https://www.discogs.com/White-Magic-Dat-Rosa-Mel-Apibus/master/86915)
 1. [**white magic** - i'm hiding my nightingale](https://www.discogs.com/White-Magic-Im-Hiding-My-Nightingale/master/874995)
 1. [**white magic** - through the sun door](https://www.discogs.com/White-Magic-Through-The-Sun-Door/master/145612)</pre>
-</div>
-<div created="20200215210323289" modified="20200217155528328" tags="work s3 aws" title="s3" type="text/x-markdown">
-<pre>1. **Requirement for bucket replication by tag**
-  - Object tag must be set on initial upload
-  - Object won't be replicated if already in bucket when new tag is set/edited
-1. **S3 defaults to MIME type application/octet-stream**
-  - May lead to incorrect MIME type (confirmed for certain html files)
-  - Consult CLI command reference (e.g. `put-object`) or appropriate SDK reference to set on upload</pre>
 </div>
 <div created="20200216172914576" modified="20200229172539304" tags="textbooks books play work" title="textbooks" type="text/x-markdown">
 <pre>1.  **Computer Systems: A Programmer's Perspective, 3rd Edition** *Bryant + O'Hallaron / 978-0134092669*
