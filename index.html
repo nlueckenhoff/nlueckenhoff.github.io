@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Notes Repository — Organized by topic </title>
+<title>Notes Repository — Organized by topic Project details for this wiki on GitHub</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -9924,7 +9924,7 @@ Error message and password prompt
     &quot;tiddlers&quot;: {
         &quot;Untitled&quot;: {
             &quot;title&quot;: &quot;Untitled&quot;,
-            &quot;text&quot;: &quot;acid mothers temple &amp; the melting paraiso u.f.o&quot;,
+            &quot;text&quot;: &quot;Der Hl. Georg kämpft mit dem Drachen&quot;,
             &quot;type&quot;: &quot;text/plain&quot;
         }
     }
@@ -10254,8 +10254,8 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
     }
 }</pre>
 </div>
-<div created="20200212223834077" modified="20200213202909401" title="$:/SiteSubtitle">
-<pre>Organized by topic &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-sa/4.0/80x15.png&quot; /&gt;</pre>
+<div created="20200212223834077" modified="20200305182634482" title="$:/SiteSubtitle">
+<pre>Organized by topic &lt;a rel=&quot;license&quot; href=&quot;https://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-sa/4.0/80x15.png&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;https://github.com/nlueckenhoff/nlueckenhoff.github.io&quot;&gt;Project details for this wiki on GitHub&lt;/a&gt;</pre>
 </div>
 <div created="20200212223826325" modified="20200212223829006" title="$:/SiteTitle">
 <pre>Notes Repository</pre>
@@ -10386,8 +10386,8 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200212230248358" modified="20200216183659583" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
-<div created="20200212224226817" modified="20200213205856379" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Advanced</pre>
+<div created="20200212224226817" modified="20200305182011083" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
 <div created="20200213171546795" modified="20200213202957019" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
@@ -10398,7 +10398,7 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213171552619" modified="20200213202328593" title="$:/state/tab-1342078386">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Plugins</pre>
 </div>
-<div created="20200212224313825" modified="20200305035514631" title="$:/state/tab-1749438307">
+<div created="20200212224313825" modified="20200305234721660" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
 <div created="20200212224509100" modified="20200305035517673" title="$:/state/tab-2065006209">
@@ -11404,8 +11404,10 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20200212230305895" modified="20200213191026117" title="$:/view">
 <pre>pop</pre>
 </div>
-<div created="20200305164706217" modified="20200305165023334" tags="work es aws" title="aws-es" type="text/x-markdown">
-<pre>1. Data encryption must be enabled during domain creation</pre>
+<div created="20200305164706217" modified="20200305172527849" tags="work es aws" title="aws-es" type="text/x-markdown">
+<pre>1. Data encryption must be enabled during domain creation
+  - T2, M3 instances do not support encryption at rest
+1. Each domain resides within dedicated VPC</pre>
 </div>
 <div created="20200215205123244" modified="20200305165047232" tags="iam work aws" title="aws-iam" type="text/x-markdown">
 <pre>1. **Permissions necessary for object tagging on upload to S3**
@@ -11413,13 +11415,15 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
   - S3 API reference for PutObjectTagging currently unclear stating, &quot;Sets the supplied tag-set to an object that already exists in a bucket&quot;
   - CLI Command Reference for `aws s3api put-object` includes `--tagging` option and mentions WRITE access requirement but not TAGGING access requirement</pre>
 </div>
-<div created="20200215210323289" modified="20200305165109850" tags="s3 work aws" title="aws-s3" type="text/x-markdown">
+<div created="20200215210323289" modified="20200305234714618" tags="s3 work aws" title="aws-s3" type="text/x-markdown">
 <pre>1. **Requirement for bucket replication by tag**
   - Object tag must be set on initial upload
   - Object won't be replicated if already in bucket when new tag is set/edited
 1. **S3 defaults to MIME type application/octet-stream**
   - May lead to incorrect MIME type (confirmed for certain html files)
-  - Consult CLI command reference (e.g. `put-object`) or appropriate SDK reference to set on upload</pre>
+  - Consult CLI command reference (e.g. `put-object`) or appropriate SDK reference to set on upload
+1. **Server access logging destination bucket must be in same region as source**
+1. **Access points require virtual-host-style URL addressing**</pre>
 </div>
 <div created="20200213010206820" modified="20200304231657260" tags="music play" title="beep-boop" type="text/x-markdown">
 <pre>Recent Additions
@@ -12101,9 +12105,11 @@ Sorted
 1. [**Introduction to Computer Science and Programming in Python** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm)
 1. [**Introduction to Algorithms** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)</pre>
 </div>
-<div created="20200212225220902" modified="20200304232139226" tags="paintings play" title="grab-bag" type="text/x-markdown">
+<div created="20200212225220902" modified="20200305181442186" tags="paintings play" title="grab-bag" type="text/x-markdown">
 <pre>1. Baldung, Hans
   - 1530 *Bildnis einer vornehmen Frau*
+1. Beck, Leonhard
+  - 1515 *Der Hl. Georg kämpft mit dem Drachen*
 1. Bellini, Gentile
   - 1496 *Processione in piazza San Marco*
 1. Bellini, Gentile and Giovanni
@@ -12170,7 +12176,7 @@ Antonius* (Museo del Prado)
   - 1615 *Portrait de Louis XIII*
   - 1617 *Portrait d'homme*
   - 1619 *Portrait de Giovanni Battista Marino*
-  1. Sanzio, Raffaello
+1. Sanzio, Raffaello
   - 1503 *Tre Grazie*
   - 1504 *Sposalizio della Vergine*
   - 1505 *San Giorgio e il drago*
