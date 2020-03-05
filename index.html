@@ -10391,10 +10391,10 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213171552619" modified="20200213202328593" title="$:/state/tab-1342078386">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Plugins</pre>
 </div>
-<div created="20200212224313825" modified="20200216194528634" title="$:/state/tab-1749438307">
+<div created="20200212224313825" modified="20200305035514631" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20200212224509100" modified="20200304211334102" title="$:/state/tab-2065006209">
+<div created="20200212224509100" modified="20200305035517673" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20200213192203102" modified="20200215165923063" title="$:/state/tab/moresidebar-1850697562">
@@ -11361,8 +11361,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20200213030502555" modified="20200215211127532" title="$:/themes/tiddlywiki/vanilla/metrics/bodyfontsize">
 <pre>15px</pre>
 </div>
-<div created="20200213030346122" modified="20200216183736996" title="$:/themes/tiddlywiki/vanilla/metrics/bodylineheight">
-<pre>19px</pre>
+<div created="20200213030346122" modified="20200305035458552" title="$:/themes/tiddlywiki/vanilla/metrics/bodylineheight">
+<pre>21px</pre>
 </div>
 <div created="20200213030338826" modified="20200215211058181" title="$:/themes/tiddlywiki/vanilla/metrics/lineheight">
 <pre>16px</pre>
@@ -11947,7 +11947,7 @@ Sorted
 1. [**Introduction to Computer Science and Programming in Python** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm)
 1. [**Introduction to Algorithms** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)</pre>
 </div>
-<div created="20200213010945998" modified="20200218195427377" tags="work linux" title="general" type="text/x-markdown">
+<div created="20200213010945998" modified="20200305035350800" tags="work linux" title="general" type="text/x-markdown">
 <pre>Edit implies create if file does not exist
 
 1. **Disable terminal bell/beep**
@@ -11971,7 +11971,10 @@ Sorted
 1. **Enable page allocator poisoning**
   - Edit `/etc/default/grub` and locate `GRUB_CMDLINE_LINUX`
   - Add `&quot;page_poison=1&quot;` and rebuild
-  - For freed pages</pre>
+  - For freed pages
+1. **Prepend ISO8601 UTC timestamp to command output**
+  - `foo | TZ=UTC gawk '{ print strftime(&quot;%FT%TZ&quot;), $0 }'`
+  - May be vulnerable to buffering</pre>
 </div>
 <div created="20200212225220902" modified="20200304232139226" tags="paintings play" title="grab-bag" type="text/x-markdown">
 <pre>1. Baldung, Hans
