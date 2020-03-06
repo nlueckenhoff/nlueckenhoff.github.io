@@ -9924,7 +9924,7 @@ Error message and password prompt
     &quot;tiddlers&quot;: {
         &quot;Untitled&quot;: {
             &quot;title&quot;: &quot;Untitled&quot;,
-            &quot;text&quot;: &quot;Der Hl. Georg kämpft mit dem Drachen&quot;,
+            &quot;text&quot;: &quot;about:preferences&quot;,
             &quot;type&quot;: &quot;text/plain&quot;
         }
     }
@@ -11415,7 +11415,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
   - S3 API reference for PutObjectTagging currently unclear stating, &quot;Sets the supplied tag-set to an object that already exists in a bucket&quot;
   - CLI Command Reference for `aws s3api put-object` includes `--tagging` option and mentions WRITE access requirement but not TAGGING access requirement</pre>
 </div>
-<div created="20200215210323289" modified="20200305234714618" tags="s3 work aws" title="aws-s3" type="text/x-markdown">
+<div created="20200215210323289" modified="20200306044410530" tags="s3 work aws" title="aws-s3" type="text/x-markdown">
 <pre>1. **Requirement for bucket replication by tag**
   - Object tag must be set on initial upload
   - Object won't be replicated if already in bucket when new tag is set/edited
@@ -11423,7 +11423,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
   - May lead to incorrect MIME type (confirmed for certain html files)
   - Consult CLI command reference (e.g. `put-object`) or appropriate SDK reference to set on upload
 1. **Server access logging destination bucket must be in same region as source**
-1. **Access points require virtual-host-style URL addressing**</pre>
+1. **Access points require virtual-host-style URL addressing**
+  - CLIv2 required to resolve access point ARNs</pre>
 </div>
 <div created="20200213010206820" modified="20200304231657260" tags="music play" title="beep-boop" type="text/x-markdown">
 <pre>Recent Additions
@@ -12328,7 +12329,7 @@ Sorted
 <div caption="discogs blank" created="20200213021034600" modified="20200216190725475" tags="$:/tags/TextEditor/Snippet" title="New Tiddler" type="text/x-markdown">
 <pre>1. [****]()</pre>
 </div>
-<div created="20200213010853669" modified="20200304193925838" tags="play music" title="rock-on" type="text/x-markdown">
+<div created="20200213010853669" modified="20200306044446284" tags="play music" title="rock-on" type="text/x-markdown">
 <pre>Recent Additions
 
 1. [**neil young** - on the beach](https://www.discogs.com/Neil-Young-On-The-Beach/master/38630)
@@ -12345,6 +12346,8 @@ Sorted
 1. [**acid mothers temple &amp; the melting paraiso u.f.o.** - la nòvia](https://www.discogs.com/Acid-Mothers-Temple-The-Melting-Paraiso-UFO-La-N%C3%B2via/master/56027)
 1. [**acid mothers temple &amp; the melting paraiso u.f.o.** - in c](https://www.discogs.com/Acid-Mothers-Temple-The-Melting-Paraiso-UFO-In-C/release/1051453)
 1. [**acid mothers temple &amp; the melting paraiso u.f.o.** - pataphisical freak out mu!!](https://www.discogs.com/Acid-Mothers-Temple-The-Melting-Paraiso-UFO-Pataphisical-Freak-Out-Mu/release/417117)
+1. [**shirley collins** - false true lovers](https://www.discogs.com/Shirley-Collins-False-True-Lovers/release/1622632)
+1. [**shirley collins** - the power of the true love knot](https://www.discogs.com/Shirley-Collins-The-Power-Of-The-True-Love-Knot/release/2253620)
 
 ---
 Sorted
