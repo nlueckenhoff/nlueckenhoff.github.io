@@ -17,11 +17,8 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-2
-
-    - name: Download, verify, and install AWS CLIv2
-      run: bash ./bash-scripts/dl-verify-install-awscliv2.sh
     
-    - name: Run AWS CLIv2 command to put with object tag and correct content type
+    - name: Run AWS CLI command to put with object tag and correct content type
       env:
         aws-s3-tag: ${{ secrets.AWS_S3_TAG }}
         aws-s3-bucket: ${{ secrets.AWS_S3_BUCKET }}
