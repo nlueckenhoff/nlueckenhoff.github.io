@@ -9924,7 +9924,7 @@ Error message and password prompt
     &quot;tiddlers&quot;: {
         &quot;Untitled&quot;: {
             &quot;title&quot;: &quot;Untitled&quot;,
-            &quot;text&quot;: &quot;El caballero de la mano en el pecho&quot;,
+            &quot;text&quot;: &quot;niko flying one of the pelicans would be more fun&quot;,
             &quot;type&quot;: &quot;text/plain&quot;
         }
     }
@@ -11409,11 +11409,13 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
   - T2, M3 instances do not support encryption at rest
 1. Each domain resides within dedicated VPC</pre>
 </div>
-<div created="20200215205123244" modified="20200305165047232" tags="iam work aws" title="aws-iam" type="text/x-markdown">
+<div created="20200215205123244" modified="20200312181430025" tags="iam work aws" title="aws-iam" type="text/x-markdown">
 <pre>1. **Permissions necessary for object tagging on upload to S3**
   - `s3:PutObject` and `s3:PutObjectTagging`
   - S3 API reference for PutObjectTagging currently unclear stating, &quot;Sets the supplied tag-set to an object that already exists in a bucket&quot;
-  - CLI Command Reference for `aws s3api put-object` includes `--tagging` option and mentions WRITE access requirement but not TAGGING access requirement</pre>
+  - CLI Command Reference for `aws s3api put-object` includes `--tagging` option and mentions WRITE access requirement but not TAGGING access requirement
+1. **Policies support conditions on request tags**
+  - Multiple keys/values also possible</pre>
 </div>
 <div created="20200215210323289" modified="20200307001340581" tags="s3 work aws" title="aws-s3" type="text/x-markdown">
 <pre>1. **Requirement for bucket replication by tag**
@@ -11425,7 +11427,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 1. **Server access logging destination bucket must be in same region as source**
 1. **Access points require virtual-host-style URL addressing**</pre>
 </div>
-<div created="20200213010206820" modified="20200308004050390" tags="music play" title="beep-boop" type="text/x-markdown">
+<div created="20200213010206820" modified="20200313010259610" tags="music play" title="beep-boop" type="text/x-markdown">
 <pre>Recent Additions
 
 1. [**kraftwerk** - trans europa express](https://www.discogs.com/Kraftwerk-Trans-Europe-Express/master/2877)
@@ -11433,6 +11435,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 1. [**kraftwerk** - computerwelt](https://www.discogs.com/Kraftwerk-Computerwelt/master/3112)
 1. [**glass candy** - b/e/a/t/b/o/x](https://www.discogs.com/Glass-Candy-BEATBOX-/master/66067)
 1. [**glass candy** - deep gems](https://www.discogs.com/Glass-Candy-Deep-Gems/master/248863)
+1. [**yukihiro takahashi = 高橋幸宏** ‎- neuromantic = ニウロマンティック](https://www.discogs.com/Yukihiro-Takahashi-%E9%AB%98%E6%A9%8B%E5%B9%B8%E5%AE%8F-Neuromantic-%E3%83%8B%E3%82%A6%E3%83%AD%E3%83%9E%E3%83%B3%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF/master/121619)
+1. [**ymo** - bgm](https://www.discogs.com/YMO-BGM/master/45062)
 
 ---
 Sorted
@@ -11530,7 +11534,7 @@ Sorted
 1. [**µ-ziq** - bluff limbo](https://www.discogs.com/%C2%B5-Ziq-Bluff-Limbo/master/21168)
 1. [**µ-ziq** - tango n' vectif](https://www.discogs.com/%C2%B5-Ziq-Tango-N-Vectif/master/21332)</pre>
 </div>
-<div created="20200213010542683" modified="20200309204559845" tags="play music" title="blue-earth" type="text/x-markdown">
+<div created="20200213010542683" modified="20200313010250389" tags="play music" title="blue-earth" type="text/x-markdown">
 <pre>Recent Additions
 
 1. [**henry flynt** - purified by the fire](https://www.discogs.com/Henry-Flynt-Purified-By-The-Fire/release/844367)
@@ -11544,7 +11548,6 @@ Sorted
 
 1. [**casiopea** - casiopea](https://www.discogs.com/Casiopea-Casiopea/master/851695)
 1. [**kengo kurozumi** ‎- ktill = スティル](https://www.discogs.com/Kengo-Kurozumi-Still-%E3%82%B9%E3%83%86%E3%82%A3%E3%83%AB/master/1106781)
-1. [**kim jung mi** - now](https://www.discogs.com/Kim-Jung-Mi-Now/master/427050)
 1. [**king tubby** - presents the roots of dub](https://www.discogs.com/King-Tubby-Presents-The-Roots-Of-Dub/master/163206)
 1. [**lee perry** - skanking with the upsetter - rare dubs 1971-1974](https://www.discogs.com/Lee-Perry-Skanking-With-The-Upsetter-Rare-Dubs-1971-1974/master/535921)
 1. [**masayoshi takanaka** - an insatiable high](https://www.discogs.com/%E9%AB%98%E4%B8%AD%E6%AD%A3%E7%BE%A9-An-Insatiable-High/master/586368)
@@ -11553,8 +11556,6 @@ Sorted
 1. [**takako mamiya** - love trip](https://www.discogs.com/Takako-Mamiya-Love-Trip/master/774556)
 1. [**various** - night recordings from bali](https://www.discogs.com/Various-Night-Recordings-From-Bali/release/920157)
 1. [**various** - streets of lhasa](https://www.discogs.com/Various-Streets-Of-Lhasa/release/896404)
-1. [**ymo** - bgm](https://www.discogs.com/YMO-BGM/master/45062)
-1. [**yukihiro takahashi = 高橋幸宏** ‎- neuromantic = ニウロマンティック](https://www.discogs.com/Yukihiro-Takahashi-%E9%AB%98%E6%A9%8B%E5%B9%B8%E5%AE%8F-Neuromantic-%E3%83%8B%E3%82%A6%E3%83%AD%E3%83%9E%E3%83%B3%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF/master/121619)
 1. [**佐井好子** - 密航](https://www.discogs.com/Yoshiko-Sai-%E5%AF%86%E8%88%AA/master/258525)
 1. [**佐井好子** - 萬花鏡 ](https://www.discogs.com/%E4%BD%90%E4%BA%95%E5%A5%BD%E5%AD%90-%E8%90%AC%E8%8A%B1%E9%8F%A1/master/258529)
 1. [**大瀧詠一** - 大瀧詠一／ファースト･アルバム](https://www.discogs.com/%E5%A4%A7%E7%80%A7%E8%A9%A0%E4%B8%80-%E5%A4%A7%E7%80%A7%E8%A9%A0%E4%B8%80%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0/master/795517)
@@ -12114,7 +12115,7 @@ Sorted
 1. [**Introduction to Computer Science and Programming in Python** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm)
 1. [**Introduction to Algorithms** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)</pre>
 </div>
-<div created="20200212225220902" modified="20200311214007640" tags="paintings play" title="grab-bag" type="text/x-markdown">
+<div created="20200212225220902" modified="20200312171229233" tags="paintings play" title="grab-bag" type="text/x-markdown">
 <pre>1. Baldung, Hans
   - 1530 *Bildnis einer vornehmen Frau*
 1. Beck, Leonhard
@@ -12157,6 +12158,7 @@ Antonius* (Museo del Prado)
   - 1472 *Annunciazione*
 1. El Greco (Δομήνικος Θεοτοκόπουλος)
   - 1580 *El caballero de la mano en el pecho*
+  - 1586 *El entierro del Conde de Orgaz*
 1. Eworth, Hans
   - 1550 *Allegorical portrait of Sir John Lutrell*
 1. Fouquet, Jean
@@ -12228,7 +12230,7 @@ Antonius* (Museo del Prado)
   - 1573 *Convito in casa di Levi*
   - 1576 *Perseo liberando Andromeda*</pre>
 </div>
-<div created="20200212231530968" modified="20200307232718732" tags="" title="index" type="text/x-markdown">
+<div created="20200212231530968" modified="20200313004924977" tags="" title="index" type="text/x-markdown">
 <pre>**Amazon Web Services**
 
 - [Identity and Access Management](#aws-iam)
@@ -12254,7 +12256,7 @@ Antonius* (Museo del Prado)
 - [Chill Bruh](#chill-bruh) - *Relaxing, droning and minimal*
 - [Jazzy](#jazzy)
 - [Rock On](#rock-on) - *Includes country/folk/soul/funk/etc.*
-- [Blue Earth](#blue-earth)
+- [Blue Earth](#blue-earth) - *Catch-all (reggae, bossa nova, pop)*
 
 **Paintings** - *Subjective aesthetic judgements or for historical context*
 
@@ -12354,7 +12356,7 @@ Sorted
 <div caption="discogs blank" created="20200213021034600" modified="20200216190725475" tags="$:/tags/TextEditor/Snippet" title="New Tiddler" type="text/x-markdown">
 <pre>1. [****]()</pre>
 </div>
-<div created="20200213010853669" modified="20200311213758931" tags="play music" title="rock-on" type="text/x-markdown">
+<div created="20200213010853669" modified="20200313023522173" tags="play music" title="rock-on" type="text/x-markdown">
 <pre>Recent Additions
 
 1. [**john fahey** - death chants, break downs &amp; military waltzes](https://www.discogs.com/John-Fahey-Death-Chants-Break-Downs-Military-Waltzes/master/98915)
@@ -12366,6 +12368,12 @@ Sorted
 1. [**circle** - pori](https://www.discogs.com/Circle-Pori/master/81356)
 1. [**circle** - fraten](https://www.discogs.com/Circle-Fraten/master/469050)
 1. [**circle** - prospekt](https://www.discogs.com/Circle-Prospekt/master/81362)
+1. [**circle** - serpent](https://www.discogs.com/Circle-Serpent/release/3414062)
+1. [**kim jung mi** - now](https://www.discogs.com/Kim-Jung-Mi-Now/master/427050)
+1. [**kim doo soo** - the promised land (약속의 땅)](https://www.discogs.com/Kim-Doo-Soo-The-Promised-Land-%EC%95%BD%EC%86%8D%EC%9D%98-%EB%95%85/master/1204109)
+1. [**김두수** - 시오리길/귀촉도 ](https://www.discogs.com/%EA%B9%80%EB%91%90%EC%88%98-%EC%8B%9C%EC%98%A4%EB%A6%AC%EA%B8%B8%EA%B7%80%EC%B4%89%EB%8F%84/master/1192650)
+1. [**김두수** - 자유로운 마음/강변마을 사람들](https://www.discogs.com/%EA%B9%80%EB%91%90%EC%88%98-%EC%9E%90%EC%9C%A0%EB%A1%9C%EC%9A%B4-%EB%A7%88%EC%9D%8C%EA%B0%95%EB%B3%80%EB%A7%88%EC%9D%84-%EC%82%AC%EB%9E%8C%EB%93%A4/master/1093676)
+1. [**leonard cohen** - songs of leonard cohen](https://www.discogs.com/Leonard-Cohen-Songs-Of-Leonard-Cohen/master/3832)
 
 ---
 Sorted
