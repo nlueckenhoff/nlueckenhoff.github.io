@@ -12127,7 +12127,7 @@ Sorted
 1. [**Introduction to Computer Science and Programming in Python** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/index.htm)
 1. [**Introduction to Algorithms** - MIT OCW](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/)</pre>
 </div>
-<div created="20200212225220902" modified="20200319150931347" tags="paintings play" title="grab-bag" type="text/x-markdown">
+<div created="20200212225220902" modified="20200320180735525" tags="paintings play" title="grab-bag" type="text/x-markdown">
 <pre>1. Arcimboldo, Giuseppe
   - 1566 *Il Bibliotecario*
 1. Baldung, Hans
@@ -12245,6 +12245,8 @@ Antonius* (Museo del Prado)
 1. van Eyck, Jan
   - 1433 *Portret van een man met rode tulband*
   - 1434 *Annunciatie*
+1. van Rijn, Rembrandt Harmenszoon
+  - 1626 *Bileam en zijn ezelin*
 1. Veronese, Paolo
   - 1563 *Nozze di Cana*
   - 1565 *La famiglia di Dario ai piedi di Alessandro*
@@ -12334,7 +12336,7 @@ Sorted
 1. [**pharoah sanders** - pharoah](https://www.discogs.com/Pharoah-Sanders-Pharoah/master/455161)
 1. [**sun ra** - the futuristic sounds of sun ra](https://www.discogs.com/Sun-Ra-The-Futuristic-Sounds-Of-Sun-Ra/master/84411)</pre>
 </div>
-<div created="20200213010945998" modified="20200311151519591" tags="work linux" title="linux-general" type="text/x-markdown">
+<div created="20200213010945998" modified="20200320175451851" tags="work linux" title="linux-general" type="text/x-markdown">
 <pre>Edit implies create if file does not exist
 
 1. **Disable terminal bell/beep**
@@ -12366,7 +12368,10 @@ Sorted
   - `foo | grep -qF 'string'`
   - Useful in scripts, careful of &quot;true&quot; output (`gpg` when verifying)
 1. **Extended permissions and capability flags stored in file inode**
-  - `setcap` `setfacl`</pre>
+  - `setcap` `setfacl`
+1. **Find instances of &quot;foo&quot;, isolate 2nd field, output 1st line**
+  - `grep foo | awk '{print $2}' | sed -n 1p`
+  - Is there a &quot;cleaner&quot; way to do this?</pre>
 </div>
 <div created="20200213011054504" modified="20200305165244759" tags="[[red hat]] work linux" title="linux-rhel8" type="text/x-markdown">
 <pre>Edit implies create if file does not exist
