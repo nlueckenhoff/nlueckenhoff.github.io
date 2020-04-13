@@ -35,13 +35,13 @@ data "aws_iam_policy_document" "log-policy" {
 # render primary server bucket policy
 data "aws_iam_policy_document" "server-primary-policy" {
   statement {
-    sid = 1
-    effect = "Allow"
+    sid       = 1
+    effect    = "Allow"
     principals {
-      type = "AWS"
+      type        = "AWS"
       identifiers = [var.cf_origin_access_id]
     }
-    actions = [
+    actions   = [
       "s3:GetObject",
       ]
     resources = [
@@ -50,13 +50,13 @@ data "aws_iam_policy_document" "server-primary-policy" {
   }
 
   statement {
-    sid = 2
-    effect = "Allow"
+    sid       = 2
+    effect    = "Allow"
     principals {
-      type = "AWS"
+      type        = "AWS"
       identifiers = [var.put_user]
     }
-    actions = [
+    actions   = [
       "s3:PutObject",
       "s3:PutObjectTagging",
     ]
@@ -92,13 +92,13 @@ data "aws_iam_policy_document" "server-primary-policy" {
 # render failover server bucket policy
 data "aws_iam_policy_document" "server-failover-policy" {
   statement {
-    sid = 1
-    effect = "Allow"
+    sid       = 1
+    effect    = "Allow"
     principals {
-      type = "AWS"
+      type        = "AWS"
       identifiers = [var.cf_origin_access_id]
     }
-    actions = [
+    actions   = [
       "s3:GetObject",
       ]
     resources = [
@@ -133,13 +133,13 @@ data "aws_iam_policy_document" "server-failover-policy" {
 # render s3 access point policy for github runner
 data "aws_iam_policy_document" "s3ap-policy" {
   statement {
-    sid = 1
-    effect = "Allow"
+    sid       = 1
+    effect    = "Allow"
     principals {
-      type = "AWS"
+      type        = "AWS"
       identifiers = [var.put_user]
     }
-    actions = [
+    actions   = [
       "s3:PutObject",
       "s3:PutObjectTagging",
     ]
@@ -164,9 +164,9 @@ data "aws_iam_policy_document" "s3crr-assume-role-policy" {
 #render s3 cross-region replication policy
 data "aws_iam_policy_document" "s3crr-policy" {
   statement {
-    sid = 1
-    effect = "Allow"
-    actions = [
+    sid       = 1
+    effect    = "Allow"
+    actions   = [
       "s3:Get*",
       "s3:ListBucket",
     ]
@@ -177,9 +177,9 @@ data "aws_iam_policy_document" "s3crr-policy" {
   }
 
   statement {
-    sid = 2
-    effect = "Allow"
-    actions = [
+    sid       = 2
+    effect    = "Allow"
+    actions   = [
       "s3:ReplicateObject",
       "s3:ReplicateDelete",
       "s3:ReplicateTags",

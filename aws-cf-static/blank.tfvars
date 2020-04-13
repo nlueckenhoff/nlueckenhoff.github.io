@@ -1,32 +1,32 @@
-credentials =
+credentials                =
 
-primary_region =
+primary_region             =
 
-failover_region =
+failover_region            =
 
-runner_user =
+runner_user                =
 
-s3crr_role =
+s3crr_role                 =
 
-bare_group =
+bare_group                 =
 
-bare_membership =
+bare_membership            =
 
-primary_bucket_prefix =
+primary_bucket_prefix      =
 
-failover_bucket_prefix =
+failover_bucket_prefix     =
 
-primary_log_bucket_prefix =
+primary_log_bucket_prefix  =
 
 failover_log_bucket_prefix =
 
-noncurrent_exp =
+noncurrent_exp             =
 
-tag_set = {
+tag_set                    = {
 }
 
-s3crr_role_policy =
+s3crr_role_policy          =
 
-failover_server_origin =
+failover_server_origin     =
 
-origin_group =
+origin_group               =
