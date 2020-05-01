@@ -9928,7 +9928,7 @@ Error message and password prompt
     &quot;tiddlers&quot;: {
         &quot;Untitled&quot;: {
             &quot;title&quot;: &quot;Untitled&quot;,
-            &quot;text&quot;: &quot;Portret van Maria I van Engeland&quot;,
+            &quot;text&quot;: &quot;http://rochefort.lorangebleuegym.fr/written-by-jeff-geerling-ansible-for-devops-server-and-configuration-management-for-humans.pdf&quot;,
             &quot;type&quot;: &quot;text/plain&quot;
         }
     }
@@ -11431,7 +11431,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 1. **Server access logging destination bucket must be in same region as source**
 1. **Access points require virtual-host-style URL addressing**</pre>
 </div>
-<div created="20200213010206820" modified="20200430181916333" tags="music play" title="beep-boop" type="text/x-markdown">
+<div created="20200213010206820" modified="20200501190734819" tags="music play" title="beep-boop" type="text/x-markdown">
 <pre>Recent Additions
 
 1. [**boxcutter** - the dissolve](https://www.discogs.com/Boxcutter-The-Dissolve/master/338834)
@@ -11440,6 +11440,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 1. [**ekoplekz** - unfidelity](https://www.discogs.com/Ekoplekz-Unfidelity/master/664851)
 1. [**ekoplekz** - four track mind](https://www.discogs.com/Ekoplekz-Four-Track-Mind/master/1061395)
 1. [**ekoplekz** - reflekzionz](https://www.discogs.com/Ekoplekz-Reflekzionz/master/838714)
+1. [**frost jockey** - burgundy trax vol 2](https://www.discogs.com/Frost-Jockey-Burgundy-Trax-Vol-2/release/21670)
+1. [**ital tek** - cyclical](https://www.discogs.com/iTAL-tEK-Cyclical/master/25602)
 
 ---
 Sorted
@@ -12269,7 +12271,7 @@ Sorted
 1. *Nabokov* **Lolita**
 </pre>
 </div>
-<div created="20200212225220902" modified="20200430153505788" tags="paintings play" title="grab-bag" type="text/x-markdown">
+<div created="20200212225220902" modified="20200501155512726" tags="paintings play" title="grab-bag" type="text/x-markdown">
 <pre>1. Arcimboldo, Giuseppe
   - 1566 *Il Bibliotecario*
 1. Baldung, Hans
@@ -12315,6 +12317,8 @@ Antonius* (Museo del Prado)
   - 1620 *David tenant la tête de Goliath*
 1. de Hooch, Pieter
   - 1656 *Vrouw met spinnewiel op een binnenplaats*
+1. de La Tour, Georges
+  - 1640 *La Madeleine pénitente (aux deux flammes)*
 1. di Cosimo, Piero
   - 1510 *Liberazione di Andromeda*
 1. di ser Piero da Vinci, Leonardo
@@ -12551,14 +12555,18 @@ Sorted
   - `grep foo | awk '{print $2}' | sed -n 1p`
   - Is there a &quot;cleaner&quot; way to do this?</pre>
 </div>
-<div created="20200213011054504" modified="20200305165244759" tags="[[red hat]] work linux" title="linux-rhel8" type="text/x-markdown">
+<div created="20200213011054504" modified="20200501161513069" tags="[[red hat]] work linux" title="linux-rhel8" type="text/x-markdown">
 <pre>Edit implies create if file does not exist
 
 1. **Switch to cgroups v2 from v1**
   - Edit `/etc/default/grub`, locate `GRUB_CMDLINE_LINUX`, and add `system.unified_cgroup_hierarchy=1`
   - Rebuild `grub.conf` with `grub2-mkconfig` and reboot
 1. **Mount filesystem without default emergency mode after timeout on boot**
-  - Set `x-systemd.device-timeout=0` as option in `/etc/fstab`</pre>
+  - Set `x-systemd.device-timeout=0` as option in `/etc/fstab`
+1. **Allow `sysadm_u` users to connect via SSH**
+  - `setsebool -P ssh_sysadm_login on`
+1. **Get default SELinux security context for path *foo* from file contexts config**
+  - `matchpathcon foo`</pre>
 </div>
 <div caption="discogs blank" created="20200213021034600" modified="20200216190725475" tags="$:/tags/TextEditor/Snippet" title="New Tiddler" type="text/x-markdown">
 <pre>1. [****]()</pre>
