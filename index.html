@@ -575,6 +575,8 @@ Error message and password prompt
 
 <li>aws-s3</li>
 
+<li>Bank-Lending-in-the-Knowledge-Economy</li>
+
 <li>beep-boop</li>
 
 <li>blue-earth</li>
@@ -10415,7 +10417,7 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213192203102" modified="20200305165128408" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200212223929553" modified="20200612004709944" title="$:/state/tab/sidebar--595412856">
+<div created="20200212223929553" modified="20200612161921498" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200213160930997" modified="20200213202246371" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -10424,7 +10426,7 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20200213014518251" modified="20200213014522021" title="$:/state/tag-manager/paintings">
 <pre>closed</pre>
 </div>
-<div list="index" title="$:/StoryList">
+<div created="20200612191449874" list="index" modified="20200612192436268" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11244,7 +11246,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20200213171707179" modified="20200213171710409" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre></pre>
 </div>
-<div created="20200213005026667" modified="20200420185332590" title="$:/temp/search">
+<div created="20200213005026667" modified="20200612162009767" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20200213194759976" modified="20200213194759976" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
@@ -11434,6 +11436,89 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
   - Consult CLI command reference (e.g. `put-object`) or appropriate SDK reference to set on upload
 1. **Server access logging destination bucket must be in same region as source**
 1. **Access points require virtual-host-style URL addressing**</pre>
+</div>
+<div created="20200612191604325" modified="20200612192205001" tags="notes play" title="Bank-Lending-in-the-Knowledge-Economy" type="text/x-markdown">
+<pre>**Bank Lending in the Knowledge Economy** *Giovanni Dell'Ariccia, Dalida Kadyrzhanova, Camelia Minoiu, Lev Ranovski*
+
+**Initial interest**
+
+    - Federal Reserve discussion series
+    - tech financing
+
+**Notes**
+
+Abstract
+
+    - We study the composition of bank loan portfolios during the transition of the real sector to a knowledge economy where firms increasingly use intangible capital. Exploiting heterogeneity in bank exposure to the compositional shift from tangible to intangible capital, we show that exposed banks curtail commercial lending and reallocate lending to other assets, such as mortgages. We estimate that the substantial growth in intangible capital since the mid-1980s explains around 30% of the secular decline in the share of commercial lending in banks’ loan portfolios. We provide suggestive evidence that this reallocation increased the riskiness of banks’ mortgage lending.
+
+1
+
+    - 50 years of corporate intangible capital growth
+    - higher intangible capital -&gt; generally less use of debt
+    - 1984-2016 C&amp;I loans -33% and real estate loans +~200%
+    - claims small firms borrow predominantly from local banks (MSAs)
+    - lagged industry composition (MSA-level employment shares) to intangible asset growth rates to avoid reverse causality
+    - real estate crowding-out channel? (R&amp;D -&gt; higher incomes -&gt; greater mortgage demand) so microdata on loans to eliminate time-varying local demand
+    - claims lending decline due to frictions not demand
+    - claims increase in real-estate loans increased risk-taking and reduced profitability
+
+2
+
+    - collateral value of intangible assets is low
+    - lower firm loan demand due to remuneration by delayed compensation
+    - Hypothesis 1: An increase in the share of intangible assets in firms’ capital reduces the equilibrium volume of bank C&amp;I lending.
+    - Hypothesis 2: An increase in the share of intangible assets in firms’ capital increases the equilibrium volume of bank non-C&amp;I assets.
+
+3
+
+    - growth rate MSA-level intangible capital (summation of product (1)(2) indexed by industry and year) -&gt; (1)BEA intangible capital estimates and (2)BLS MSA-level industry employment shares
+    - (1) capitalized private expenditure on scientific R&amp;D, software, artistic originals (lower bound)
+    - industries based on NAICS three-digit classification
+    - geographic variation (San Francisco, Seattle, Boston, Montgomery, Denver, Nashville)
+    - firm-level intangible capital from public firms in knowledge capital, organizational capital, and informational capital (Compustat)
+
+4
+
+    - bank-level data on C&amp;I and balance sheet from USA Call Reports
+    - controls for house prices, per capita income, population, firm sales growth, and market-to-book ratio, bank size, capital ratio
+    - also measure bank exposure by entire geographic footprint (across MSAs)
+    - lags of 1 and 5 years in employment shares close to baseline
+
+5
+
+    - 1990-2016 average syndicated loan 6.3m, spread 135 bps LIBOR maturity 4.2y
+    - lower collateral value (even patents) -&gt; financial friction
+    - similar results for small business (SBA data)
+    - aggregated loan-level data by bank-MSA-year (total volumes and avg acceptance rates 1995-2016)
+
+6
+
+    - capital ratio, dividend ratio, multi-bank holding affiliation as constraints support financial friction
+
+**Key takeaways**
+
+    - conclusions reliant on fixed effects absorbing time-varying MSA-level conditions (if incorrect, comparison across MSAs invalid)
+    - similar for bank-level balance sheet controls
+    - banks preferring collateral unsurprising, but interesting additional pressure on increasing real-estate loans (even at lower profitability)
+    - broader savings glut problem?
+
+**Further reading**
+
+    - Chakraborty, I., Goldstein, I., and MacKinlay, A. (2018). Housing price booms and crowding-out effects in bank lending. Review of Financial Studies, (31):2806–2853.
+    - Acharya, V. V., Schnabl, P., and Suarez, G. (2013). Securitization without risk transfer. Journal of Financial Economics, 107(3):515–536.
+    - Kisin, R. and Manela, A. (2016). The shadow cost of bank capital requirements. Review of Financial Studies, 29(7):1780–1820.
+    - Campello, M., Graham, J. R., and Harvey, C. R. (2010). The real effects of financial constraints: Evidence from a financial crisis. Journal of Financial Economics, 97(3):470–487.
+    - Houston, J., James, C., and Marcus, D. (1997). Capital market frictions and the role of internal capital markets in banking. Journal of Financial Economics, 46(2):135–164.
+    - Shin, H. S. (2012). Global banking glut and loan risk premium. IMF Economic Review, 60(2):155–192.
+    - Summers, L. H. (2014). US economic prospects: Secular stagnation, hysteresis, and the zero lower bound. Business Economics, 49(2):65–73.
+    - Chodorow-Reich, G. (2013). The employment effects of credit market disruptions: Firm-level evidence from the 2008–9 financial crisis. Quarterly Journal of Economics, 237(1):1–59.
+
+
+
+
+
+
+</pre>
 </div>
 <div created="20200213010206820" modified="20200608193835151" tags="music play" title="beep-boop" type="text/x-markdown">
 <pre>Recent Additions
@@ -12427,7 +12512,7 @@ C9
     - 1974 Henry Kissinger National Security Study Memorandum 200
     - Forsberg, A. (2000) America and the Japanese Miracle: The Cold War context of Japan's post-war economic revival 1950-1960</pre>
 </div>
-<div created="20200212225220902" modified="20200611155924424" tags="paintings play" title="grab-bag" type="text/x-markdown">
+<div created="20200212225220902" modified="20200612163058141" tags="paintings play" title="grab-bag" type="text/x-markdown">
 <pre>1. Arcimboldo, Giuseppe
   - 1566 *Il Bibliotecario*
 1. Baldung, Hans
@@ -12480,6 +12565,7 @@ Antonius* (Museo del Prado)
   - 1630 *La Diseuse de bonne aventure* (authentic?)
   - 1640 *La Madeleine pénitente (aux deux flammes)*
 1. de Ribera, José (Jusepe)
+  - 1630 *Demócrito*
   - 1631 *Retrato de Magdalena Ventura, llamada la mujer barbuda, que aparece junto con su marido y su hijo*
   - 1632 *Ixion*
   - 1652 *San Jerónimo penitente*
@@ -12610,14 +12696,19 @@ Antonius* (Museo del Prado)
   - 1434 *Annunciatie*
 1. van Rijn, Rembrandt Harmenszoon
   - 1626 *Bileam en zijn ezelin*
+  - 1628 *Rembrandt lachend*
   - 1628 *Borststuk van een man met een tulband*
   - 1629 *Zelfportret met gevederde baret*
   - 1633 *De storm op het meer van Genezareth*
+  - 1633 *Bellona*
   - 1634 *Portret van Haesje Jacobsdr van Cleyburgh*
   - 1637 *Poolse edelman*
   - 1642 *De Nachtwacht*
+  - 1655 *De Poolse ruiter*
+  - 1655 *Man in wapenrusting*
   - 1660 *De verloochening van Petrus*
   - 1664 *Lucretia*
+  - 1665 *Zelfportret met twee cirkels*
 1. Vermeer, Johannes
   - 1657 *Het straatje*  
   - 1665 *Meisje met de parel*
@@ -12786,7 +12877,7 @@ Sorted
 1. **Walden; or, Life in the Woods** *Thoreau*
 1. **Zero: The Biography of a Dangerous Idea** *Seife*</pre>
 </div>
-<div created="20200213010853669" modified="20200611220407890" tags="play music" title="rock-on" type="text/x-markdown">
+<div created="20200213010853669" modified="20200612184519014" tags="play music" title="rock-on" type="text/x-markdown">
 <pre>Recent Additions
 
 1. [**stereolab** - mars audiac quintet](https://www.discogs.com/Stereolab-Mars-Audiac-Quintet/master/21212)
@@ -12801,6 +12892,8 @@ Sorted
 1. [**magoo** - the soateramic sounds of magoo](https://www.discogs.com/Magoo-The-Soateramic-Sounds-Of-Magoo/master/217541)
 1. [**mogwai** - young team](https://www.discogs.com/Mogwai-Young-Team/master/18165)
 1. [**black sabbath** - paranoid](https://www.discogs.com/Black-Sabbath-Paranoid/master/302)
+1. [**black sabbath** - master of reality](https://www.discogs.com/Black-Sabbath-Master-Of-Reality/master/4844)
+1. [**mogwai** - come on die young](https://www.discogs.com/Mogwai-Come-On-Die-Young/master/6404)
 
 ---
 Sorted
@@ -12954,8 +13047,28 @@ Sorted
 1. **Understanding and Using English Grammar, 4th Edition** *Azar + Hagen / 978-0132333313*
 1. **UNIX and Linux System Administration Handbook, 5th Edition** *Nemeth + Snyder + Hein + Whaley + Mackin / 978-0134277554*</pre>
 </div>
-<div created="20200612004532499" modified="20200612004812117" tags="literature [[working papers]] play" title="working-papers" type="text/x-markdown">
-<pre></pre>
+<div created="20200612004532499" modified="20200612191556002" tags="literature [[working papers]] play" title="working-papers" type="text/x-markdown">
+<pre>1. A-Balance-Sheet-Approach-to-Financial-Crisis-Allen-Rosenberg-Keller-Setser-Roubini-wp02210
+
+1. Bank-Lending-in-the-Knowledge-Economy-DellAriccia-Kadyrzhanova-Minoiu-Ratnovski-2020040pap [notes](#Bank-Lending-in-the-Knowledge-Economy)
+
+1. Cyn-Fazz-EJEEP-2015-Rising-inequality-and-stagnation-in-the-US-economy
+
+1. EME-government-debt-cause-for-concern-Cantú-Goel-Schanz-r_qt2006z
+
+1. Global-Banking-Glut-and-Loan-Risk-Premium-Shin-hss
+
+1. International-dimensions-of-EME-corporate-debt-Avdjiev-McGuire-von-Peter-r_qt2006b
+
+1. NIPA-Handbook-Chapter-5-PERSONAL-CONSUMPTION-EXPENDITURES
+
+1. SECURITIZATION-WITHOUT-RISK-TRANSFER-Acharya-Schnabl-Suarez-w15730
+
+1. The-Changing-Nature-of-Financial-Intermediation-and-the-Financial-Crisis-of-2007-09-Adrian-Shin-sr439
+
+1. US-Economic-Prospects-Secular-Stagnation-Hysteresis-and-the-Zero-Lower-Bound-NABE-speech-Lawrence-H.-Summers1
+
+1. Using-Loopholes-to-Reveal-the-Marginal-Cost-of-Regulation-The-Case-of-Fuel-Economy-Standards-Anderson-Sallee-aer.101.4.1375</pre>
 </div>
 
 </div>
