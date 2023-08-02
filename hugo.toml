@@ -1,0 +1,23 @@
+baseURL = 'https://nlueckenhoff.github.io'
+languageCode = 'en-us'
+title = 'The Infinity of Lists'
+theme = 'hugo-book'
+
+[menu]
+[[menu.after]]
+  name = "Github"
+  url = "https://github.com/nlueckenhoff/nlueckenhoff.github.io"
+  weight = 20
+
+[[menu.after]]
+  name = "Hugo Book Theme"
+  url = "https://themes.gohugo.io/hugo-book/"
+  weight = 30
+
+[params]
+  enableGitInfo = true
+  BookTheme = 'auto'
+  BookRepo = 'https://github.com/nlueckenhoff/nlueckenhoff.github.io'
+  BookCommitPath = 'commit'
+  BookDateFormat = '2006, Jan 2'
+  BookComments = false
