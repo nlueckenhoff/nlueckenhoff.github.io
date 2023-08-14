@@ -215,3 +215,5 @@ title: "World • Reggae • Dub • Pop"
 1. [**山崎ハコ** ‎- 飛・び・ま・す](Https://www.discogs.com/%e5%b1%b1%e5%b4%8e%e3%83%8f%e3%82%b3-%e9%a3%9b%e3%81%b3%e3%81%be%e3%81%99/master/20610)
 1. [**梶芽衣子** ‎- きょうの我が身は・・・・・・](Https://www.discogs.com/%e6%a2%b6%e8%8a%bd%e8%a1%a3%e5%ad%90-%e3%81%8d%e3%82%87%e3%81%86%e3%81%ae%e6%88%91%e3%81%8c%e8%ba%ab%e3%81%af-/master/831154)
 1. [**장필순** ‎- 어느새 / 내작은 가슴속에](Https://www.discogs.com/%ec%9e%a5%ed%95%84%ec%88%9c-%ec%96%b4%eb%8a%90%ec%83%88-%eb%82%b4%ec%9e%91%ec%9d%80-%ea%b0%80%ec%8a%b4%ec%86%8d%ec%97%90/release/11497777)
+1. [**Topoke** - The Topoke People Of The Congo](https://www.discogs.com/master/1670280-Topoke-The-Topoke-People-Of-The-Congo)
+1. [**Ustad Mohammad Omar** - Virtuoso From Afghanistan](https://www.discogs.com/release/1178614-Ustad-Mohammad-Omar-featuring-Zakir-Hussain-Virtuoso-From-Afghanistan)
