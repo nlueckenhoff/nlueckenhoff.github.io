@@ -361,6 +361,7 @@ title: "Electronic • Hip-hop • Rap"
 1. [**Thomas Köner** - Motus](https://www.discogs.com/master/1680534-thomas-k%c3%b6ner-motus)
 1. [**TNGHT** - II](https://www.discogs.com/tnght-ii/master/1635564)
 1. [**Tod Dockstader & James Reichert** - Omniphony 1](https://www.discogs.com/master/272237-Tod-Dockstader-James-Reichert-Omniphony-1)
+1. [**Tod Dockstader** - Aerial #1](https://www.discogs.com/master/1092408-Tod-Dockstader-Aerial-1)
 1. [**Tod Dockstader** - Drone; Two Fragments From Apocalypse; Water Music](https://www.discogs.com/master/695944-Tod-Dockstader-Drone-Two-Fragments-From-Apocalypse-Water-Music)
 1. [**Tod Dockstader** - Eight Electronic Pieces](https://www.discogs.com/master/86222-Tod-Dockstader-Eight-Electronic-Pieces)
 1. [**Tod Dockstader** - Organized Sound by Tod Dockstader - Luna Park - Traveling Music - Apocalypse](https://www.discogs.com/master/272239-Tod-Dockstader-Organized-Sound-by-Tod-Dockstader-Luna-Park-Traveling-Music-Apocalypse)
