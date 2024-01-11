@@ -4,6 +4,11 @@ title: "Film"
 ---
 1. Altman, Robert
    - [1975 - **Nashville**](https://www.imdb.com/title/tt0073440/)
+1. Antonioni, Michelangelo
+   - [1960 - **L'Avventura**](https://www.imdb.com/title/tt0053619)
+   - [1961 - **La Notte**](https://www.imdb.com/title/tt0054130)
+   - [1966 - **Blow-Up**](https://www.imdb.com/title/tt0060176)
+   - [1975 - **The Passenger**](https://www.imdb.com/title/tt0073580)
 1. Bak, Chanuk
    - [2002 - **Sympathy for Mr. Vengeance**](https://www.imdb.com/title/tt0310775/)
    - [2003 - **Oldboy**](https://www.imdb.com/title/tt0364569/)
@@ -36,6 +41,11 @@ title: "Film"
    - [1991 - **Life on a String**](https://www.imdb.com/title/tt0101440/)
    - [1993 - **Farewell My Concubine**](https://www.imdb.com/title/tt0106332/)
    - [1996 - **Temptress Moon**](https://www.imdb.com/title/tt0116295/)
+1. Coppola, Francis Ford
+   - [1972 - **The Godfather**](https://www.imdb.com/title/tt0068646)
+   - [1974 - **The Conversation**](https://www.imdb.com/title/tt0071360)
+   - [1974 - **The Godfather Part II**](https://www.imdb.com/title/tt0071562)
+   - [1979 - **Apocalypse Now**](https://www.imdb.com/title/tt0078788)
 1. Donen, Stanley
    - [1952 - **Singin' in the Rain**](https://www.imdb.com/title/tt0045152/)
    - [1957 - **Funny Face**](https://www.imdb.com/title/tt0050419/)
@@ -48,6 +58,12 @@ title: "Film"
    - [1957 - **Nights of Cabiria**](https://www.imdb.com/title/tt0050783/)
    - [1960 - **La dolce vita**](https://www.imdb.com/title/tt0053779/)
    - [1963 - **8½**](https://www.imdb.com/title/tt0056801/)
+1. Ford, John
+   - [1950 - **Rio Grande**](https://www.imdb.com/title/tt0042895)
+   - [1956 - **The Searchers**](https://www.imdb.com/title/tt0049730)
+   - [1962 - **The Man Who Shot Liberty Valance**](https://www.imdb.com/title/tt0056217)
+1. Forman, Milos
+   - [1984 - **Amadeus**](https://www.imdb.com/title/tt0086879)
 1. Godard, Jean-Luc
    - [1960 - **Breathless**](https://www.imdb.com/title/tt0053472)
    - [1964 - **Band of Outsiders**](https://www.imdb.com/title/tt0057869/)
@@ -105,6 +121,10 @@ title: "Film"
    - [1996 - **Goodbye South, Goodbye**](https://www.imdb.com/title/tt0117151)
    - [1998 - **Flowers of Shanghai**](https://www.imdb.com/title/tt0156587)
    - [2003 - **Café Lumière**](https://www.imdb.com/title/tt0412596)
+1. Kazan, Elia
+   - [1951 - **A Streetcar Named Desire**](https://www.imdb.com/title/tt0044081)
+   - [1954 - **On the Waterfront**](https://www.imdb.com/title/tt0047296)
+   - [1955 - **East of Eden**](https://www.imdb.com/title/tt0048028)
 1. Keaton, Buster
    - [1924 - **The Navigator**](https://www.imdb.com/title/tt0015163/)
    - [1926 - **The General**](https://www.imdb.com/title/tt0017925/)
@@ -131,6 +151,11 @@ title: "Film"
    - [1927 - **Metropolis**](https://www.imdb.com/title/tt0017136/)
    - [1931 - **M**](https://www.imdb.com/title/tt0022100/)
    - [1933 - **The Testament of Dr. Mabuse**](https://www.imdb.com/title/tt0023563/)
+1. Leone, Sergio
+   - [1964 - **A Fistful of Dollars**](https://www.imdb.com/title/tt0058461)
+   - [1965 - **For a Few Dollars More**](https://www.imdb.com/title/tt0059578)
+   - [1966 - **The Good, the Bad and the Ugly**](https://www.imdb.com/title/tt0060196)
+   - [1968 - **Once Upon a Time in the West**](https://www.imdb.com/title/tt0064116)
 1. Oppenheimer, Joshua
    - [2014 - **The Look of Silence**](https://www.imdb.com/title/tt3521134/)
 1. Oppenheimer, Joshua + Anonymous + Cynn, Christine
@@ -142,9 +167,18 @@ title: "Film"
    - [1956 - **Early Spring**](https://www.imdb.com/title/tt0049784/)
 1. Powell, Michael
    - [1960 - **Peeping Tom**](https://www.imdb.com/title/tt0054167/)
+1. Renoir, Jean
+   - [1937 - **The Grand Illusion**](https://www.imdb.com/title/tt0028950)
+   - [1939 - **The Rules of the Game**](https://www.imdb.com/title/tt0031885)
 1. Rossellini, Roberto
    - [1945 - **Rome, Open City**](https://www.imdb.com/title/tt0038890/)
    - [1950 - **The Flowers of St. Francis**](https://www.imdb.com/title/tt0042477/)
+1. Scorsese, Martin
+   - [1976 - **Taxi Driver**](https://www.imdb.com/title/tt0075314/)
+   - [1980 - **Raging Bull**](https://www.imdb.com/title/tt0081398/)
+   - [1982 - **The King of Comedy**](https://www.imdb.com/title/tt0085794/)
+   - [2006 - **The Departed](https://www.imdb.com/title/tt0407887/)
+   - [2013 - **The Wolf of Wall Street**](https://www.imdb.com/title/tt0993846/)
 1. Suzuki, Seijun
    - [1964 - **Gate of Flesh**](https://www.imdb.com/title/tt0058409/)
    - [1966 - **Tokyo Drifter**](https://www.imdb.com/title/tt0061101/)
@@ -180,6 +214,8 @@ title: "Film"
 1. Varda, Agnès
    - [1985 - **Vagabond**](https://www.imdb.com/title/tt0089960)
    - [2000 - **The Gleaners and I**](https://www.imdb.com/title/tt0247380)
+1. Welles, Orson
+   - [1941 - **Citizen Kane**](https://www.imdb.com/title/tt0033467/)
 1. Zhang, Yimou
    - [1988 - **Red Sorghum**](https://www.imdb.com/title/tt0093206/)
    - [1990 - **Ju Dou**](https://www.imdb.com/title/tt0099902/)
@@ -194,4 +230,5 @@ title: "Film"
    - [1963 - **Irma la Douce**](https://www.imdb.com/title/tt0057187/)
 1. Yang, Edward
    - [1985 - **Taipei Story**](https://www.imdb.com/title/tt0089866/)
+   - [1991 - **A Brighter Summer Day**](https://www.imdb.com/title/tt0101985/)
    - [2000 - **Yi Yi: A One and a Two**](https://www.imdb.com/title/tt0244316/)
