@@ -2,6 +2,7 @@
 title: "Rock • Country • Soul • Funk • Folk"
 ---
 
+1. [**"Blue" Gene Tyranny** - Trust In Rock](https://www.discogs.com/master/1583721-Blue-Gene-Tyranny-Peter-Gordon-Trust-In-Rock)
 1. [**(Smog)** - Rain On Lens](https://www.discogs.com/smog-rain-on-lens/master/9712)
 1. [**(Smog)** - Supper](https://www.discogs.com/smog-supper/master/9717)
 1. [**3Ds** - Fish Tales / Swarthy Songs For Swabs](https://www.discogs.com/master/240636-3ds-fish-tales-swarthy-songs-for-swabs)
@@ -44,6 +45,7 @@ title: "Rock • Country • Soul • Funk • Folk"
 1. [**Big Star** - #1 Record](https://www.discogs.com/master/13825-big-star-1-record)
 1. [**Big Star** - Radio City](https://www.discogs.com/master/13840-big-star-radio-city)
 1. [**Bill Callahan** - Woke On A Whaleheart](https://www.discogs.com/bill-callahan-woke-on-a-whaleheart/master/170652)
+1. [**Bill Laswell** - Baselines](https://www.discogs.com/master/12039-Bill-Laswell-Baselines)
 1. [**Bill Orcutt** - Bill Orcutt](https://www.discogs.com/master/1200869-Bill-Orcutt-Bill-Orcutt)
 1. [**Birthday Party, The** - Live 81-82](https://www.discogs.com/the-birthday-party-live-81-82/master/20065)
 1. [**Black Flag** - Damaged](https://www.discogs.com/master/28654-black-flag-damaged)
@@ -422,6 +424,7 @@ title: "Rock • Country • Soul • Funk • Folk"
 1. [**Part Chimp** - IV](https://www.discogs.com/part-chimp-iv/master/1166777)
 1. [**Partchimp** - Thriller](https://www.discogs.com/partchimp-thriller/master/307995)
 1. [**Patti Smith Group** - Radio Ethiopia](https://www.discogs.com/master/40133-Patti-Smith-Group-Radio-Ethiopia)
+1. [**Pete Seeger** - American Industrial Ballads](https://www.discogs.com/master/216268-P-Seeger-American-Industrial-Ballads)
 1. [**Pharaoh Overlord** - #1](https://www.discogs.com/pharaoh-overlord-1/master/1026125)
 1. [**Pharaoh Overlord** - Horn](https://www.discogs.com/pharaoh-overlord-horn/master/523203)
 1. [**Pharaoh Overlord** - Lunar Jetman](https://www.discogs.com/pharaoh-overlord-lunar-jetman/master/414808)
@@ -621,4 +624,4 @@ title: "Rock • Country • Soul • Funk • Folk"
 1. [**산울림** - 산울림 새노래 모음](https://www.discogs.com/master/412444-%ec%82%b0%ec%9a%b8%eb%a6%bc-%ec%82%b0%ec%9a%b8%eb%a6%bc-%ec%83%88%eb%85%b8%eb%9e%98-%eb%aa%a8%ec%9d%8c)
 1. [**산울림** - 제2집](https://www.discogs.com/master/397367-%ec%82%b0%ec%9a%b8%eb%a6%bc-%ec%a0%9c2%ec%a7%91)
 1. [**장현 And The Men, Shin Joong Hyun** - 석양 / 아름다운 강산](https://www.discogs.com/master/1487307-%ec%9e%a5%ed%98%84-and-the-men-shin-joong-hyun-%ec%84%9d%ec%96%91-%ec%95%84%eb%a6%84%eb%8b%a4%ec%9a%b4-%ea%b0%95%ec%82%b0)
-1. [**장현** – 석양 미련](https://www.discogs.com/release/12861712-%ec%9e%a5%ed%98%84-%ec%84%9d%ec%96%91-%eb%af%b8%eb%a0%a8)
+1. [**장현** – 석양 미련](https://www.discogs.com/release/12861712-%ec%9e%a5%ed%98%84-%ec%84%9d%ec%96%91-%eb%af%b8%eb%a0%a8)1. [**"Blue" Gene Tyranny** - Out Of The Blue](https://www.discogs.com/master/82590-Blue-Gene-Tyranny-Out-Of-The-Blue)

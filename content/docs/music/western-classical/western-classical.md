@@ -1,6 +1,7 @@
 ---
 title: "Western Classical"
 ---
+
 1. [**Adam De La Halle - Ensemble Perceval Direction Guy Robert** - Le Jeu De Robin Et Marion](https://www.discogs.com/master/view/1261184)
 1. [**Aldo Clementi - Ives Ensemble** - Madrigale](https://www.discogs.com/release/1011966-aldo-clementi-ives-ensemble-madrigale)
 1. [**Alla Francesca** - Cantigas De Santa Maria](https://www.discogs.com/alla-francesca-cantigas-de-santa-maria/release/8574909)
@@ -18,6 +19,7 @@ title: "Western Classical"
 1. [**Donizetti, Moffo, Bergonzi, Sereni, Flagello, Rca Italiana Opera Orchestra And Chorus, Conductor Georges Prêtre** - Lucia Di Lammermoor](https://www.discogs.com/donizetti-moffo-bergonzi-sereni-flagello-rca-italiana-opera-orchestra-and-chorus-conductor-georges-p/master/974472)
 1. [**Dvorak, Berliner Philharmoniker, Rafael Kubelik** - Symphonien Nr. 7 & 8](https://www.discogs.com/dvorak-berliner-philharmoniker-rafael-kubelik-symphonien-nr-7-8/release/2169879)
 1. [**Dvořák, Fleming, Heppner, Zajick, Hawlata, Urbanová, Czech Philharmonic Orchestra, Sir Charles Mackerras** - Rusalka](https://www.discogs.com/dvo%c5%99%c3%a1k-fleming-heppner-zajick-hawlata-urbanov%c3%a1-czech-philharmonic-orchestra-sir-charles-mackerras/release/2855658)
+1. [**Ensemble Gilles Binchois** - Musique Et Poésie À Saint-Gall](https://www.discogs.com/master/1435909-Ensemble-Gilles-Binchois-Dominique-Vellard-Musique-Et-Po%C3%A9sie-Saint-Gall)
 1. [**Gaetano Donizetti** - Lucrezia Borgia](https://www.discogs.com/gaetano-donizetti-lucrezia-borgia/release/5410774)
 1. [**Gautier De Coincy / The Harp Consort, Andrew Lawrence-King** - Miracles Of Notre-dame](https://www.discogs.com/gautier-de-coincy-the-harp-consort-andrew-lawrence-king-miracles-of-notre-dame/release/2066822)
 1. [**George Frideric Handel / Alexandrina Pendatchanska • Jennifer Rivera • Sunhae Im • Bejun Mehta, Marcos Fink • Neil Davies • Dominique Visse • Daniel Schmutzhard • Akademie Für Alte Musik Berlin • René Jacobs** - Agrippina](https://www.discogs.com/george-frideric-handel-alexandrina-pendatchanska-jennifer-rivera-2-sunhae-im-bejun-mehta-marcos-fink/master/1552223)
@@ -28,10 +30,12 @@ title: "Western Classical"
 1. [**Guillaume De Machaut - Ensemble Musica Nova • Lucien Kandel** - Ballades](https://www.discogs.com/guillaume-de-machaut-ensemble-musica-nova-lucien-kandel-ballades/release/10973807)
 1. [**Guillaume De Machaut - Ensemble Organum, Marcel Pérès** - Messe De Notre Dame](https://www.discogs.com/master/view/593829)
 1. [**Guillaume De Machaut, Ensemble Musica Nova** - Les Motets](https://www.discogs.com/guillaume-de-machaut-ensemble-musica-nova-les-motets/release/9797450)
+1. [**Guillaume de Machaut** - Le Remède De Fortune](https://www.discogs.com/release/13332967-Guillaume-de-Machaut-Marc-Mauillon-Pierre-Hamon-Le-Rem%C3%A8de-De-Fortune)
 1. [**Haendel - Jennifer Larmore, Barbara Schlick, Bernarda Fink, Marianne Rørholm, Derek Lee Ragin, Furio Zanasi, Dominique Visse, Olivier Lallouette, Concerto Köln, René Jacobs** - Giulio Cesare](https://www.discogs.com/haendel-jennifer-larmore-barbara-schlick-bernarda-fink-marianne-r%c3%b8rholm-derek-lee-ragin-furio-zanas/master/651419)
 1. [**Handel - Owen Willetts, Karina Gauvin, Allyson Mchardy, Amanda Forsythe, Nathan Berg, Pacific Baroque Orchestra, Alexander Weimann** - Orlando](https://www.discogs.com/handel-owen-willetts-karina-gauvin-allyson-mchardy-amanda-forsythe-nathan-berg-pacific-baroque-orche/release/15036012)
 1. [**Herbert Von Karajan · Berliner Philharmoniker · Ravel · Debussy** - Bolero · La Mer & Prélude à L'après-midi D'un Faune](https://www.discogs.com/master/view/510714)
 1. [**Hespèrion XXI • Jordi Savall** - Estampies & Danses Royales • Le Manuscrit Du Roi – Ca. 1270-1320](https://www.discogs.com/master/view/1356802)
+1. [**Hildegard Von Bingen** - Heavenly Revelations: Hymns, Sequences, Antiphons, Responds](https://www.discogs.com/master/211987-Hildegard-Von-Bingen-Oxford-Camerata-Jeremy-Summerly-Heavenly-Revelations-Hymns-Sequences-Antiphons-)
 1. [**Igor Stravinsky, Charles Dutoit** - Stravinsky - Ramuz - L'histoire Du Soldat - Renard](https://www.discogs.com/igor-stravinsky-charles-dutoit-stravinsky-ramuz-lhistoire-du-soldat-renard/master/1537393)
 1. [**Jacopo Da Bologna, La Reverdie** - Madrigali E Cacce](https://www.discogs.com/jacopo-da-bologna-la-reverdie-madrigali-e-cacce/release/5718202)
 1. [**Johann Sebastian Bach, Orchestra Mozart, Claudio Abbado, Giuliano Carmignola** - Brandenburg Concertos 1-6](https://www.discogs.com/johann-sebastian-bach-orchestra-mozart-claudio-abbado-giuliano-carmignola-brandenburg-concertos-16/release/5883950)
@@ -41,7 +45,9 @@ title: "Western Classical"
 1. [**Mozart / Rodney Gilfry, Luba Orgonasova, Charlotte Margiono, Eirian James, Christoph Prégardien, Ildebrando D'arcangelo, Julian Clarkson, Andrea Silvestrelli, The Monteverdi Choir, The English Baroque Soloists, John Eliot Gardiner** - Don Giovanni](https://www.discogs.com/mozart-rodney-gilfry-luba-orgonasova-charlotte-margiono-eirian-james-christoph-pr%c3%a9gardien-ildebrand/master/1291986)
 1. [**Orchestre Symphonique De Montréal / Dutoit** - Stravinsky: Pétrouchka / Le Chant Du Rossignol](https://www.discogs.com/master/view/797946)
 1. [**Perotin - The Hilliard Ensemble** - Perotin](https://www.discogs.com/master/view/185257)
+1. [**Pierre Chépélov** - Music For A King, The Winchester Troper](https://www.discogs.com/release/15552743-Pierre-Ch%C3%A9p%C3%A9lov-Joel-Rust-Discantus-Brigitte-Lesne-Music-For-A-KingWinchester-Troper)
 1. [**Pyotr Ilyich Tchaikovsky - Bolshoi Theatre Orchestra Et Boris Khaikin** - Eugène Onéguine](https://www.discogs.com/master/view/1078075)
+1. [**Pérotin** - Perotin](https://www.discogs.com/master/185257-Perotin-The-Hilliard-Ensemble-Perotin)
 1. [**Richard Strauss – Hildegard Behrens · José Van Dam · Karl-walter Böhm · Agnes Baltsa · Wiesław Ochman · Heljä Angervo, Vienna Philharmonic Orchestra, Herbert Von Karajan** - Salome](https://www.discogs.com/master/view/527645)
 1. [**Rossini - Glyndebourne Festival Orchestra And Chorus, Vittorio Gui** - Le Comte Ory](https://www.discogs.com/master/view/1284598)
 1. [**Schola Hungarica, Janka Szendrei** - Ludus Danielis](https://www.discogs.com/schola-hungarica-janka-szendrei-ludus-danielis/master/1431334)

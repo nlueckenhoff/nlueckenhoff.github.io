@@ -1,7 +1,6 @@
 ---
 title: "Non-fiction"
 ---
-1. **A Brief History of Ancient Greece: Politics, Society, and Culture** *Pomeroy, Burstein, Donlan, Roberts, Tandy*
 1. **A Brief History of Ancient Greece: Politics, Society, and Culture, 3rd Edition** *Pomeroy, Burstein, Donlan, Roberts, Tandy / 978-0199981557*
 1. **A First Course in Probability, 7th Edition** *Ross / 978-0131856622*
 1. **A History of England, Volume 1, 3rd Edition** *Roberts + Roberts / 978-0133903942*
@@ -26,30 +25,43 @@ title: "Non-fiction"
 1. **Dr. Euler's Fabulous Formula** *Nahin*
 1. **e: the Story of a Number** *Maor*
 1. **Einstein in Berlin** *Levenson*
+1. **Enjoyment of Music, The, 8th Edition** *Machlis + Forney / 978-0393973013*
 1. **EuroTragedy: A Drama in Nine Acts** *Mody*
 1. **Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and State** *Hirschman*
-1. **Film at Wit's End** *Brakhage*
 1. **Film Theory and Criticism, 5th Edition** *Braudy + Cohen / 978-0195105988*
+1. **Film at Wit's End** *Brakhage*
 1. **Fixed Income Strategy: A Practitioner's Guide to Riding the Curve** *Henderson*
 1. **Flowers in the Blood: The Story of Opium** *Goldberg, Latimer*
+1. **Formation of Vegetable Mould Through the Action of Worms, The, with Observations on their Habits** *Darwin*
 1. **Fourier Analysis** *Stade / 978-0471669845*
+1. **Fourth Horseman, The: A Short History of Epidemics, Plagues, Famine and Other Scourges** *Nikiforuk*
 1. **Generation Ecstasy: Into the World of Techno and Rave Culture** *Reynolds*
 1. **Geosystems, 4th Edition** *Christopherson / 9780130108456*
+1. **Global Minotaur, The: America, Europe and the Future of the Global Economy** *Varoufakis*
 1. **God Created the Integers** *Hawking*
+1. **Great Rebalancing, The: Trade, Conflict, and the Perilous Road Ahead for the World Economy** *Pettis*
+1. **Holy Grail of Macroeconomics, The: Lessons from Japan's Great Recession** *Koo*
 1. **Homage to Catalonia** *Orwell*
+1. **House of Rothschild, The: Money's Prophets 1798-1848** *Ferguson*
+1. **I Ching, The: A Biography** *Smith*
 1. **Imitations of Life: A Reader on Film & Television Melodrama** *Landy / 978-0814320655*
+1. **Immense Majesty, The: A History of Rome and the Roman Empire** *Africa / 978-0882958743*
+1. **Infinity of Lists, The** *Eco*
 1. **Introduction to Algorithms, 3rd Edition (The MIT Press)** *Cormen + Leiserson + Rivest + Stein / 978-0262033848*
 1. **Introduction to Computation and Programming Using Python: With Application to Understanding Data, 2nd Edition (The MIT Press)** *Guttag / 978-0262529624*
+1. **Karma of Words, The: Buddhism and the Literary Arts in Medieval Japan** *LaFleur*
 1. **Korea: The Impossible Country** *Tudor*
 1. **Ladders, 2nd Edition** *Pope / 978-1616894115*
 1. **Language and Problems of Knowledge** *Chomsky*
 1. **Learning Teaching: The Essential Guide to English Language Teaching** *Scrivener / 978-1405013994*
 1. **Linear Algebra and Its Applications, 3rd Edition** *Lay / 978-0321287131*
 1. **Lost Enlightenment: Central Asia's Golden Age from the Arab Conquest to Tamerlane** *Starr*
+1. **Lotus Sutra, The: A Biography** *Lopez, Jr.*
 1. **Magic in the Middle Ages** *Kieckhefer / 978-0521312028*
 1. **Mathematical Analysis, 2nd Edition** *Apostol / 978-0201002881*
 1. **Modern Physics, 3rd Edition** *Tipler + Llewellyn / 978-1572591649*
 1. **Money and Government: The Past and Future of Economics** *Skidelsky*
+1. **Nature of Money, The** *Ingham*
 1. **No Logo: Taking Aim at the Brand Bullies** *Klein*
 1. **Oil 101** *Downey*
 1. **On China** *Kissinger*
@@ -57,35 +69,23 @@ title: "Non-fiction"
 1. **Physics for Scientists and Engineers, 3rd Edition** *Wolfson + Pasachoff /  978-0321035714*
 1. **Poetics** *Aristotle*
 1. **Principles of Computer System Design: An Introduction** *Saltzer + Kaashoek / 978-0123749574*
+1. **Pursuit of Power in Modern Japan, The 1825-1995** *Tsuzuki*
+1. **Rhetoric of Reaction, The: Perversity, Futility, Jeopardy** *Hirschman*
 1. **Rights of Man** *Paine*
+1. **Rise of Carry, The: The Dangerous Consequences of Volatility Suppression and the New Financial Order of Decaying Growth and Recurring Crisis** *Lee, Lee, Coldiron*
 1. **Risk and Liquidity** *Shin*
 1. **Social and Political Philosophy** *Somerville + Santoni / 978-0385012386*
 1. **The Cave and the Light: Plato Versus Aristotle, and the Struggle for the Soul of Western Civilization** *Herman*
 1. **The Deluge: The Great War, America and the Remaking of the Global Order, 1916-1931** *Tooze*
-1. **The Enjoyment of Music, 8th Edition** *Machlis + Forney / 978-0393973013*
-1. **The Formation of Vegetable Mould Through the Action of Worms, with Observations on their Habits** *Darwin*
-1. **The Fourth Horseman: A Short History of Epidemics, Plagues, Famine and Other Scourges** *Nikiforuk*
-1. **The Global Minotaur: America, Europe and the Future of the Global Economy** *Varoufakis* 
-1. **The Great Rebalancing: Trade, Conflict, and the Perilous Road Ahead for the World Economy** *Pettis*
-1. **The Holy Grail of Macroeconomics: Lessons from Japan's Great Recession** *Koo*
-1. **The House of Rothschild: Money's Prophets 1798-1848** *Ferguson*
-1. **The I Ching: A Biography** *Smith*
-1. **The Immense Majesty: A History of Rome and the Roman Empire** *Africa / 978-0882958743*
-1. **The Karma of Words: Buddhism and the Literary Arts in Medieval Japan** *LaFleur*
-1. **The Lotus Sutra: A Biography** *Lopez, Jr.*
-1. **The Nature of Money** *Ingham*
-1. **The Pursuit of Power in Modern Japan 1825-1995** *Tsuzuki*
-1. **The Rhetoric of Reaction: Perversity, Futility, Jeopardy** *Hirschman*
-1. **The Rise of Carry: The Dangerous Consequences of Volatility Suppression and the New Financial Order of Decaying Growth and Recurring Crisis** *Lee, Lee, Coldiron*
 1. **The United States, in the Orient: The Nature of the Economic Problem** *Conant*
-1. **The Volatility Machine: Emerging Economics and the Threat of Financial Collapse** *Pettis*
-1. **The Wages of Destruction: The Making and Breaking of the Nazi Economy** *Tooze*
-1. **The World for Sale: Money, Power, and the Traders Who Barter the Earth's Resources** *Blas, Farchy*
-1. **The World of Late Antiquity** *Brown*
 1. **Topology, 2nd Edition** *Munkres /  978-0134689517*
 1. **Trade Wars Are Class Wars: How Rising Inequality Distorts the Global Economy and Threatens International Peace** *Klein, Pettis*
 1. **Transcendental Style in Film: Ozu, Bresson, Dreyer** *Schrader / 978-0306803352*
-1. **Understanding and Using English Grammar, 4th Edition** *Azar + Hagen / 978-0132333313*
 1. **UNIX and Linux System Administration Handbook, 5th Edition** *Nemeth + Snyder + Hein + Whaley + Mackin / 978-0134277554*
+1. **Understanding and Using English Grammar, 4th Edition** *Azar + Hagen / 978-0132333313*
+1. **Volatility Machine, The: Emerging Economics and the Threat of Financial Collapse** *Pettis*
+1. **Wages of Destruction, The: The Making and Breaking of the Nazi Economy** *Tooze*
 1. **Walden; or, Life in the Woods** *Thoreau*
+1. **World for Sale, The: Money, Power, and the Traders Who Barter the Earth's Resources** *Blas, Farchy*
+1. **World of Late Antiquity, The** *Brown*
 1. **Zero: The Biography of a Dangerous Idea** *Seife*
