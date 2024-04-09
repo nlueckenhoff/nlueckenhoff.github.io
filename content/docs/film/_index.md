@@ -205,6 +205,7 @@ title: "Film"
    - [1959 - **The 400 Blows**](https://www.imdb.com/title/tt0053198/)
    - [1960 - **Shoot the Piano Player**](https://www.imdb.com/title/tt0054389/)
    - [1962 - **Jules and Jim**](https://www.imdb.com/title/tt0055032/)
+   - [1973 - **Day for Night**](https://www.imdb.com/title/tt0070460/)
 1. Tsai, Ming-liang
    - [1992 - **Rebels of the Neon God**](https://www.imdb.com/title/tt0103935)
    - [2001 - **What Time is it There?**](https://www.imdb.com/title/tt0269746)

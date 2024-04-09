@@ -47,6 +47,7 @@ title: "Non-fiction"
 1. **Imitations of Life: A Reader on Film & Television Melodrama** *Landy / 978-0814320655*
 1. **Immense Majesty, The: A History of Rome and the Roman Empire** *Africa / 978-0882958743*
 1. **Infinity of Lists, The** *Eco*
+1. **Inside the House of Money: Top Hedge Fund Traders on Profiting in the Global Markets** *Drobny*
 1. **Introduction to Algorithms, 3rd Edition (The MIT Press)** *Cormen + Leiserson + Rivest + Stein / 978-0262033848*
 1. **Introduction to Computation and Programming Using Python: With Application to Understanding Data, 2nd Edition (The MIT Press)** *Guttag / 978-0262529624*
 1. **Karma of Words, The: Buddhism and the Literary Arts in Medieval Japan** *LaFleur*
@@ -68,6 +69,7 @@ title: "Non-fiction"
 1. **Our Mathematical Universe: My Quest for the Ultimate Nature of Reality** *Tegmark*
 1. **Physics for Scientists and Engineers, 3rd Edition** *Wolfson + Pasachoff /  978-0321035714*
 1. **Poetics** *Aristotle*
+1. **Portfolio Design: A Modern Approach to Asset Allocation** *Marston*
 1. **Principles of Computer System Design: An Introduction** *Saltzer + Kaashoek / 978-0123749574*
 1. **Pursuit of Power in Modern Japan, The 1825-1995** *Tsuzuki*
 1. **Rhetoric of Reaction, The: Perversity, Futility, Jeopardy** *Hirschman*

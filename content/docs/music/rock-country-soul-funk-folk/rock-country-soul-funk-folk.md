@@ -2,6 +2,7 @@
 title: "Rock • Country • Soul • Funk • Folk"
 ---
 
+1. [**"Blue" Gene Tyranny** - Out Of The Blue](https://www.discogs.com/master/82590-Blue-Gene-Tyranny-Out-Of-The-Blue)
 1. [**"Blue" Gene Tyranny** - Trust In Rock](https://www.discogs.com/master/1583721-Blue-Gene-Tyranny-Peter-Gordon-Trust-In-Rock)
 1. [**(Smog)** - Rain On Lens](https://www.discogs.com/smog-rain-on-lens/master/9712)
 1. [**(Smog)** - Supper](https://www.discogs.com/smog-supper/master/9717)
@@ -197,6 +198,8 @@ title: "Rock • Country • Soul • Funk • Folk"
 1. [**Fall, The** - Live At The Witch Trials](https://www.discogs.com/the-fall-live-at-the-witch-trials/master/38998)
 1. [**Fall, The** - Slates](https://www.discogs.com/master/98773-the-fall-slates)
 1. [**Fall, The** - The Wonderful And Frightening World Of...](https://www.discogs.com/master/5301-the-fall-the-wonderful-and-frightening-world-of)
+1. [**Faust** - Faust IV](https://www.discogs.com/master/28060-Faust-Faust-IV)
+1. [**Faust** - So Far](https://www.discogs.com/master/28068-Faust-So-Far)
 1. [**Flaming Lips, The** - Clouds Taste Metallic](https://www.discogs.com/the-flaming-lips-clouds-taste-metallic/master/114256)
 1. [**Flaming Lips, The** - Embryonic](https://www.discogs.com/the-flaming-lips-embryonic/master/189078)
 1. [**Flaming Lips, The** - The Soft Bulletin](https://www.discogs.com/the-flaming-lips-the-soft-bulletin/master/114223)
@@ -296,6 +299,7 @@ title: "Rock • Country • Soul • Funk • Folk"
 1. [**Lambchop** - How I Quit Smoking](https://www.discogs.com/lambchop-how-i-quit-smoking/master/35047)
 1. [**Lambchop** - Is A Woman](https://www.discogs.com/lambchop-is-a-woman/master/35070)
 1. [**Lambchop** - Nixon](https://www.discogs.com/lambchop-nixon/master/35062)
+1. [**Lambchop** - Showtunes](https://www.discogs.com/master/2135680-Lambchop-Showtunes)
 1. [**Lambchop** - Thriller](https://www.discogs.com/lambchop-thriller/master/35066)
 1. [**Lambchop** - What Another Man Spills](https://www.discogs.com/lambchop-what-another-man-spills/master/35056)
 1. [**Leadbelly** - The Smithsonian Folkways Collection](https://www.discogs.com/release/6711938-Lead-Belly-The-Smithsonian-Folkways-Collection)
@@ -429,6 +433,8 @@ title: "Rock • Country • Soul • Funk • Folk"
 1. [**Pharaoh Overlord** - Horn](https://www.discogs.com/pharaoh-overlord-horn/master/523203)
 1. [**Pharaoh Overlord** - Lunar Jetman](https://www.discogs.com/pharaoh-overlord-lunar-jetman/master/414808)
 1. [**Pharaoh Overlörd** - Out Of Darkness](https://www.discogs.com/pharaoh-overl%c3%b6rd-out-of-darkness/master/374636)
+1. [**Pink Floyd** - A Saucerful Of Secrets](https://www.discogs.com/master/10352-Pink-Floyd-A-Saucerful-Of-Secrets)
+1. [**Pink Floyd** - Meddle](https://www.discogs.com/master/20649-Pink-Floyd-Meddle)
 1. [**Pixies** - Doolittle](https://www.discogs.com/pixies-doolittle/master/16764)
 1. [**Pixies** - Surfer Rosa](https://www.discogs.com/pixies-surfer-rosa/master/16731)
 1. [**Pogues, The** - Red Roses For Me](https://www.discogs.com/master/43754-The-Pogues-Red-Roses-For-Me)
@@ -624,4 +630,4 @@ title: "Rock • Country • Soul • Funk • Folk"
 1. [**산울림** - 산울림 새노래 모음](https://www.discogs.com/master/412444-%ec%82%b0%ec%9a%b8%eb%a6%bc-%ec%82%b0%ec%9a%b8%eb%a6%bc-%ec%83%88%eb%85%b8%eb%9e%98-%eb%aa%a8%ec%9d%8c)
 1. [**산울림** - 제2집](https://www.discogs.com/master/397367-%ec%82%b0%ec%9a%b8%eb%a6%bc-%ec%a0%9c2%ec%a7%91)
 1. [**장현 And The Men, Shin Joong Hyun** - 석양 / 아름다운 강산](https://www.discogs.com/master/1487307-%ec%9e%a5%ed%98%84-and-the-men-shin-joong-hyun-%ec%84%9d%ec%96%91-%ec%95%84%eb%a6%84%eb%8b%a4%ec%9a%b4-%ea%b0%95%ec%82%b0)
-1. [**장현** – 석양 미련](https://www.discogs.com/release/12861712-%ec%9e%a5%ed%98%84-%ec%84%9d%ec%96%91-%eb%af%b8%eb%a0%a8)1. [**"Blue" Gene Tyranny** - Out Of The Blue](https://www.discogs.com/master/82590-Blue-Gene-Tyranny-Out-Of-The-Blue)
+1. [**장현** – 석양 미련](https://www.discogs.com/release/12861712-%ec%9e%a5%ed%98%84-%ec%84%9d%ec%96%91-%eb%af%b8%eb%a0%a8)
