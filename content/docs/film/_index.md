@@ -2,6 +2,8 @@
 weight: 30
 title: "Film"
 ---
+1. Almodóvar, Peter
+   - [1988 - **Women on the Verge of a Nervous Breakdown**](https://www.imdb.com/title/tt0095675/)
 1. Altman, Robert
    - [1975 - **Nashville**](https://www.imdb.com/title/tt0073440/)
 1. Antonioni, Michelangelo
@@ -22,6 +24,7 @@ title: "Film"
    - [1963 - **Winter Light**](https://www.imdb.com/title/tt0057358/)
    - [1966 - **Persona**](https://www.imdb.com/title/tt0060827/)
 1. Bresson, Robert
+   - [1951 - **Diary of a Country Priest**](https://www.imdb.com/title/tt0042619/)
    - [1956 - **A Man Escaped**](https://www.imdb.com/title/tt0049902)
 1. Buñuel, Luis
    - [1929 - **An Andalusian Dog**](https://www.imdb.com/title/tt0020530)
@@ -117,6 +120,7 @@ title: "Film"
    - [1960 - **Psycho**](https://www.imdb.com/title/tt0054215/)
    - [1963 - **The Birds**](https://www.imdb.com/title/tt0056869/)
 1. Hou, Hsiao-Hsien
+   - [1989 - **A City of Sadness**](https://www.imdb.com/title/tt0096908/)
    - [1993 - **The Puppetmaster**](https://www.imdb.com/title/tt0107157)
    - [1996 - **Goodbye South, Goodbye**](https://www.imdb.com/title/tt0117151)
    - [1998 - **Flowers of Shanghai**](https://www.imdb.com/title/tt0156587)
@@ -167,6 +171,8 @@ title: "Film"
    - [1956 - **Early Spring**](https://www.imdb.com/title/tt0049784/)
 1. Powell, Michael
    - [1960 - **Peeping Tom**](https://www.imdb.com/title/tt0054167/)
+1. Reed, Carol
+   - [1949 - **The Third Man**](https://www.imdb.com/title/tt0041959/)
 1. Renoir, Jean
    - [1937 - **The Grand Illusion**](https://www.imdb.com/title/tt0028950)
    - [1939 - **The Rules of the Game**](https://www.imdb.com/title/tt0031885)

@@ -58,6 +58,7 @@ title: "Non-fiction"
 1. **Linear Algebra and Its Applications, 3rd Edition** *Lay / 978-0321287131*
 1. **Lost Enlightenment: Central Asia's Golden Age from the Arab Conquest to Tamerlane** *Starr*
 1. **Lotus Sutra, The: A Biography** *Lopez, Jr.*
+1. **Macroeconomics** *Abel + Bernanke + Croushore / 978-1-292-44612-7*
 1. **Magic in the Middle Ages** *Kieckhefer / 978-0521312028*
 1. **Mathematical Analysis, 2nd Edition** *Apostol / 978-0201002881*
 1. **Modern Physics, 3rd Edition** *Tipler + Llewellyn / 978-1572591649*
