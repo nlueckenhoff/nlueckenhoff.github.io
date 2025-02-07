@@ -340,3 +340,4 @@ title: "Jazz"
 1. [**Wilbur Harden** - Jazz Way Out](https://www.discogs.com/wilbur-harden-jazz-way-out/master/313934)
 1. [**Woody Shaw With Anthony Braxton** - The Iron Men](https://www.discogs.com/master/281214-Woody-Shaw-With-Anthony-Braxton-The-Iron-Men)
 1. [**Woody Shaw** - Song Of Songs](https://www.discogs.com/master/406558-Woody-Shaw-Song-Of-Songs)
+1. [**Erik Friedlander** - Grains Of Paradise](https://www.discogs.com/release/684351-Erik-Friedlander-Grains-Of-Paradise)
