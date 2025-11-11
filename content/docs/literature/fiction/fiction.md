@@ -26,9 +26,6 @@ title: "Fiction"
 1. *Camus* **The Myth of Sisyphus**
 1. *Camus* **The Plague**
 1. *Camus* **The Stranger**
-1. *Clarke + Lee* **Rama II**
-1. *Clarke + Lee* **Rama Revealed**
-1. *Clarke + Lee* **The Garden of Rama**
 1. *Clarke* **Rendezvous with Rama**
 1. *Clarke* **The Songs of Distant Earth**
 1. *Coleridge* **The Rime of the Ancient Mariner**

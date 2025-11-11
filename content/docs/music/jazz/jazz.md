@@ -1,6 +1,7 @@
 ---
 title: "Jazz"
 ---
+
 1. [**Abbey Lincoln** - Abbey Is Blue](https://www.discogs.com/abbey-lincoln-abbey-is-blue/master/289638)
 2. [**Ahmad Jamal** - At The Top: Poinciana Revisited](https://www.discogs.com/ahmad-jamal-at-the-top-poinciana-revisited/master/193363)
 3. [**Al Grey, Billy Mitchel, Lee Morgan, Charlie Persip, Paul West, Billy Root, Wynton Kelly** - Dizzy Atmosphere](https://www.discogs.com/master/393948-al-grey-billy-mitchell-lee-morgan-charlie-persip-paul-west-billy-root-wynton-kelly-dizzy-atmosphere)

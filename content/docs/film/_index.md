@@ -11,6 +11,8 @@ title: "Film"
    - [1961 - **La Notte**](https://www.imdb.com/title/tt0054130)
    - [1966 - **Blow-Up**](https://www.imdb.com/title/tt0060176)
    - [1975 - **The Passenger**](https://www.imdb.com/title/tt0073580)
+1. Asquith, Anthony + Howard, Leslie
+   - [1938 - **Pygmalion**](https://www.imdb.com/title/tt0030637/)
 1. Bak, Chanuk
    - [2002 - **Sympathy for Mr. Vengeance**](https://www.imdb.com/title/tt0310775/)
    - [2003 - **Oldboy**](https://www.imdb.com/title/tt0364569/)
@@ -23,6 +25,8 @@ title: "Film"
    - [1960 - **The Virgin Spring**](https://www.imdb.com/title/tt0053976/)
    - [1963 - **Winter Light**](https://www.imdb.com/title/tt0057358/)
    - [1966 - **Persona**](https://www.imdb.com/title/tt0060827/)
+1. Breillat, Catherine
+   - [2001 - **Fat Girl**](https://www.imdb.com/title/tt0243255/)
 1. Bresson, Robert
    - [1951 - **Diary of a Country Priest**](https://www.imdb.com/title/tt0042619/)
    - [1956 - **A Man Escaped**](https://www.imdb.com/title/tt0049902)
@@ -49,10 +53,17 @@ title: "Film"
    - [1974 - **The Conversation**](https://www.imdb.com/title/tt0071360)
    - [1974 - **The Godfather Part II**](https://www.imdb.com/title/tt0071562)
    - [1979 - **Apocalypse Now**](https://www.imdb.com/title/tt0078788)
+1. Demy, Jacques
+   - [1961 - **Lola**](https://www.imdb.com/title/tt0055093/)
+   - [1964 - **The Umbrellas of Cherbourg**](https://www.imdb.com/title/tt0058450/)
 1. Donen, Stanley
    - [1952 - **Singin' in the Rain**](https://www.imdb.com/title/tt0045152/)
    - [1957 - **Funny Face**](https://www.imdb.com/title/tt0050419/)
    - [1963 - **Charade**](https://www.imdb.com/title/tt0056923/)
+1. Deren, Maya
+   - [1945 - **A Study in Choreography for Camera**](https://www.imdb.com/title/tt0124148/)
+1. Deren, Maya + Hammid, Alexander
+   - [1943 - **Meshes in the Afternoon**](https://www.imdb.com/title/tt0036154/)
 1. Eisenstein, Sergei
    - [1925 - **Battleship Potemkin**](https://www.imdb.com/title/tt0015648)
 1. Fellini, Federico
@@ -125,6 +136,8 @@ title: "Film"
    - [1996 - **Goodbye South, Goodbye**](https://www.imdb.com/title/tt0117151)
    - [1998 - **Flowers of Shanghai**](https://www.imdb.com/title/tt0156587)
    - [2003 - **Café Lumière**](https://www.imdb.com/title/tt0412596)
+1. Itami, Juzo
+   - [1985 - **Tampopo**](https://www.imdb.com/title/tt0092048/)
 1. Kazan, Elia
    - [1951 - **A Streetcar Named Desire**](https://www.imdb.com/title/tt0044081)
    - [1954 - **On the Waterfront**](https://www.imdb.com/title/tt0047296)
@@ -160,6 +173,18 @@ title: "Film"
    - [1965 - **For a Few Dollars More**](https://www.imdb.com/title/tt0059578)
    - [1966 - **The Good, the Bad and the Ugly**](https://www.imdb.com/title/tt0060196)
    - [1968 - **Once Upon a Time in the West**](https://www.imdb.com/title/tt0064116)
+1. Lynch, David
+   - [1999 - **The Straight Story**](https://www.imdb.com/title/tt0166896/)
+   - [2001 - **Mulholland Drive**](https://www.imdb.com/title/tt0166924/)
+1. Marker, Chris
+   - [1962 - **La Jetée**](https://www.imdb.com/title/tt0056119/)
+1. Malle, Louis
+   - [1987 - **Au Revoir les Enfants**](https://www.imdb.com/title/tt0092593/)
+1. Murnau, F.W.
+   - [1922 - **Nosferatu: A Symphony of Horror**](https://www.imdb.com/title/tt0013442/)
+   - [1924 - **The Last Laugh**](https://www.imdb.com/title/tt0015064/)
+   - [1926 - **Faust**](https://www.imdb.com/title/tt0016847/)
+   - [1927 - **Sunrise**](https://www.imdb.com/title/tt0018455/)
 1. Oppenheimer, Joshua
    - [2014 - **The Look of Silence**](https://www.imdb.com/title/tt3521134/)
 1. Oppenheimer, Joshua + Anonymous + Cynn, Christine
@@ -169,6 +194,14 @@ title: "Film"
    - [1949 - **Late Spring**](https://www.imdb.com/title/tt0041154/)
    - [1953 - **Tokyo Story**](https://www.imdb.com/title/tt0046438/)
    - [1956 - **Early Spring**](https://www.imdb.com/title/tt0049784/)
+1. Pakula, Alan J.
+   - [1976 - **All the President's Men**](https://www.imdb.com/title/tt0074119/)
+1. Polanski, Roman
+   - [1962 - **Knife in the Water**](https://www.imdb.com/title/tt0056291/)
+   - [1968 - **Rosemary's Baby**](https://www.imdb.com/title/tt0063522/)
+   - [1974 - **Chinatown**](https://www.imdb.com/title/tt0071315/)
+1. Pollack, Sydney
+   - [1975 - **Three Days of the Condor**](https://www.imdb.com/title/tt0073802/)
 1. Powell, Michael
    - [1960 - **Peeping Tom**](https://www.imdb.com/title/tt0054167/)
 1. Reed, Carol
@@ -176,15 +209,30 @@ title: "Film"
 1. Renoir, Jean
    - [1937 - **The Grand Illusion**](https://www.imdb.com/title/tt0028950)
    - [1939 - **The Rules of the Game**](https://www.imdb.com/title/tt0031885)
+   - [1951 - **The River**](https://www.imdb.com/title/tt0043972/)
+1. Resnais, Alain
+   - [1959 - **Hiroshima Mon Amour**](https://www.imdb.com/title/tt0052893/)
+   - [1961 - **Last Year at Marienbad**](https://www.imdb.com/title/tt0054632/)
+1. Rohmer, Eric
+   - [1970 - **Claire's Knee**](https://www.imdb.com/title/tt0065772/)
+   - [1972 - **Love in the Afternoon**](https://www.imdb.com/title/tt0068205/)
 1. Rossellini, Roberto
    - [1945 - **Rome, Open City**](https://www.imdb.com/title/tt0038890/)
    - [1950 - **The Flowers of St. Francis**](https://www.imdb.com/title/tt0042477/)
+1. Schlöndorff, Volker
+   - [1966 - **Young Törless**](https://www.imdb.com/title/tt0060574/)
+   - [1979 - **The Tin Drum**](https://www.imdb.com/title/tt0078875/)
+1. Schlöndorff, Volker + von Trotta, Margarethe
+   - [1975 - **The Lost Honor of Katharina Blum**](https://www.imdb.com/title/tt0073858/)
 1. Scorsese, Martin
    - [1976 - **Taxi Driver**](https://www.imdb.com/title/tt0075314/)
    - [1980 - **Raging Bull**](https://www.imdb.com/title/tt0081398/)
    - [1982 - **The King of Comedy**](https://www.imdb.com/title/tt0085794/)
    - [2006 - **The Departed](https://www.imdb.com/title/tt0407887/)
    - [2013 - **The Wolf of Wall Street**](https://www.imdb.com/title/tt0993846/)
+1. Sirk, Douglas
+   - [1954 - **Magnificent Obsession**](https://www.imdb.com/title/tt0047203/)
+   - [1956 - **Written on the Wind**](https://www.imdb.com/title/tt0049966/)
 1. Suzuki, Seijun
    - [1964 - **Gate of Flesh**](https://www.imdb.com/title/tt0058409/)
    - [1966 - **Tokyo Drifter**](https://www.imdb.com/title/tt0061101/)
@@ -218,6 +266,8 @@ title: "Film"
    - [2002 - **The Skywalk is Gone**](https://www.imdb.com/title/tt0334372)
    - [2003 - **Goodbye, Dragon Inn**](https://www.imdb.com/title/tt0377556)
    - [2005 - **The Wayward Cloud**](https://www.imdb.com/title/tt0445760)
+1. Tsui, Hark
+   - [1991 - **Once Upon a Time in China**](https://www.imdb.com/title/tt0103285/)
 1. Varda, Agnès
    - [1985 - **Vagabond**](https://www.imdb.com/title/tt0089960)
    - [2000 - **The Gleaners and I**](https://www.imdb.com/title/tt0247380)
@@ -229,6 +279,9 @@ title: "Film"
    - [1991 - **Raise the Red Lantern**](https://www.imdb.com/title/tt0101640/)
    - [1992 - **The Story of Qiu Ju**](https://www.imdb.com/title/tt0105197/)
    - [1994 - **To Live**](https://www.imdb.com/title/tt0110081/)
+1. Wiene, Robert
+   - [1920 - **The Cabinet of Dr. Caligari**](https://www.imdb.com/title/tt0010323/)
+   - [1924 - **The Hands of Orlac**](https://www.imdb.com/title/tt0015202/)
 1. Wilder, Billy
    - [1944 - **Double Indemnity**](https://www.imdb.com/title/tt0036775/)
    - [1950 - **Sunset Blvd.**](https://www.imdb.com/title/tt0043014/)
