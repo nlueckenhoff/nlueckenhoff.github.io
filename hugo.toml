@@ -6,7 +6,7 @@ theme = 'hugo-book'
 [menu]
 [[menu.after]]
   name = "Github"
-  url = "https://github.com/nlueckenhoff/nlueckenhoff.github.io"
+  url = "https://github.com/nathanreplicant/nathanreplicant.github.io"
   weight = 20
 
 [[menu.after]]
@@ -17,7 +17,7 @@ theme = 'hugo-book'
 [params]
   enableGitInfo = true
   BookTheme = 'auto'
-  BookRepo = 'https://github.com/nlueckenhoff/nlueckenhoff.github.io'
+  BookRepo = 'https://github.com/nathanreplicant/nathanreplicant.github.io'
   BookCommitPath = 'commit'
   BookDateFormat = '2006, Jan 2'
   BookComments = false
