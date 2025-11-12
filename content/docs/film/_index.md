@@ -228,7 +228,7 @@ title: "Film"
    - [1976 - **Taxi Driver**](https://www.imdb.com/title/tt0075314/)
    - [1980 - **Raging Bull**](https://www.imdb.com/title/tt0081398/)
    - [1982 - **The King of Comedy**](https://www.imdb.com/title/tt0085794/)
-   - [2006 - **The Departed](https://www.imdb.com/title/tt0407887/)
+   - [2006 - **The Departed**](https://www.imdb.com/title/tt0407887/)
    - [2013 - **The Wolf of Wall Street**](https://www.imdb.com/title/tt0993846/)
 1. Sirk, Douglas
    - [1954 - **Magnificent Obsession**](https://www.imdb.com/title/tt0047203/)
