@@ -1,17 +1,12 @@
 ---
 title: "Non-fiction"
 ---
-1. **A Brief History of Ancient Greece: Politics, Society, and Culture, 3rd Edition** *Pomeroy, Burstein, Donlan, Roberts, Tandy / 978-0199981557*
-1. **A First Course in Probability, 7th Edition** *Ross / 978-0131856622*
-1. **A History of England, Volume 1, 3rd Edition** *Roberts + Roberts / 978-0133903942*
-1. **A Mathematical Introduction to Logic, 2nd Edition** *Enderton / 978-0122384523*
-1. **A Medieval Life: Cecilia Penifader of Brigstock, c. 1295-1344** *Bennett / 978-0072903317*
-1. **A Short History of the Movies, 8th Edition** *Mast + Kawin / 978-0321106032*
-1. **A Vindication of the Rights of Woman: with Strictures on Political and Moral Subjects** *Wollstonecraft*
+
 1. **America and the Japanese Miracle: The Cold War Context of Japan's Postwar Economic Revival, 1950-1960** *Forsberg*
 1. **And the Weak Suffer What They Must?: Europe's Crisis and America's Economic Future** *Varoufakis*
 1. **Animal Liberation: A New Ethics for our Treatment of Animals** *Singer*
 1. **Art History, Revised Edition** *Stokstad / 978-0130825834*
+1. **A Brief History of Ancient Greece: Politics, Society, and Culture, 3rd Edition** *Pomeroy, Burstein, Donlan, Roberts, Tandy / 978-0199981557*
 1. **Combinatorics and Graph Theory** *Harris, Hirst, + Mossinghoff / 978-0387987361*
 1. **Common Sense** *Paine*
 1. **Complex Variables and Applications, 7th Edition** *Brown + Churchill / 978-0072872521*
@@ -30,6 +25,7 @@ title: "Non-fiction"
 1. **Exit, Voice, and Loyalty: Responses to Decline in Firms, Organizations, and State** *Hirschman*
 1. **Film Theory and Criticism, 5th Edition** *Braudy + Cohen / 978-0195105988*
 1. **Film at Wit's End** *Brakhage*
+1. **A First Course in Probability, 7th Edition** *Ross / 978-0131856622*
 1. **Fixed Income Strategy: A Practitioner's Guide to Riding the Curve** *Henderson*
 1. **Flowers in the Blood: The Story of Opium** *Goldberg, Latimer*
 1. **The Formation of Vegetable Mould Through the Action of Worms, with Observations on their Habits** *Darwin*
@@ -40,6 +36,7 @@ title: "Non-fiction"
 1. **The Global Minotaur: America, Europe and the Future of the Global Economy** *Varoufakis*
 1. **God Created the Integers** *Hawking*
 1. **The Great Rebalancing: Trade, Conflict, and the Perilous Road Ahead for the World Economy** *Pettis*
+1. **A History of England, Volume 1, 3rd Edition** *Roberts + Roberts / 978-0133903942*
 1. **The Holy Grail of Macroeconomics: Lessons from Japan's Great Recession** *Koo*
 1. **Homage to Catalonia** *Orwell*
 1. **The House of Rothschild: Money's Prophets 1798-1848** *Ferguson*
@@ -61,6 +58,8 @@ title: "Non-fiction"
 1. **Macroeconomics** *Abel + Bernanke + Croushore / 978-1-292-44612-7*
 1. **Magic in the Middle Ages** *Kieckhefer / 978-0521312028*
 1. **Mathematical Analysis, 2nd Edition** *Apostol / 978-0201002881*
+1. **A Mathematical Introduction to Logic, 2nd Edition** *Enderton / 978-0122384523*
+1. **A Medieval Life: Cecilia Penifader of Brigstock, c. 1295-1344** *Bennett / 978-0072903317*
 1. **Modern Physics, 3rd Edition** *Tipler + Llewellyn / 978-1572591649*
 1. **Money and Government: The Past and Future of Economics** *Skidelsky*
 1. **The Nature of Money** *Ingham*
@@ -77,6 +76,7 @@ title: "Non-fiction"
 1. **Rights of Man** *Paine*
 1. **The Rise of Carry: The Dangerous Consequences of Volatility Suppression and the New Financial Order of Decaying Growth and Recurring Crisis** *Lee, Lee, Coldiron*
 1. **Risk and Liquidity** *Shin*
+1. **A Short History of the Movies, 8th Edition** *Mast + Kawin / 978-0321106032*
 1. **Social and Political Philosophy** *Somerville + Santoni / 978-0385012386*
 1. **The Cave and the Light: Plato Versus Aristotle, and the Struggle for the Soul of Western Civilization** *Herman*
 1. **The Deluge: The Great War, America and the Remaking of the Global Order, 1916-1931** *Tooze*
@@ -86,6 +86,7 @@ title: "Non-fiction"
 1. **Transcendental Style in Film: Ozu, Bresson, Dreyer** *Schrader / 978-0306803352*
 1. **UNIX and Linux System Administration Handbook, 5th Edition** *Nemeth + Snyder + Hein + Whaley + Mackin / 978-0134277554*
 1. **Understanding and Using English Grammar, 4th Edition** *Azar + Hagen / 978-0132333313*
+1. **A Vindication of the Rights of Woman: with Strictures on Political and Moral Subjects** *Wollstonecraft*
 1. **The Volatility Machine: Emerging Economics and the Threat of Financial Collapse** *Pettis*
 1. **The Wages of Destruction: The Making and Breaking of the Nazi Economy** *Tooze*
 1. **Walden; or, Life in the Woods** *Thoreau*
