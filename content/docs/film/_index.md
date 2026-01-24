@@ -64,6 +64,10 @@ title: "Film"
    - [1945 - **A Study in Choreography for Camera**](https://www.imdb.com/title/tt0124148/)
 1. Deren, Maya + Hammid, Alexander
    - [1943 - **Meshes in the Afternoon**](https://www.imdb.com/title/tt0036154/)
+1. Dreyer, Carl Theodor
+   - [1928 - **The Passion of Joan of Arc**](https://www.imdb.com/title/tt0019254/)
+   - [1932 - **Vampyr**](https://www.imdb.com/title/tt0023649/)
+   - [1955 - **Ordet**](https://www.imdb.com/title/tt0048452/)
 1. Eisenstein, Sergei
    - [1925 - **Battleship Potemkin**](https://www.imdb.com/title/tt0015648)
 1. Fellini, Federico
@@ -180,6 +184,8 @@ title: "Film"
    - [1962 - **La Jetée**](https://www.imdb.com/title/tt0056119/)
 1. Malle, Louis
    - [1987 - **Au Revoir les Enfants**](https://www.imdb.com/title/tt0092593/)
+1. Mankiewicz, Joseph L.
+   - [1950 - **All About Eve**](https://www.imdb.com/title/tt0042192/)
 1. Murnau, F.W.
    - [1922 - **Nosferatu: A Symphony of Horror**](https://www.imdb.com/title/tt0013442/)
    - [1924 - **The Last Laugh**](https://www.imdb.com/title/tt0015064/)
