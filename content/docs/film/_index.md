@@ -239,6 +239,9 @@ title: "Film"
 1. Sirk, Douglas
    - [1954 - **Magnificent Obsession**](https://www.imdb.com/title/tt0047203/)
    - [1956 - **Written on the Wind**](https://www.imdb.com/title/tt0049966/)
+1. Sokurov, Aleksandr
+   - [1997 - **Mother and Son**](https://www.imdb.com/title/tt0119711/)
+   - [2002 - **Russian Ark**](https://www.imdb.com/title/tt0318034/)
 1. Suzuki, Seijun
    - [1964 - **Gate of Flesh**](https://www.imdb.com/title/tt0058409/)
    - [1966 - **Tokyo Drifter**](https://www.imdb.com/title/tt0061101/)
