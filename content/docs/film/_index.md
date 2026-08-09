@@ -6,6 +6,11 @@ title: "Film"
    - [1988 - **Women on the Verge of a Nervous Breakdown**](https://www.imdb.com/title/tt0095675/)
 1. Altman, Robert
    - [1975 - **Nashville**](https://www.imdb.com/title/tt0073440/)
+1. Anderson, Paul Thomas
+   - [2007 - **There Will Be Blood**](https://www.imdb.com/title/tt0469494)
+   - [2012 - **The Master**](https://www.imdb.com/title/tt1560747)
+   - [2014 - **Inherent Vice**](https://www.imdb.com/title/tt1791528)
+   - [2017 - **Phantom Thread**](https://www.imdb.com/title/tt5776858)
 1. Antonioni, Michelangelo
    - [1960 - **L'Avventura**](https://www.imdb.com/title/tt0053619)
    - [1961 - **La Notte**](https://www.imdb.com/title/tt0054130)
@@ -25,8 +30,6 @@ title: "Film"
    - [1960 - **The Virgin Spring**](https://www.imdb.com/title/tt0053976/)
    - [1963 - **Winter Light**](https://www.imdb.com/title/tt0057358/)
    - [1966 - **Persona**](https://www.imdb.com/title/tt0060827/)
-1. Breillat, Catherine
-   - [2001 - **Fat Girl**](https://www.imdb.com/title/tt0243255/)
 1. Bresson, Robert
    - [1951 - **Diary of a Country Priest**](https://www.imdb.com/title/tt0042619/)
    - [1956 - **A Man Escaped**](https://www.imdb.com/title/tt0049902)
@@ -187,6 +190,8 @@ title: "Film"
    - [1987 - **Au Revoir les Enfants**](https://www.imdb.com/title/tt0092593/)
 1. Mankiewicz, Joseph L.
    - [1950 - **All About Eve**](https://www.imdb.com/title/tt0042192/)
+1. Mann, Michael
+   - [2006 - **Miami Vice**](https://www.imdb.com/title/tt0430357)
 1. Murnau, F.W.
    - [1922 - **Nosferatu: A Symphony of Horror**](https://www.imdb.com/title/tt0013442/)
    - [1924 - **The Last Laugh**](https://www.imdb.com/title/tt0015064/)
@@ -265,6 +270,11 @@ title: "Film"
    - [1964 - **Woman in the Dunes**](https://www.imdb.com/title/tt0058625/)
 1. Tian, Zhuangzhuang + Pan, Peicheng
    - [1986 - **The Horse Thief**](https://www.imdb.com/title/tt0090907/)
+1. Tourneur, Jacques
+   - [1942 - **Cat People**](https://www.imdb.com/title/tt0034587)
+   - [1947 - **Out of the Past**](https://www.imdb.com/title/tt0039689)
+1. Tourneur, Maurice
+   - [1918 - **The Blue Bird**](https://www.imdb.com/title/tt0008891)
 1. Truffaut, François
    - [1959 - **The 400 Blows**](https://www.imdb.com/title/tt0053198/)
    - [1960 - **Shoot the Piano Player**](https://www.imdb.com/title/tt0054389/)
@@ -283,12 +293,6 @@ title: "Film"
    - [2000 - **The Gleaners and I**](https://www.imdb.com/title/tt0247380)
 1. Welles, Orson
    - [1941 - **Citizen Kane**](https://www.imdb.com/title/tt0033467/)
-1. Zhang, Yimou
-   - [1988 - **Red Sorghum**](https://www.imdb.com/title/tt0093206/)
-   - [1990 - **Ju Dou**](https://www.imdb.com/title/tt0099902/)
-   - [1991 - **Raise the Red Lantern**](https://www.imdb.com/title/tt0101640/)
-   - [1992 - **The Story of Qiu Ju**](https://www.imdb.com/title/tt0105197/)
-   - [1994 - **To Live**](https://www.imdb.com/title/tt0110081/)
 1. Wiene, Robert
    - [1920 - **The Cabinet of Dr. Caligari**](https://www.imdb.com/title/tt0010323/)
    - [1924 - **The Hands of Orlac**](https://www.imdb.com/title/tt0015202/)
@@ -302,3 +306,10 @@ title: "Film"
    - [1985 - **Taipei Story**](https://www.imdb.com/title/tt0089866/)
    - [1991 - **A Brighter Summer Day**](https://www.imdb.com/title/tt0101985/)
    - [2000 - **Yi Yi: A One and a Two**](https://www.imdb.com/title/tt0244316/)
+1. Zhang, Yimou
+   - [1988 - **Red Sorghum**](https://www.imdb.com/title/tt0093206/)
+   - [1990 - **Ju Dou**](https://www.imdb.com/title/tt0099902/)
+   - [1991 - **Raise the Red Lantern**](https://www.imdb.com/title/tt0101640/)
+   - [1992 - **The Story of Qiu Ju**](https://www.imdb.com/title/tt0105197/)
+   - [1994 - **To Live**](https://www.imdb.com/title/tt0110081/)
+   - [2004 - **House of Flying Daggers**](https://www.imdb.com/title/tt0385004)
