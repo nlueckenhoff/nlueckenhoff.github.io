@@ -51,11 +51,16 @@ title: "Film"
    - [1991 - **Life on a String**](https://www.imdb.com/title/tt0101440/)
    - [1993 - **Farewell My Concubine**](https://www.imdb.com/title/tt0106332/)
    - [1996 - **Temptress Moon**](https://www.imdb.com/title/tt0116295/)
+1. Cocteau, Jean
+   - [1932 - **Blood of a Poet**](https://www.imdb.com/title/tt0021331)
+   - [1946 - **Beauty and the Beast**](https://www.imdb.com/title/tt0050825)
 1. Coppola, Francis Ford
    - [1972 - **The Godfather**](https://www.imdb.com/title/tt0068646)
    - [1974 - **The Conversation**](https://www.imdb.com/title/tt0071360)
    - [1974 - **The Godfather Part II**](https://www.imdb.com/title/tt0071562)
    - [1979 - **Apocalypse Now**](https://www.imdb.com/title/tt0078788)
+1. Cukor, George
+   - [1940 - **The Philadelphia Story**](https://www.imdb.com/title/tt0032904/)
 1. Demy, Jacques
    - [1961 - **Lola**](https://www.imdb.com/title/tt0055093/)
    - [1964 - **The Umbrellas of Cherbourg**](https://www.imdb.com/title/tt0058450/)
@@ -138,6 +143,8 @@ title: "Film"
    - [1959 - **North by Northwest**](https://www.imdb.com/title/tt0053125/)
    - [1960 - **Psycho**](https://www.imdb.com/title/tt0054215/)
    - [1963 - **The Birds**](https://www.imdb.com/title/tt0056869/)
+1. Honda, Ishirō
+   - [1954 - **Godzilla**](https://www.imdb.com/title/tt0047034/)
 1. Hou, Hsiao-Hsien
    - [1989 - **A City of Sadness**](https://www.imdb.com/title/tt0096908/)
    - [1993 - **The Puppetmaster**](https://www.imdb.com/title/tt0107157)
@@ -156,7 +163,10 @@ title: "Film"
 1. Kiarostami, Abbas
    - [1987 - **Where is the Friend's House?**](https://www.imdb.com/title/tt0093342/)
    - [1997 - **Taste of Cherry**](https://www.imdb.com/title/tt0120265/)
+1. Kobayashi, Masaki
+   - [1962 - **Harakiri**](https://www.imdb.com/title/tt0056058/)
 1. Kubrick, Stanley
+   - [1957 - **Paths of Glory**](https://www.imdb.com/title/tt0050825)
    - [1960 - **Spartacus**](https://www.imdb.com/title/tt0054331)
    - [1964 - **Dr. Strangelove or: How I learned to Stop Worrying and Love the Bomb**](https://www.imdb.com/title/tt0057012/)
    - [1968 - **2001: A Space Odyssey**](https://www.imdb.com/title/tt0062622)
@@ -184,6 +194,10 @@ title: "Film"
 1. Lynch, David
    - [1999 - **The Straight Story**](https://www.imdb.com/title/tt0166896/)
    - [2001 - **Mulholland Drive**](https://www.imdb.com/title/tt0166924/)
+1. Malick, Terrence
+   - [1998 - **The Thin Red Line**](https://www.imdb.com/title/tt0120863)
+   - [2005 - **The New World**](https://www.imdb.com/title/tt0402399)
+   - [2015 - **Knight of Cups**](https://www.imdb.com/title/tt2101383)
 1. Marker, Chris
    - [1962 - **La Jetée**](https://www.imdb.com/title/tt0056119/)
 1. Malle, Louis
